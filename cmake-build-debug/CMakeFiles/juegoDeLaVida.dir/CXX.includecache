@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/gianbattolla/Documents/tpi_final/auxiliares.h
+definiciones.h
+/Users/gianbattolla/Documents/tpi_final/definiciones.h
+
+/Users/gianbattolla/Documents/tpi_final/definiciones.h
+vector
+-
+cmath
+-
+algorithm
+-
+
+/Users/gianbattolla/Documents/tpi_final/ejercicios.cpp
+algorithm
+-
+ejercicios.h
+/Users/gianbattolla/Documents/tpi_final/ejercicios.h
+auxiliares.h
+/Users/gianbattolla/Documents/tpi_final/auxiliares.h
+
+/Users/gianbattolla/Documents/tpi_final/ejercicios.h
+definiciones.h
+/Users/gianbattolla/Documents/tpi_final/definiciones.h
+

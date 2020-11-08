@@ -1,44 +1,64 @@
 #include <algorithm>
 #include "ejercicios.h"
+#include "auxiliares.h"
 
 // EJERCICIO 1
 bool toroideValido(vector<vector<bool>> const &t) {
-    bool resp = false; // este valor puede ser cambiado de acuerdo a la propia implementacion
-    // Implementacion
+    bool resp = false;
+    if (cantFilas(t) >= 3 && cantColumnas(t) >= 3 && esRectangulo(t))
+        resp = true;
     return resp;
 }
 
 // EJERCICIO 2
 vector<posicion> posicionesVivas(toroide const &t) {
-	vector<posicion> vivos;
-    // Implementacion
+    vector<posicion> vivos;
+    for (int i = 0; i < cantFilas(t); i ++){
+        for (int j = 0 ; j < cantColumnas(t); j ++){
+            if (t[i][j])
+                vivos.push_back(mp(i,j));
+        }
+    }
     return vivos;
 }
 
 // EJERCICIO 3
 float densidadPoblacion(toroide const &t) {
-	float resp = -1;
-    // Implementacion
-    return resp;
+    float cantidadViva = posicionesVivas(t).size();
+    float superficieTotal = float(cantFilas(t)) * float(cantColumnas(t));
+    return cantidadViva / superficieTotal;
 }
 
 // EJERCICIO 4
 bool evolucionDePosicion(toroide const &t, posicion x) {
-	bool resp = false;
-    // Implementacion
+    bool resp = false;
+    int cantVecinos =  vecinosVivos(t,x.first,x.second);
+    if (cantVecinos==3) {
+        resp = true;
+    } else {
+        if ( t[x.first][x.second] && cantVecinos >= 2 && cantVecinos <= 3){
+            resp = true;
+        }
+    }
     return resp;
 }
 
 // EJERCICIO 5
 void evolucionToroide(toroide &t){
-    // Implementacions
-    return;
+    toroide toroideOriginal = t;
+    for (int i = 0; i < cantFilas(t); i ++) {
+        for (int j = 0; j < cantColumnas(t); j++) {
+            t[i][j] = evolucionDePosicion(toroideOriginal, mp(i, j));
+        }
+    }
 }
 
 // EJERCICIO 6
 toroide evolucionMultiple(toroide const &t, int K) {
-    toroide out;
-    // Implementacion
+    toroide out = t;
+    for (int k = K; k > 0; k --){
+        evolucionToroide(out);
+    }
     return out;
 }
 
