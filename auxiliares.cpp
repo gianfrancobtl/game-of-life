@@ -78,3 +78,74 @@ toroide traslacion(toroide t, int a , int b ){
     return l;
 }
 
+
+
+//EJERCICIO 12
+bool filaTieneViva (vector<bool> n){
+    bool resp = false;
+    for (int i = 0; i < n.size() && !resp ; ++i) {
+        if (n[i]){
+            resp = true;
+        }
+    }
+    return resp;
+}
+
+
+int primeraFilaViva (toroide t){
+    int resultado = 0;
+    bool resp = false;
+    for (int i = 0; i < cantFilas(t) && !resp ; ++i) {
+        if (filaTieneViva(t[i])){
+            resultado = i;
+            resp = true;
+        }
+    }
+    return resultado;
+}
+
+int ultimaFilaViva (toroide t){
+    int resultado = 0;
+    bool resp = false;
+    for (int i = cantFilas(t)-1; i > 0 && !resp ; i--) {
+        if (filaTieneViva(t[i])){
+            resultado = i;
+            resp = true;
+        }
+    }
+    return resultado;
+}
+
+int primeraColumnaViva(toroide t){
+    int result = 0;
+    bool resp = false;
+    for (int j = 0; j < cantColumnas(t) && !resp ; ++j) {
+        for (int i = 0; i <cantFilas(t) ; ++i) {
+            if (t[i][j]){
+                result = j;
+                resp = true;
+            }
+        }
+    }
+    return result;
+}
+
+int ultimaColumnaViva(toroide t){
+    int result = 0;
+    bool resp = false;
+    for (int j = cantColumnas(t) -1; j > 0 && !resp ; ++j) {
+        for (int i = 0; i <cantFilas(t) ; ++i) {
+            if (t[i][j]){
+                result = j;
+                resp = true;
+            }
+        }
+    }
+    return result;
+}
+
+int areaTotal (toroide t){
+    int cantFilaViva = ultimaFilaViva(t) - primeraFilaViva(t) + 1;
+    int cantColumnaViva = ultimaColumnaViva(t) - primeraColumnaViva(t) + 1;
+    return cantFilaViva * cantColumnaViva;
+}

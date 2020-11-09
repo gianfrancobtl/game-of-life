@@ -103,7 +103,7 @@ int seleccionNatural(vector <toroide> ts) {
                 evolucionToroide(evoT);
                 k ++;
             }
-            if (k >= mayorCantTicks){
+            if (k > mayorCantTicks){
                 resp = i;
                 mayorCantTicks = k;
             }
@@ -142,7 +142,14 @@ bool vistaTrasladada(toroide const &t, toroide const &u){
 
 // EJERCICIO 12
 int menorSuperficieViva(toroide const &t){
-	int resp = -1;
-	// Implementacion
-	return resp;
+    int resp = areaTotal(t);
+    toroide generico = t;
+    for (int i = 0; i <t.size() ; ++i) {
+        for (int j = 0; j <t[0].size() ; ++j) {
+            if (resp > areaTotal(traslacion(t,i,j))){
+                resp = areaTotal(traslacion(t,i,j));
+            }
+        }
+    }
+    return resp;
 }

@@ -18,4 +18,14 @@ bool toroideMuerto (toroide const &t);
 toroide traslacion(toroide t, int a , int b );
 
 
+
+bool filaTieneViva (vector<bool> n);
+int primeraFilaViva (toroide t);
+int ultimaFilaViva (toroide t);
+int ultimaColumnaViva(toroide t);
+int areaTotal (toroide t);
+
+
+
+
 #endif //REUNIONESREMOTAS_AUXILIARES_H
