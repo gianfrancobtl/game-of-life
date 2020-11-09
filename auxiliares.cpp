@@ -35,7 +35,7 @@ bool esRectangulo (vector<vector<bool>> const &t){
 
 // EJERCICIO 4
 bool vecinaViva(toroide t , int z , int c , int i , int j){
-    int result = t[(z+i + t.size()) % t.size()][(c+j + t[0].size()) % t[0].size()];
+    int result = t[(z+i + cantFilas(t)) % cantFilas(t)][(c+j + cantColumnas(t)) % cantColumnas(t)];
     return result;
 }
 
@@ -50,3 +50,31 @@ int vecinosVivos(toroide t, int f , int c){
     }
     return result;
 }
+
+
+// EJERCICIO 7
+bool toroideMuerto (toroide const &t){
+    bool estaMuerto = true;
+    for (int i = 0; i < cantFilas(t) && estaMuerto; i ++) {
+        for (int j = 0; j < cantColumnas(t) && estaMuerto; j++) {
+            if (t[i][j]) {
+                estaMuerto = false;
+            }
+        }
+    }
+    return estaMuerto;
+}
+
+
+
+//EJERCICIOS 11
+toroide traslacion(toroide t, int a , int b ){
+    toroide l = t;
+    for (int i = 0; i < cantFilas(t) ; ++i) {
+        for (int j = 0; j < cantColumnas(t) ; ++j) {
+            l[(i + a + cantFilas(t)) % cantFilas(t)] [(j + b + cantColumnas(t)) % cantColumnas(t)] = t[i][j];
+        }
+    }
+    return l;
+}
+

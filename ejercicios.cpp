@@ -63,37 +63,80 @@ toroide evolucionMultiple(toroide const &t, int K) {
 }
 
 // EJERCICIO 7
-bool esPeriodico(toroide const &t, int &p) {
+bool esPeriodico(toroide const& t, int &p) {
     bool resp = false;
-    // Implementacion
+    p = 0;
+    toroide toroideOut = t;
+    while (!toroideMuerto(toroideOut) && !resp){
+        p ++;
+        evolucionToroide(toroideOut);
+        if (t == toroideOut){
+            resp = true;
+        }
+    }
     return resp;
 }
 
 // EJERCICIO 8
 bool primosLejanos(toroide const &t, toroide const &u) {
-	bool resp = false; 
-    // Implementacion
+    bool resp = false;
+    toroide genericoT = t;
+    toroide genericoU = u;
+    while (!toroideMuerto(genericoT) && !toroideMuerto(genericoU) && !resp){
+        evolucionToroide(genericoT);
+        evolucionToroide(genericoU);
+        if ( genericoT == u || genericoU == t)
+            resp = true;
+    }
     return resp;
 }
 
 // EJERCICIO 9
 int seleccionNatural(vector <toroide> ts) {
-    int resp = -1; // este valor puede ser cambiado de acuerdo a la propia implementacion    
-	// Implementacion
+    int resp = -1;
+    int mayorCantTicks = -1;
+    for (int i = 0; i < ts.size(); i ++){
+        toroide evoT = ts[i];
+        int k = 0;
+        if (!esPeriodico(evoT, k)){
+            while (!toroideMuerto(evoT)){
+                evolucionToroide(evoT);
+                k ++;
+            }
+            if (k >= mayorCantTicks){
+                resp = i;
+                mayorCantTicks = k;
+            }
+        }
+    }
     return resp;
 }
 
+
 // EJERCICIO 10
 toroide fusionar(toroide const &t, toroide const &u) {
-    toroide out;
-    // Implementacion
+    toroide out (cantFilas(t), vector<bool>(cantColumnas(t)));
+    for (int i = 0; i < cantFilas(t); i ++) {
+        for (int j = 0; j < cantColumnas(t); j ++) {
+            if (t[i][j] && u[i][j])
+                out [i][j] = true;
+            else
+                out [i][j] = false;
+        }
+    }
     return out;
 }
 
 // EJERCICIO 11
 bool vistaTrasladada(toroide const &t, toroide const &u){
-	bool resp = false;
-    // Implementacion
+    bool resp = false;
+    for (int i = 0; i < cantFilas(t) && !resp ; ++i) {
+        for (int j = 0; j < cantColumnas(t) ; ++j) {
+            if (traslacion(t,i,j) == u){
+                resp = true;
+            }
+        }
+    }
     return resp;
 }
 

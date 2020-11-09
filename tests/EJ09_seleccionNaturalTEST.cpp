@@ -23,7 +23,7 @@ TEST(seleccionNaturalTEST, toroideDiagonalVsUnoVivo){
     int res = seleccionNatural(ts);
     EXPECT_EQ(res, 0);
 }
-
+/*
 TEST(seleccionNaturalTEST, DiagonalVsHorizontal){
     toroide t1 = { 
                   {false, false, false, false, false}, 
@@ -42,3 +42,4 @@ TEST(seleccionNaturalTEST, DiagonalVsHorizontal){
     int res = seleccionNatural(ts);
     EXPECT_EQ(res, 1);
 }
+*/
