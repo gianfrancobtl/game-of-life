@@ -22,17 +22,17 @@
         2:   13-block  0
         -:   14:}
         -:   15:
-     8892:   16:int cantFilas (vector<vector<bool>> const &t){
-     8892:   16-block  0
-     8892:   17:    int size = t.size();
-     8892:   18:    return size;
-     8892:   18-block  0
+     8924:   16:int cantFilas (vector<vector<bool>> const &t){
+     8924:   16-block  0
+     8924:   17:    int size = t.size();
+     8924:   18:    return size;
+     8924:   18-block  0
         -:   19:}
         -:   20:
-     7088:   21:int cantColumnas (vector<vector<bool>> const &t){
-     7088:   21-block  0
-     7088:   22:    return t[0].size();
-     7088:   22-block  0
+     7120:   21:int cantColumnas (vector<vector<bool>> const &t){
+     7120:   21-block  0
+     7120:   22:    return t[0].size();
+     7120:   22-block  0
         -:   23:}
         -:   24:
         -:   25:// EJERCICIO 1
@@ -55,45 +55,45 @@
         -:   34:}
         -:   35:
         -:   36:// EJERCICIO 4
-      516:   37:bool estaViva(toroide const &t, posicion x){
-      516:   37-block  0
-      516:   38:    return t[x.first][x.second];
-      516:   38-block  0
+      520:   37:bool estaViva(toroide const &t, posicion x){
+      520:   37-block  0
+      520:   38:    return t[x.first][x.second];
+      520:   38-block  0
         -:   39:}
         -:   40:
-     2488:   41:bool posVecinaViva(toroide const &t, int f, int c, int i, int j){
-     2488:   41-block  0
-     2488:   42:    int k = (f + i + cantFilas(t)) % cantFilas(t);
-     2488:   43:    int l = (c + j + cantColumnas(t)) % cantColumnas(t);
-     2488:   44:    return (t[k][l]);
-     2488:   44-block  0
+     2504:   41:bool posVecinaViva(toroide const &t, int f, int c, int i, int j){
+     2504:   41-block  0
+     2504:   42:    int k = (f + i + cantFilas(t)) % cantFilas(t);
+     2504:   43:    int l = (c + j + cantColumnas(t)) % cantColumnas(t);
+     2504:   44:    return (t[k][l]);
+     2504:   44-block  0
         -:   45:}
         -:   46:
-      311:   47:int cantVecinosVivos (toroide const &t, posicion x){
-      311:   47-block  0
-      311:   48:    int cantVecinosVivos = 0;
-      311:   49:    int f = x.first;
-      311:   50:    int c = x.second;
-     1244:   51:    for (int i = - 1; i <= 1; i ++){
-      311:   51-block  0
-     1244:   51-block  1
-      933:   51-block  2
-     3732:   52:        for (int j = - 1; j <= 1; j ++){
-      933:   52-block  0
-     3732:   52-block  1
-     2799:   52-block  2
-     2799:   53:            if ((i != 0 || j != 0) && posVecinaViva(t, f, c, i, j))
-     2799:   53-block  0
-      933:   53-block  1
-     2488:   53-block  2
-      739:   54:                cantVecinosVivos += 1;
-      739:   54-block  0
-     2799:   55:        }
-     2799:   55-block  0
-      933:   56:    }
-      933:   56-block  0
-      311:   57:    return cantVecinosVivos;
-      311:   57-block  0
+      313:   47:int cantVecinosVivos (toroide const &t, posicion x){
+      313:   47-block  0
+      313:   48:    int cantVecinosVivos = 0;
+      313:   49:    int f = x.first;
+      313:   50:    int c = x.second;
+     1252:   51:    for (int i = - 1; i <= 1; i ++){
+      313:   51-block  0
+     1252:   51-block  1
+      939:   51-block  2
+     3756:   52:        for (int j = - 1; j <= 1; j ++){
+      939:   52-block  0
+     3756:   52-block  1
+     2817:   52-block  2
+     2817:   53:            if ((i != 0 || j != 0) && posVecinaViva(t, f, c, i, j))
+     2817:   53-block  0
+      939:   53-block  1
+     2504:   53-block  2
+      744:   54:                cantVecinosVivos += 1;
+      744:   54-block  0
+     2817:   55:        }
+     2817:   55-block  0
+      939:   56:    }
+      939:   56-block  0
+      313:   57:    return cantVecinosVivos;
+      313:   57-block  0
         -:   58:}
         -:   59:
         -:   60:
@@ -164,7 +164,7 @@
        68:   87:bool filaTieneViva (vector<bool> n){
        68:   88:    bool resp = false;
        68:   88-block  0
-      250:   89:    for (int i = 0; i < n.size() && !resp ; ++i) {
+      250:   89:    for (int i = 0; i < n.size() && !resp ; ++i){
        68:   89-block  0
       250:   89-block  1
       222:   89-block  2
@@ -184,7 +184,7 @@
        20:   97:    int resultado = 0;
        20:   97-block  0
        20:   98:    bool resp = false;
-       52:   99:    for (int i = 0; i < cantFilas(t) && !resp ; ++i) {
+       52:   99:    for (int i = 0; i < cantFilas(t) && !resp ; ++i){
        20:   99-block  0
        52:   99-block  1
        52:   99-block  2
@@ -209,7 +209,7 @@
        20:  109:    int resultado = 0;
        20:  109-block  0
        20:  110:    bool resp = false;
-       56:  111:    for (int i = cantFilas(t)-1; i > 0 && !resp ; i--) {
+       56:  111:    for (int i = cantFilas(t)-1; i > 0 && !resp ; i--){
        20:  111-block  0
        56:  111-block  1
        50:  111-block  2
@@ -234,7 +234,7 @@
        20:  121:    int result = 0;
        20:  121-block  0
        20:  122:    bool resp = false;
-       46:  123:    for (int j = 0; j < cantColumnas(t) && !resp ; ++j) {
+       46:  123:    for (int j = 0; j < cantColumnas(t) && !resp ; ++j){
        20:  123-block  0
        46:  123-block  1
        46:  123-block  2
@@ -262,13 +262,13 @@
        20:  135:    int result = 0;
        20:  135-block  0
        20:  136:    bool resp = false;
-      528:  137:    for (int j = cantColumnas(t) - 1; j > 0 && !resp ; ++ j) {
+      528:  137:    for (int j = cantColumnas(t) - 1; j > 0 && !resp ; ++ j){
        20:  137-block  0
       528:  137-block  1
       528:  137-block  2
       528:  137-block  3
       508:  137-block  4
-     2540:  138:        for (int i = 0; i < cantFilas(t) ; ++ i) {
+     2540:  138:        for (int i = 0; i < cantFilas(t) ; ++ i){
       508:  138-block  0
      2540:  138-block  1
      2032:  138-block  2

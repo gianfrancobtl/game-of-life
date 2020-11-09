@@ -474,7 +474,7 @@
         -:  461:// This class provides implementation of TeastFactoryBase interface.
         -:  462:// It is used in TEST and TEST_F macros.
         -:  463:template <class TestClass>
-       10:  464:class TestFactoryImpl : public TestFactoryBase {
+       20:  464:class TestFactoryImpl : public TestFactoryBase {
         1:  464-block  0
         1:  464-block  1
         1:  464-block  2
@@ -485,8 +485,18 @@
         1:  464-block  7
         1:  464-block  8
         1:  464-block  9
+        1:  464-block 10
+        1:  464-block 11
+        1:  464-block 12
+        1:  464-block 13
+        1:  464-block 14
+        1:  464-block 15
+        1:  464-block 16
+        1:  464-block 17
+        1:  464-block 18
+        1:  464-block 19
         -:  465: public:
-        2:  466:  virtual Test* CreateTest() { return new TestClass; }
+        4:  466:  virtual Test* CreateTest() { return new TestClass; }
         1:  466-block  0
         1:  466-block  1
         1:  466-block  2
@@ -497,6 +507,16 @@
         1:  466-block  7
     $$$$$:  466-block  8
     $$$$$:  466-block  9
+        1:  466-block 10
+        1:  466-block 11
+        1:  466-block 12
+    $$$$$:  466-block 13
+    $$$$$:  466-block 14
+        1:  466-block 15
+        1:  466-block 16
+        1:  466-block 17
+    $$$$$:  466-block 18
+    $$$$$:  466-block 19
         -:  467:};
         -:  468:
         -:  469:#if GTEST_OS_WINDOWS

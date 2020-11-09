@@ -64,24 +64,24 @@
         -:   30:}
         -:   31:
         -:   32:// EJERCICIO 4
-      269:   33:bool evolucionDePosicion(toroide const &t, posicion x) {
-      269:   33-block  0
+      271:   33:bool evolucionDePosicion(toroide const &t, posicion x) {
+      271:   33-block  0
         -:   34:    bool resp;
-      474:   35:    if ((estaViva(t, x) && (cantVecinosVivos(t, x) == 2 || cantVecinosVivos(t, x) == 3)) ||
-      269:   35-block  0
+      478:   35:    if ((estaViva(t, x) && (cantVecinosVivos(t, x) == 2 || cantVecinosVivos(t, x) == 3)) ||
+      271:   35-block  0
        64:   35-block  1
        42:   35-block  2
-      205:   35-block  3
-      247:   36:    (!estaViva(t, x) && cantVecinosVivos(t, x) == 3))
-      247:   36-block  0
+      207:   35-block  3
+      249:   36:    (!estaViva(t, x) && cantVecinosVivos(t, x) == 3))
+      249:   36-block  0
        64:   37:        resp = true;
        64:   37-block  0
         -:   38:    else
-      205:   39:        resp = false;
-      205:   39-block  0
+      207:   39:        resp = false;
+      207:   39-block  0
         -:   40:
-      269:   41:    return resp;
-      269:   41-block  0
+      271:   41:    return resp;
+      271:   41-block  0
         -:   42:}
         -:   43:
         -:   44:// EJERCICIO 5

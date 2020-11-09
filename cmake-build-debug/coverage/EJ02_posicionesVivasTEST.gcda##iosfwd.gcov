@@ -132,10 +132,10 @@
         -:  127:
         -:  128:template <class _CharT, class _Traits = char_traits<_CharT>,
         -:  129:          class _Allocator = allocator<_CharT> >
-      196:  130:    class _LIBCPP_TEMPLATE_VIS basic_stringbuf;
-       98:  130-block  0
+      200:  130:    class _LIBCPP_TEMPLATE_VIS basic_stringbuf;
+      100:  130-block  0
     $$$$$:  130-block  1
-       98:  130-block  2
+      100:  130-block  2
         -:  131:template <class _CharT, class _Traits = char_traits<_CharT>,
         -:  132:          class _Allocator = allocator<_CharT> >
         -:  133:    class _LIBCPP_TEMPLATE_VIS basic_istringstream;
@@ -144,10 +144,10 @@
         -:  136:    class _LIBCPP_TEMPLATE_VIS basic_ostringstream;
         -:  137:template <class _CharT, class _Traits = char_traits<_CharT>,
         -:  138:          class _Allocator = allocator<_CharT> >
-      294:  139:    class _LIBCPP_TEMPLATE_VIS basic_stringstream;
-       98:  139-block  0
-       98:  139-block  1
-       98:  139-block  2
+      300:  139:    class _LIBCPP_TEMPLATE_VIS basic_stringstream;
+      100:  139-block  0
+      100:  139-block  1
+      100:  139-block  2
         -:  140:
         -:  141:template <class _CharT, class _Traits = char_traits<_CharT> >
         -:  142:    class _LIBCPP_TEMPLATE_VIS basic_filebuf;

@@ -446,21 +446,21 @@
         -:  407:
         -:  408:template <class _Cp, bool _IsConst>
         -:  409:__bit_iterator<_Cp, false>
-      877:  410:__copy_aligned(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last,
-      877:  410-block  0
+      883:  410:__copy_aligned(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last,
+      883:  410-block  0
         -:  411:                                                     __bit_iterator<_Cp, false> __result)
         -:  412:{
         -:  413:    typedef __bit_iterator<_Cp, _IsConst> _In;
         -:  414:    typedef  typename _In::difference_type difference_type;
         -:  415:    typedef typename _In::__storage_type __storage_type;
-      877:  416:    const int __bits_per_word = _In::__bits_per_word;
-      877:  417:    difference_type __n = __last - __first;
-      877:  418:    if (__n > 0)
-      877:  418-block  0
+      883:  416:    const int __bits_per_word = _In::__bits_per_word;
+      883:  417:    difference_type __n = __last - __first;
+      883:  418:    if (__n > 0)
+      883:  418-block  0
         -:  419:    {
         -:  420:        // do first word
-      877:  421:        if (__first.__ctz_ != 0)
-      877:  421-block  0
+      883:  421:        if (__first.__ctz_ != 0)
+      883:  421-block  0
         -:  422:        {
     #####:  423:            unsigned __clz = __bits_per_word - __first.__ctz_;
     #####:  424:            difference_type __dn = _VSTD::min(static_cast<difference_type>(__clz), __n);
@@ -477,28 +477,28 @@
     $$$$$:  434-block  0
         -:  435:        // __first.__ctz_ == 0;
         -:  436:        // do middle words
-      877:  437:        __storage_type __nw = __n / __bits_per_word;
-     2631:  438:        _VSTD::memmove(_VSTD::__to_address(__result.__seg_),
-      877:  439:                       _VSTD::__to_address(__first.__seg_),
-      877:  440:                       __nw * sizeof(__storage_type));
-      877:  441:        __n -= __nw * __bits_per_word;
-      877:  442:        __result.__seg_ += __nw;
+      883:  437:        __storage_type __nw = __n / __bits_per_word;
+     2649:  438:        _VSTD::memmove(_VSTD::__to_address(__result.__seg_),
+      883:  439:                       _VSTD::__to_address(__first.__seg_),
+      883:  440:                       __nw * sizeof(__storage_type));
+      883:  441:        __n -= __nw * __bits_per_word;
+      883:  442:        __result.__seg_ += __nw;
         -:  443:        // do last word
-      877:  444:        if (__n > 0)
-      877:  444-block  0
+      883:  444:        if (__n > 0)
+      883:  444-block  0
         -:  445:        {
-      877:  446:            __first.__seg_ += __nw;
-      877:  447:            __storage_type __m = ~__storage_type(0) >> (__bits_per_word - __n);
-      877:  448:            __storage_type __b = *__first.__seg_ & __m;
-      877:  449:            *__result.__seg_ &= ~__m;
-      877:  450:            *__result.__seg_ |= __b;
-      877:  451:            __result.__ctz_ = static_cast<unsigned>(__n);
-      877:  452:        }
-      877:  452-block  0
-      877:  453:    }
-      877:  453-block  0
-      877:  454:    return __result;
-      877:  454-block  0
+      883:  446:            __first.__seg_ += __nw;
+      883:  447:            __storage_type __m = ~__storage_type(0) >> (__bits_per_word - __n);
+      883:  448:            __storage_type __b = *__first.__seg_ & __m;
+      883:  449:            *__result.__seg_ &= ~__m;
+      883:  450:            *__result.__seg_ |= __b;
+      883:  451:            __result.__ctz_ = static_cast<unsigned>(__n);
+      883:  452:        }
+      883:  452-block  0
+      883:  453:    }
+      883:  453-block  0
+      883:  454:    return __result;
+      883:  454-block  0
         -:  455:}
         -:  456:
         -:  457:template <class _Cp, bool _IsConst>
@@ -601,17 +601,17 @@
         -:  535:template <class _Cp, bool _IsConst>
         -:  536:inline _LIBCPP_INLINE_VISIBILITY
         -:  537:__bit_iterator<_Cp, false>
-      877:  538:copy(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, __bit_iterator<_Cp, false> __result)
-      877:  538-block  0
+      883:  538:copy(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, __bit_iterator<_Cp, false> __result)
+      883:  538-block  0
         -:  539:{
-      877:  540:    if (__first.__ctz_ == __result.__ctz_)
-      877:  540-block  0
-      877:  541:        return __copy_aligned(__first, __last, __result);
-      877:  541-block  0
+      883:  540:    if (__first.__ctz_ == __result.__ctz_)
+      883:  540-block  0
+      883:  541:        return __copy_aligned(__first, __last, __result);
+      883:  541-block  0
     #####:  542:    return __copy_unaligned(__first, __last, __result);
     $$$$$:  542-block  0
-      877:  543:}
-      877:  543-block  0
+      883:  543:}
+      883:  543-block  0
         -:  544:
         -:  545:// copy_backward
         -:  546:
@@ -1257,12 +1257,12 @@
         -: 1129:      _If<!_IsConst, __bit_iterator, struct __private_nat>;
         -: 1130:
         -: 1131:    _LIBCPP_INLINE_VISIBILITY
-     3510: 1132:    __bit_iterator(__type_for_abi_non_trivial_copy_ctor const& __it) _NOEXCEPT
-     1755: 1132-block  0
-     1755: 1132-block  1
-     3510: 1133:      : __seg_(__it.__seg_), __ctz_(__it.__ctz_) {}
-     1755: 1133-block  0
-     1755: 1133-block  1
+     3534: 1132:    __bit_iterator(__type_for_abi_non_trivial_copy_ctor const& __it) _NOEXCEPT
+     1767: 1132-block  0
+     1767: 1132-block  1
+     3534: 1133:      : __seg_(__it.__seg_), __ctz_(__it.__ctz_) {}
+     1767: 1133-block  0
+     1767: 1133-block  1
         -: 1134:
         -: 1135:    // Always declare the copy assignment operator since the implicit declaration
         -: 1136:    // is deprecated.
@@ -1345,10 +1345,10 @@
         -: 1213:    friend __bit_iterator operator+(difference_type __n, const __bit_iterator& __it) {return __it + __n;}
         -: 1214:
         -: 1215:    _LIBCPP_INLINE_VISIBILITY
-     1794: 1216:    friend difference_type operator-(const __bit_iterator& __x, const __bit_iterator& __y)
-     1794: 1216-block  0
-     1794: 1217:        {return (__x.__seg_ - __y.__seg_) * __bits_per_word + __x.__ctz_ - __y.__ctz_;}
-     1794: 1217-block  0
+     1806: 1216:    friend difference_type operator-(const __bit_iterator& __x, const __bit_iterator& __y)
+     1806: 1216-block  0
+     1806: 1217:        {return (__x.__seg_ - __y.__seg_) * __bits_per_word + __x.__ctz_ - __y.__ctz_;}
+     1806: 1217-block  0
         -: 1218:
         -: 1219:    _LIBCPP_INLINE_VISIBILITY reference operator[](difference_type __n) const {return *(*this + __n);}
         -: 1220:
@@ -1372,16 +1372,16 @@
         -: 1238:
         -: 1239:private:
         -: 1240:    _LIBCPP_INLINE_VISIBILITY
-     5450: 1241:    __bit_iterator(__storage_pointer __s, unsigned __ctz) _NOEXCEPT
-      878: 1241-block  0
-      878: 1241-block  1
-     1847: 1241-block  2
-     1847: 1241-block  3
-     5450: 1242:        : __seg_(__s), __ctz_(__ctz) {}
-      878: 1242-block  0
-      878: 1242-block  1
-     1847: 1242-block  2
-     1847: 1242-block  3
+     5486: 1241:    __bit_iterator(__storage_pointer __s, unsigned __ctz) _NOEXCEPT
+      884: 1241-block  0
+      884: 1241-block  1
+     1859: 1241-block  2
+     1859: 1241-block  3
+     5486: 1242:        : __seg_(__s), __ctz_(__ctz) {}
+      884: 1242-block  0
+      884: 1242-block  1
+     1859: 1242-block  2
+     1859: 1242-block  3
         -: 1243:
         -: 1244:    friend typename _Cp::__self;
         -: 1245:

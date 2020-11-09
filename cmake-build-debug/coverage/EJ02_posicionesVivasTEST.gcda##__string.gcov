@@ -246,9 +246,9 @@
         -:  241:    typedef mbstate_t state_type;
         -:  242:
         -:  243:    static inline _LIBCPP_CONSTEXPR_AFTER_CXX14
-     1034:  244:    void assign(char_type& __c1, const char_type& __c2) _NOEXCEPT {__c1 = __c2;}
-     1034:  244-block  0
-     1034:  244-block  1
+     1038:  244:    void assign(char_type& __c1, const char_type& __c2) _NOEXCEPT {__c1 = __c2;}
+     1038:  244-block  0
+     1038:  244-block  1
     #####:  245:    static inline _LIBCPP_CONSTEXPR bool eq(char_type __c1, char_type __c2) _NOEXCEPT
     $$$$$:  245-block  0
     #####:  246:            {return __c1 == __c2;}
@@ -294,14 +294,14 @@
     $$$$$:  280-block  1
     $$$$$:  280-block  2
     $$$$$:  280-block  3
-      107:  281:    static inline _LIBCPP_CONSTEXPR char_type to_char_type(int_type __c) _NOEXCEPT
-      107:  281-block  0
-      107:  282:        {return char_type(__c);}
-      107:  282-block  0
-      107:  283:    static inline _LIBCPP_CONSTEXPR int_type to_int_type(char_type __c) _NOEXCEPT
-      107:  283-block  0
-      107:  284:        {return int_type((unsigned char)__c);}
-      107:  284-block  0
+      109:  281:    static inline _LIBCPP_CONSTEXPR char_type to_char_type(int_type __c) _NOEXCEPT
+      109:  281-block  0
+      109:  282:        {return char_type(__c);}
+      109:  282-block  0
+      109:  283:    static inline _LIBCPP_CONSTEXPR int_type to_int_type(char_type __c) _NOEXCEPT
+      109:  283-block  0
+      109:  284:        {return int_type((unsigned char)__c);}
+      109:  284-block  0
     #####:  285:    static inline _LIBCPP_CONSTEXPR bool eq_int_type(int_type __c1, int_type __c2) _NOEXCEPT
     $$$$$:  285-block  0
     #####:  286:        {return __c1 == __c2;}

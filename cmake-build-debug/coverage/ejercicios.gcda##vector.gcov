@@ -305,9 +305,9 @@
         -:  300:class _LIBCPP_TEMPLATE_VIS __vector_base_common
         -:  301:{
         -:  302:protected:
-     1075:  303:    _LIBCPP_INLINE_VISIBILITY __vector_base_common() {}
-     1075:  303-block  0
-     1075:  303-block  1
+     1081:  303:    _LIBCPP_INLINE_VISIBILITY __vector_base_common() {}
+     1081:  303-block  0
+     1081:  303-block  1
         -:  304:    _LIBCPP_NORETURN void __throw_length_error() const;
         -:  305:    _LIBCPP_NORETURN void __throw_out_of_range() const;
         -:  306:};
@@ -351,33 +351,33 @@
         -:  344:    __compressed_pair<pointer, allocator_type> __end_cap_;
         -:  345:
         -:  346:    _LIBCPP_INLINE_VISIBILITY
-     1501:  347:    allocator_type& __alloc() _NOEXCEPT
+     1511:  347:    allocator_type& __alloc() _NOEXCEPT
        85:  347-block  0
-     1416:  347-block  1
-     1501:  348:        {return __end_cap_.second();}
+     1426:  347-block  1
+     1511:  348:        {return __end_cap_.second();}
        85:  348-block  0
-     1416:  348-block  1
+     1426:  348-block  1
         -:  349:    _LIBCPP_INLINE_VISIBILITY
-      406:  350:    const allocator_type& __alloc() const _NOEXCEPT
+      408:  350:    const allocator_type& __alloc() const _NOEXCEPT
        13:  350-block  0
-      393:  350-block  1
-      406:  351:        {return __end_cap_.second();}
+      395:  350-block  1
+      408:  351:        {return __end_cap_.second();}
        13:  351-block  0
-      393:  351-block  1
+      395:  351-block  1
         -:  352:    _LIBCPP_INLINE_VISIBILITY
-      246:  353:    pointer& __end_cap() _NOEXCEPT
+      248:  353:    pointer& __end_cap() _NOEXCEPT
        36:  353-block  0
-      210:  353-block  1
-      246:  354:        {return __end_cap_.first();}
+      212:  353-block  1
+      248:  354:        {return __end_cap_.first();}
        36:  354-block  0
-      210:  354-block  1
+      212:  354-block  1
         -:  355:    _LIBCPP_INLINE_VISIBILITY
-      867:  356:    const pointer& __end_cap() const _NOEXCEPT
+      873:  356:    const pointer& __end_cap() const _NOEXCEPT
        57:  356-block  0
-      810:  356-block  1
-      867:  357:        {return __end_cap_.first();}
+      816:  356-block  1
+      873:  357:        {return __end_cap_.first();}
        57:  357-block  0
-      810:  357-block  1
+      816:  357-block  1
         -:  358:
         -:  359:    _LIBCPP_INLINE_VISIBILITY
         3:  360:    __vector_base()
@@ -395,18 +395,18 @@
         -:  366:    ~__vector_base();
         -:  367:
         -:  368:    _LIBCPP_INLINE_VISIBILITY
-      215:  369:    void clear() _NOEXCEPT {__destruct_at_end(__begin_);}
+      217:  369:    void clear() _NOEXCEPT {__destruct_at_end(__begin_);}
         5:  369-block  0
         5:  369-block  1
-      210:  369-block  2
-      210:  369-block  3
+      212:  369-block  2
+      212:  369-block  3
         -:  370:    _LIBCPP_INLINE_VISIBILITY
-      867:  371:    size_type capacity() const _NOEXCEPT
+      873:  371:    size_type capacity() const _NOEXCEPT
        57:  371-block  0
-      810:  371-block  1
-      867:  372:        {return static_cast<size_type>(__end_cap() - __begin_);}
+      816:  371-block  1
+      873:  372:        {return static_cast<size_type>(__end_cap() - __begin_);}
        57:  372-block  0
-      810:  372-block  1
+      816:  372-block  1
         -:  373:
         -:  374:    _LIBCPP_INLINE_VISIBILITY
         -:  375:    void __destruct_at_end(pointer __new_last) _NOEXCEPT;
@@ -456,27 +456,27 @@
         -:  419:template <class _Tp, class _Allocator>
         -:  420:inline _LIBCPP_INLINE_VISIBILITY
         -:  421:void
-      215:  422:__vector_base<_Tp, _Allocator>::__destruct_at_end(pointer __new_last) _NOEXCEPT
+      217:  422:__vector_base<_Tp, _Allocator>::__destruct_at_end(pointer __new_last) _NOEXCEPT
         5:  422-block  0
-      210:  422-block  1
+      212:  422-block  1
         -:  423:{
-      215:  424:    pointer __soon_to_be_end = __end_;
-     1069:  425:    while (__new_last != __soon_to_be_end)
+      217:  424:    pointer __soon_to_be_end = __end_;
+     1077:  425:    while (__new_last != __soon_to_be_end)
         5:  425-block  0
        49:  425-block  1
        44:  425-block  2
-      210:  425-block  3
-     1020:  425-block  4
-      810:  425-block  5
-      854:  426:        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__soon_to_be_end));
+      212:  425-block  3
+     1028:  425-block  4
+      816:  425-block  5
+      860:  426:        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__soon_to_be_end));
        44:  426-block  0
     $$$$$:  426-block  1
-      810:  426-block  2
+      816:  426-block  2
     $$$$$:  426-block  3
-      215:  427:    __end_ = __new_last;
-      215:  428:}
+      217:  427:    __end_ = __new_last;
+      217:  428:}
         5:  428-block  0
-      210:  428-block  1
+      212:  428-block  1
         -:  429:
         -:  430:template <class _Tp, class _Allocator>
         -:  431:inline _LIBCPP_INLINE_VISIBILITY
@@ -516,22 +516,22 @@
         -:  456:#endif
         -:  457:
         -:  458:template <class _Tp, class _Allocator>
-      221:  459:__vector_base<_Tp, _Allocator>::~__vector_base()
+      223:  459:__vector_base<_Tp, _Allocator>::~__vector_base()
         5:  459-block  0
-      216:  459-block  1
+      218:  459-block  1
         -:  460:{
-      221:  461:    if (__begin_ != nullptr)
+      223:  461:    if (__begin_ != nullptr)
         5:  461-block  0
-      216:  461-block  1
+      218:  461-block  1
         -:  462:    {
-      215:  463:        clear();
-      215:  464:        __alloc_traits::deallocate(__alloc(), __begin_, capacity());
-      215:  465:    }
+      217:  463:        clear();
+      217:  464:        __alloc_traits::deallocate(__alloc(), __begin_, capacity());
+      217:  465:    }
         5:  465-block  0
-      210:  465-block  1
-      221:  466:}
+      212:  465-block  1
+      223:  466:}
         5:  466-block  0
-      216:  466-block  1
+      218:  466-block  1
         -:  467:
         -:  468:template <class _Tp, class _Allocator /* = allocator<_Tp> */>
         -:  469:class _LIBCPP_TEMPLATE_VIS vector
@@ -741,12 +741,12 @@
         8:  656-block  1
       310:  656-block  2
         -:  657:    _LIBCPP_INLINE_VISIBILITY
-      652:  658:    size_type capacity() const _NOEXCEPT
+      656:  658:    size_type capacity() const _NOEXCEPT
        52:  658-block  0
-      600:  658-block  1
-      652:  659:        {return __base::capacity();}
+      604:  658-block  1
+      656:  659:        {return __base::capacity();}
        52:  659-block  0
-      600:  659-block  1
+      604:  659-block  1
         -:  660:    _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_INLINE_VISIBILITY
         -:  661:    bool empty() const _NOEXCEPT
         -:  662:        {return this->__begin_ == this->__end_;}
@@ -784,12 +784,12 @@
         -:  694:    value_type*       data() _NOEXCEPT
         -:  695:        {return _VSTD::__to_address(this->__begin_);}
         -:  696:    _LIBCPP_INLINE_VISIBILITY
-     1284:  697:    const value_type* data() const _NOEXCEPT
+     1292:  697:    const value_type* data() const _NOEXCEPT
        84:  697-block  0
-     1200:  697-block  1
-     1284:  698:        {return _VSTD::__to_address(this->__begin_);}
+     1208:  697-block  1
+     1292:  698:        {return _VSTD::__to_address(this->__begin_);}
        84:  698-block  0
-     1200:  698-block  1
+     1208:  698-block  1
         -:  699:
         -:  700:#ifdef _LIBCPP_CXX03_LANG
         -:  701:    _LIBCPP_INLINE_VISIBILITY
@@ -957,22 +957,22 @@
         -:  863:    }
         -:  864:#else
         -:  865:    _LIBCPP_INLINE_VISIBILITY
-      321:  866:    void __annotate_contiguous_container(const void*, const void*, const void*,
+      323:  866:    void __annotate_contiguous_container(const void*, const void*, const void*,
        21:  866-block  0
-      300:  866-block  1
-      321:  867:                                         const void*) const _NOEXCEPT {}
+      302:  866-block  1
+      323:  867:                                         const void*) const _NOEXCEPT {}
        21:  867-block  0
-      300:  867-block  1
+      302:  867-block  1
         -:  868:#endif
         -:  869:    _LIBCPP_INLINE_VISIBILITY
-      220:  870:    void __annotate_new(size_type __current_size) const _NOEXCEPT {
+      222:  870:    void __annotate_new(size_type __current_size) const _NOEXCEPT {
        10:  870-block  0
-      210:  870-block  1
-      440:  871:      __annotate_contiguous_container(data(), data() + capacity(),
-      220:  872:                                      data() + capacity(), data() + __current_size);
-      220:  873:    }
+      212:  870-block  1
+      444:  871:      __annotate_contiguous_container(data(), data() + capacity(),
+      222:  872:                                      data() + capacity(), data() + __current_size);
+      222:  873:    }
        10:  873-block  0
-      210:  873-block  1
+      212:  873-block  1
         -:  874:
         -:  875:    _LIBCPP_INLINE_VISIBILITY
       101:  876:    void __annotate_delete() const _NOEXCEPT {
@@ -999,36 +999,36 @@
         -:  893:    }
         -:  894:
         -:  895:  struct _ConstructTransaction {
-      458:  896:    explicit _ConstructTransaction(vector &__v, size_type __n)
+      462:  896:    explicit _ConstructTransaction(vector &__v, size_type __n)
        19:  896-block  0
        19:  896-block  1
-      210:  896-block  2
-      210:  896-block  3
-      458:  897:      : __v_(__v),  __pos_(__v.__end_), __new_end_(__v.__end_ + __n) {
+      212:  896-block  2
+      212:  896-block  3
+      462:  897:      : __v_(__v),  __pos_(__v.__end_), __new_end_(__v.__end_ + __n) {
         -:  898:#ifndef _LIBCPP_HAS_NO_ASAN
         -:  899:      __v_.__annotate_increase(__n);
         -:  900:#endif
-      458:  901:    }
+      462:  901:    }
        19:  901-block  0
        19:  901-block  1
-      210:  901-block  2
-      210:  901-block  3
-      458:  902:    ~_ConstructTransaction() {
+      212:  901-block  2
+      212:  901-block  3
+      462:  902:    ~_ConstructTransaction() {
        19:  902-block  0
        19:  902-block  1
-      210:  902-block  2
-      210:  902-block  3
-      229:  903:      __v_.__end_ = __pos_;
+      212:  902-block  2
+      212:  902-block  3
+      231:  903:      __v_.__end_ = __pos_;
         -:  904:#ifndef _LIBCPP_HAS_NO_ASAN
         -:  905:      if (__pos_ != __new_end_) {
         -:  906:        __v_.__annotate_shrink(__new_end_ - __v_.__begin_);
         -:  907:      }
         -:  908:#endif
-      458:  909:    }
+      462:  909:    }
        19:  909-block  0
        19:  909-block  1
-      210:  909-block  2
-      210:  909-block  3
+      212:  909-block  2
+      212:  909-block  3
         -:  910:
         -:  911:    vector &__v_;
         -:  912:    pointer __pos_;
@@ -1117,18 +1117,18 @@
         -:  987://  Postcondition:  size() == 0
         -:  988:template <class _Tp, class _Allocator>
         -:  989:void
-      210:  990:vector<_Tp, _Allocator>::__vallocate(size_type __n)
-      210:  990-block  0
+      212:  990:vector<_Tp, _Allocator>::__vallocate(size_type __n)
+      212:  990-block  0
         -:  991:{
-      210:  992:    if (__n > max_size())
-      210:  992-block  0
+      212:  992:    if (__n > max_size())
+      212:  992-block  0
     #####:  993:        this->__throw_length_error();
     $$$$$:  993-block  0
-      210:  994:    this->__begin_ = this->__end_ = __alloc_traits::allocate(this->__alloc(), __n);
-      210:  995:    this->__end_cap() = this->__begin_ + __n;
-      210:  996:    __annotate_new(0);
-      210:  997:}
-      210:  997-block  0
+      212:  994:    this->__begin_ = this->__end_ = __alloc_traits::allocate(this->__alloc(), __n);
+      212:  995:    this->__end_cap() = this->__begin_ + __n;
+      212:  996:    __annotate_new(0);
+      212:  997:}
+      212:  997-block  0
         -:  998:
         -:  999:template <class _Tp, class _Allocator>
         -: 1000:void
@@ -1144,20 +1144,20 @@
         -: 1010:
         -: 1011:template <class _Tp, class _Allocator>
         -: 1012:typename vector<_Tp, _Allocator>::size_type
-      223: 1013:vector<_Tp, _Allocator>::max_size() const _NOEXCEPT
+      225: 1013:vector<_Tp, _Allocator>::max_size() const _NOEXCEPT
        13: 1013-block  0
-      210: 1013-block  1
+      212: 1013-block  1
         -: 1014:{
-      446: 1015:    return _VSTD::min<size_type>(__alloc_traits::max_size(this->__alloc()),
+      450: 1015:    return _VSTD::min<size_type>(__alloc_traits::max_size(this->__alloc()),
        13: 1015-block  0
        13: 1015-block  1
        13: 1015-block  2
     $$$$$: 1015-block  3
-      210: 1015-block  4
-      210: 1015-block  5
-      210: 1015-block  6
+      212: 1015-block  4
+      212: 1015-block  5
+      212: 1015-block  6
     $$$$$: 1015-block  7
-      223: 1016:                                 numeric_limits<difference_type>::max());
+      225: 1016:                                 numeric_limits<difference_type>::max());
         -: 1017:}
         -: 1018:
         -: 1019://  Precondition:  __new_size > capacity()
@@ -2401,23 +2401,23 @@
         -: 2191:    typedef __bit_const_reference<vector>            const_reference;
         -: 2192:private:
         -: 2193:    _LIBCPP_INLINE_VISIBILITY
-     1924: 2194:    size_type& __cap() _NOEXCEPT
-     1924: 2194-block  0
-     1924: 2195:        {return __cap_alloc_.first();}
-     1924: 2195-block  0
+     1948: 2194:    size_type& __cap() _NOEXCEPT
+     1948: 2194-block  0
+     1948: 2195:        {return __cap_alloc_.first();}
+     1948: 2195-block  0
         -: 2196:    _LIBCPP_INLINE_VISIBILITY
         -: 2197:    const size_type& __cap() const _NOEXCEPT
         -: 2198:        {return __cap_alloc_.first();}
         -: 2199:    _LIBCPP_INLINE_VISIBILITY
-     1924: 2200:    __storage_allocator& __alloc() _NOEXCEPT
-     1924: 2200-block  0
-     1924: 2201:        {return __cap_alloc_.second();}
-     1924: 2201-block  0
+     1948: 2200:    __storage_allocator& __alloc() _NOEXCEPT
+     1948: 2200-block  0
+     1948: 2201:        {return __cap_alloc_.second();}
+     1948: 2201-block  0
         -: 2202:    _LIBCPP_INLINE_VISIBILITY
-     1850: 2203:    const __storage_allocator& __alloc() const _NOEXCEPT
-     1850: 2203-block  0
-     1850: 2204:        {return __cap_alloc_.second();}
-     1850: 2204-block  0
+     1868: 2203:    const __storage_allocator& __alloc() const _NOEXCEPT
+     1868: 2203-block  0
+     1868: 2204:        {return __cap_alloc_.second();}
+     1868: 2204-block  0
         -: 2205:
         -: 2206:    static const unsigned __bits_per_word = static_cast<unsigned>(sizeof(__storage_type) * CHAR_BIT);
         -: 2207:
@@ -2427,10 +2427,10 @@
     #####: 2210:        {return __n * __bits_per_word;}
     $$$$$: 2210-block  0
         -: 2211:    _LIBCPP_INLINE_VISIBILITY
-      962: 2212:    static size_type __external_cap_to_internal(size_type __n) _NOEXCEPT
-      962: 2212-block  0
-      962: 2213:        {return (__n - 1) / __bits_per_word + 1;}
-      962: 2213-block  0
+      974: 2212:    static size_type __external_cap_to_internal(size_type __n) _NOEXCEPT
+      974: 2212-block  0
+      974: 2213:        {return (__n - 1) / __bits_per_word + 1;}
+      974: 2213-block  0
         -: 2214:
         -: 2215:public:
         -: 2216:    _LIBCPP_INLINE_VISIBILITY
@@ -2464,7 +2464,7 @@
         -: 2244:        vector(_ForwardIterator __first, _ForwardIterator __last, const allocator_type& __a,
         -: 2245:               typename enable_if<__is_cpp17_forward_iterator<_ForwardIterator>::value>::type* = 0);
         -: 2246:
-      888: 2247:    vector(const vector& __v);
+      894: 2247:    vector(const vector& __v);
         -: 2248:    vector(const vector& __v, const allocator_type& __a);
         -: 2249:    vector& operator=(const vector& __v);
         -: 2250:
@@ -2522,10 +2522,10 @@
         -: 2302:    size_type capacity() const _NOEXCEPT
         -: 2303:        {return __internal_cap_to_external(__cap());}
         -: 2304:    _LIBCPP_INLINE_VISIBILITY
-     1847: 2305:    size_type size() const _NOEXCEPT
-     1847: 2305-block  0
-     1847: 2306:        {return __size_;}
-     1847: 2306-block  0
+     1859: 2305:    size_type size() const _NOEXCEPT
+     1859: 2305-block  0
+     1859: 2306:        {return __size_;}
+     1859: 2306-block  0
         -: 2307:    _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_INLINE_VISIBILITY
         -: 2308:    bool empty() const _NOEXCEPT
         -: 2309:        {return __size_ == 0;}
@@ -2536,18 +2536,18 @@
         -: 2314:    iterator begin() _NOEXCEPT
         -: 2315:        {return __make_iter(0);}
         -: 2316:    _LIBCPP_INLINE_VISIBILITY
-      939: 2317:    const_iterator begin() const _NOEXCEPT
-      939: 2317-block  0
-      939: 2318:        {return __make_iter(0);}
-      939: 2318-block  0
+      945: 2317:    const_iterator begin() const _NOEXCEPT
+      945: 2317-block  0
+      945: 2318:        {return __make_iter(0);}
+      945: 2318-block  0
         -: 2319:    _LIBCPP_INLINE_VISIBILITY
         -: 2320:    iterator end() _NOEXCEPT
         -: 2321:        {return __make_iter(__size_);}
         -: 2322:    _LIBCPP_INLINE_VISIBILITY
-      908: 2323:    const_iterator end()   const _NOEXCEPT
-      908: 2323-block  0
-      908: 2324:        {return __make_iter(__size_);}
-      908: 2324-block  0
+      914: 2323:    const_iterator end()   const _NOEXCEPT
+      914: 2323-block  0
+      914: 2324:        {return __make_iter(__size_);}
+      914: 2324-block  0
         -: 2325:
         -: 2326:    _LIBCPP_INLINE_VISIBILITY
         -: 2327:    reverse_iterator rbegin() _NOEXCEPT
@@ -2686,15 +2686,15 @@
        50: 2453:        {return const_reference(__begin_ + __pos / __bits_per_word, __storage_type(1) << __pos % __bits_per_word);}
        50: 2453-block  0
         -: 2454:    _LIBCPP_INLINE_VISIBILITY
-      878: 2455:    iterator __make_iter(size_type __pos) _NOEXCEPT
-      878: 2455-block  0
-      878: 2456:        {return iterator(__begin_ + __pos / __bits_per_word, static_cast<unsigned>(__pos % __bits_per_word));}
-      878: 2456-block  0
+      884: 2455:    iterator __make_iter(size_type __pos) _NOEXCEPT
+      884: 2455-block  0
+      884: 2456:        {return iterator(__begin_ + __pos / __bits_per_word, static_cast<unsigned>(__pos % __bits_per_word));}
+      884: 2456-block  0
         -: 2457:    _LIBCPP_INLINE_VISIBILITY
-     1847: 2458:    const_iterator __make_iter(size_type __pos) const _NOEXCEPT
-     1847: 2458-block  0
-     1847: 2459:        {return const_iterator(__begin_ + __pos / __bits_per_word, static_cast<unsigned>(__pos % __bits_per_word));}
-     1847: 2459-block  0
+     1859: 2458:    const_iterator __make_iter(size_type __pos) const _NOEXCEPT
+     1859: 2458-block  0
+     1859: 2459:        {return const_iterator(__begin_ + __pos / __bits_per_word, static_cast<unsigned>(__pos % __bits_per_word));}
+     1859: 2459-block  0
         -: 2460:    _LIBCPP_INLINE_VISIBILITY
         -: 2461:    iterator __const_iterator_cast(const_iterator __p) _NOEXCEPT
         -: 2462:        {return begin() + (__p - cbegin());}
@@ -2750,11 +2750,11 @@
         -: 2512:template <class _Allocator>
         -: 2513:inline _LIBCPP_INLINE_VISIBILITY
         -: 2514:void
-      975: 2515:vector<bool, _Allocator>::__invalidate_all_iterators()
-      975: 2515-block  0
+      987: 2515:vector<bool, _Allocator>::__invalidate_all_iterators()
+      987: 2515-block  0
         -: 2516:{
-      975: 2517:}
-      975: 2517-block  0
+      987: 2517:}
+      987: 2517-block  0
         -: 2518:
         -: 2519://  Allocate space for __n objects
         -: 2520://  throws length_error if __n > max_size()
@@ -2765,19 +2765,19 @@
         -: 2525://  Postcondition:  size() == 0
         -: 2526:template <class _Allocator>
         -: 2527:void
-      962: 2528:vector<bool, _Allocator>::__vallocate(size_type __n)
-      962: 2528-block  0
+      974: 2528:vector<bool, _Allocator>::__vallocate(size_type __n)
+      974: 2528-block  0
         -: 2529:{
-      962: 2530:    if (__n > max_size())
-      962: 2530-block  0
+      974: 2530:    if (__n > max_size())
+      974: 2530-block  0
     #####: 2531:        this->__throw_length_error();
     $$$$$: 2531-block  0
-      962: 2532:    __n = __external_cap_to_internal(__n);
-      962: 2533:    this->__begin_ = __storage_traits::allocate(this->__alloc(), __n);
-      962: 2534:    this->__size_ = 0;
-      962: 2535:    this->__cap() = __n;
-      962: 2536:}
-      962: 2536-block  0
+      974: 2532:    __n = __external_cap_to_internal(__n);
+      974: 2533:    this->__begin_ = __storage_traits::allocate(this->__alloc(), __n);
+      974: 2534:    this->__size_ = 0;
+      974: 2535:    this->__cap() = __n;
+      974: 2536:}
+      974: 2536-block  0
         -: 2537:
         -: 2538:template <class _Allocator>
         -: 2539:void
@@ -2794,19 +2794,19 @@
         -: 2550:
         -: 2551:template <class _Allocator>
         -: 2552:typename vector<bool, _Allocator>::size_type
-      962: 2553:vector<bool, _Allocator>::max_size() const _NOEXCEPT
-      962: 2553-block  0
+      974: 2553:vector<bool, _Allocator>::max_size() const _NOEXCEPT
+      974: 2553-block  0
         -: 2554:{
-      962: 2555:    size_type __amax = __storage_traits::max_size(__alloc());
-      962: 2556:    size_type __nmax = numeric_limits<size_type>::max() / 2;  // end() >= begin(), always
-      962: 2557:    if (__nmax / __bits_per_word <= __amax)
-      962: 2557-block  0
-      962: 2558:        return __nmax;
-      962: 2558-block  0
+      974: 2555:    size_type __amax = __storage_traits::max_size(__alloc());
+      974: 2556:    size_type __nmax = numeric_limits<size_type>::max() / 2;  // end() >= begin(), always
+      974: 2557:    if (__nmax / __bits_per_word <= __amax)
+      974: 2557-block  0
+      974: 2558:        return __nmax;
+      974: 2558-block  0
     #####: 2559:    return __internal_cap_to_external(__amax);
     $$$$$: 2559-block  0
-      962: 2560:}
-      962: 2560-block  0
+      974: 2560:}
+      974: 2560-block  0
         -: 2561:
         -: 2562://  Precondition:  __new_size > capacity()
         -: 2563:template <class _Allocator>
@@ -2859,27 +2859,27 @@
         -: 2602:    __is_cpp17_forward_iterator<_ForwardIterator>::value,
         -: 2603:    void
         -: 2604:>::type
-      877: 2605:vector<bool, _Allocator>::__construct_at_end(_ForwardIterator __first, _ForwardIterator __last)
-      877: 2605-block  0
+      883: 2605:vector<bool, _Allocator>::__construct_at_end(_ForwardIterator __first, _ForwardIterator __last)
+      883: 2605-block  0
         -: 2606:{
-      877: 2607:    size_type __old_size = this->__size_;
-      877: 2608:    this->__size_ += _VSTD::distance(__first, __last);
-      877: 2609:    if (__old_size == 0 || ((__old_size - 1) / __bits_per_word) != ((this->__size_ - 1) / __bits_per_word))
-      877: 2609-block  0
+      883: 2607:    size_type __old_size = this->__size_;
+      883: 2608:    this->__size_ += _VSTD::distance(__first, __last);
+      883: 2609:    if (__old_size == 0 || ((__old_size - 1) / __bits_per_word) != ((this->__size_ - 1) / __bits_per_word))
+      883: 2609-block  0
     $$$$$: 2609-block  1
         -: 2610:    {
-      877: 2611:        if (this->__size_ <= __bits_per_word)
-      877: 2611-block  0
-      877: 2612:            this->__begin_[0] = __storage_type(0);
-      877: 2612-block  0
+      883: 2611:        if (this->__size_ <= __bits_per_word)
+      883: 2611-block  0
+      883: 2612:            this->__begin_[0] = __storage_type(0);
+      883: 2612-block  0
         -: 2613:        else
     #####: 2614:            this->__begin_[(this->__size_ - 1) / __bits_per_word] = __storage_type(0);
     $$$$$: 2614-block  0
-      877: 2615:    }
-      877: 2615-block  0
-      877: 2616:    _VSTD::copy(__first, __last, __make_iter(__old_size));
-      877: 2617:}
-      877: 2617-block  0
+      883: 2615:    }
+      883: 2615-block  0
+      883: 2616:    _VSTD::copy(__first, __last, __make_iter(__old_size));
+      883: 2617:}
+      883: 2617-block  0
         -: 2618:
         -: 2619:template <class _Allocator>
         -: 2620:inline _LIBCPP_INLINE_VISIBILITY
@@ -3084,39 +3084,39 @@
         -: 2813:#endif  // _LIBCPP_CXX03_LANG
         -: 2814:
         -: 2815:template <class _Allocator>
-     1950: 2816:vector<bool, _Allocator>::~vector()
-      975: 2816-block  0
-      975: 2816-block  1
-      975: 2817:{
-      975: 2818:    if (__begin_ != nullptr)
-      975: 2818-block  0
-      962: 2819:        __storage_traits::deallocate(__alloc(), __begin_, __cap());
-      962: 2819-block  0
-      975: 2820:    __invalidate_all_iterators();
-      975: 2820-block  0
+     1974: 2816:vector<bool, _Allocator>::~vector()
+      987: 2816-block  0
+      987: 2816-block  1
+      987: 2817:{
+      987: 2818:    if (__begin_ != nullptr)
+      987: 2818-block  0
+      974: 2819:        __storage_traits::deallocate(__alloc(), __begin_, __cap());
+      974: 2819-block  0
+      987: 2820:    __invalidate_all_iterators();
+      987: 2820-block  0
     $$$$$: 2820-block  1
-     1950: 2821:}
-      975: 2821-block  0
-      975: 2821-block  1
+     1974: 2821:}
+      987: 2821-block  0
+      987: 2821-block  1
         -: 2822:
         -: 2823:template <class _Allocator>
-     1776: 2824:vector<bool, _Allocator>::vector(const vector& __v)
-      888: 2824-block  0
-      888: 2824-block  1
-      888: 2825:    : __begin_(nullptr),
-      888: 2826:      __size_(0),
-      888: 2827:      __cap_alloc_(0, __storage_traits::select_on_container_copy_construction(__v.__alloc()))
-     1776: 2828:{
-      888: 2829:    if (__v.size() > 0)
-      888: 2829-block  0
+     1788: 2824:vector<bool, _Allocator>::vector(const vector& __v)
+      894: 2824-block  0
+      894: 2824-block  1
+      894: 2825:    : __begin_(nullptr),
+      894: 2826:      __size_(0),
+      894: 2827:      __cap_alloc_(0, __storage_traits::select_on_container_copy_construction(__v.__alloc()))
+     1788: 2828:{
+      894: 2829:    if (__v.size() > 0)
+      894: 2829-block  0
         -: 2830:    {
-      877: 2831:        __vallocate(__v.size());
-      877: 2832:        __construct_at_end(__v.begin(), __v.end());
-      877: 2833:    }
-      877: 2833-block  0
-     1776: 2834:}
-      888: 2834-block  0
-      888: 2834-block  1
+      883: 2831:        __vallocate(__v.size());
+      883: 2832:        __construct_at_end(__v.begin(), __v.end());
+      883: 2833:    }
+      883: 2833-block  0
+     1788: 2834:}
+      894: 2834-block  0
+      894: 2834-block  1
         -: 2835:
         -: 2836:template <class _Allocator>
         -: 2837:vector<bool, _Allocator>::vector(const vector& __v, const allocator_type& __a)

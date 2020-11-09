@@ -692,25 +692,25 @@
         -:  687:template <class _RandIter>
         -:  688:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX14
         -:  689:typename iterator_traits<_RandIter>::difference_type
-       84:  690:__distance(_RandIter __first, _RandIter __last, random_access_iterator_tag)
+       90:  690:__distance(_RandIter __first, _RandIter __last, random_access_iterator_tag)
     $$$$$:  690-block  0
-       84:  690-block  1
+       90:  690-block  1
         -:  691:{
-       84:  692:    return __last - __first;
+       90:  692:    return __last - __first;
     $$$$$:  692-block  0
-       84:  692-block  1
+       90:  692-block  1
         -:  693:}
         -:  694:
         -:  695:template <class _InputIter>
         -:  696:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX14
         -:  697:typename iterator_traits<_InputIter>::difference_type
-       84:  698:distance(_InputIter __first, _InputIter __last)
+       90:  698:distance(_InputIter __first, _InputIter __last)
     $$$$$:  698-block  0
-       84:  698-block  1
+       90:  698-block  1
         -:  699:{
-       84:  700:    return __distance(__first, __last, typename iterator_traits<_InputIter>::iterator_category());
+       90:  700:    return __distance(__first, __last, typename iterator_traits<_InputIter>::iterator_category());
     $$$$$:  700-block  0
-       84:  700-block  1
+       90:  700-block  1
         -:  701:}
         -:  702:
         -:  703:template <class _InputIter>

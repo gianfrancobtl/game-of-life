@@ -61,18 +61,18 @@
         -:   56:        {return !static_cast<bool>(*this);}
         -:   57:
         -:   58:    _LIBCPP_INLINE_VISIBILITY
-      287:   59:    __bit_reference& operator=(bool __x) _NOEXCEPT
-      287:   59-block  0
+      305:   59:    __bit_reference& operator=(bool __x) _NOEXCEPT
+      305:   59-block  0
         -:   60:    {
-      287:   61:        if (__x)
-      287:   61-block  0
-       93:   62:            *__seg_ |= __mask_;
-       93:   62-block  0
+      305:   61:        if (__x)
+      305:   61-block  0
+       98:   62:            *__seg_ |= __mask_;
+       98:   62-block  0
         -:   63:        else
-      194:   64:            *__seg_ &= ~__mask_;
-      194:   64-block  0
-      287:   65:        return *this;
-      287:   65-block  0
+      207:   64:            *__seg_ &= ~__mask_;
+      207:   64-block  0
+      305:   65:        return *this;
+      305:   65-block  0
         -:   66:    }
         -:   67:
         -:   68:    _LIBCPP_INLINE_VISIBILITY
@@ -84,12 +84,12 @@
         -:   74:        {return __bit_iterator<_Cp, false>(__seg_, static_cast<unsigned>(__libcpp_ctz(__mask_)));}
         -:   75:private:
         -:   76:    _LIBCPP_INLINE_VISIBILITY
-      574:   77:    __bit_reference(__storage_pointer __s, __storage_type __m) _NOEXCEPT
-      287:   77-block  0
-      287:   77-block  1
-      574:   78:        : __seg_(__s), __mask_(__m) {}
-      287:   78-block  0
-      287:   78-block  1
+      610:   77:    __bit_reference(__storage_pointer __s, __storage_type __m) _NOEXCEPT
+      305:   77-block  0
+      305:   77-block  1
+      610:   78:        : __seg_(__s), __mask_(__m) {}
+      305:   78-block  0
+      305:   78-block  1
         -:   79:};
         -:   80:
         -:   81:template <class _Cp>
@@ -1175,38 +1175,38 @@
         -: 1129:      _If<!_IsConst, __bit_iterator, struct __private_nat>;
         -: 1130:
         -: 1131:    _LIBCPP_INLINE_VISIBILITY
-      672: 1132:    __bit_iterator(__type_for_abi_non_trivial_copy_ctor const& __it) _NOEXCEPT
-      336: 1132-block  0
-      336: 1132-block  1
-      672: 1133:      : __seg_(__it.__seg_), __ctz_(__it.__ctz_) {}
-      336: 1133-block  0
-      336: 1133-block  1
+      720: 1132:    __bit_iterator(__type_for_abi_non_trivial_copy_ctor const& __it) _NOEXCEPT
+      360: 1132-block  0
+      360: 1132-block  1
+      720: 1133:      : __seg_(__it.__seg_), __ctz_(__it.__ctz_) {}
+      360: 1133-block  0
+      360: 1133-block  1
         -: 1134:
         -: 1135:    // Always declare the copy assignment operator since the implicit declaration
         -: 1136:    // is deprecated.
         -: 1137:    _LIBCPP_INLINE_VISIBILITY
         -: 1138:    __bit_iterator& operator=(__bit_iterator const&) = default;
         -: 1139:
-      287: 1140:    _LIBCPP_INLINE_VISIBILITY reference operator*() const _NOEXCEPT
-      287: 1140-block  0
-      287: 1141:        {return reference(__seg_, __storage_type(1) << __ctz_);}
-      287: 1141-block  0
+      305: 1140:    _LIBCPP_INLINE_VISIBILITY reference operator*() const _NOEXCEPT
+      305: 1140-block  0
+      305: 1141:        {return reference(__seg_, __storage_type(1) << __ctz_);}
+      305: 1141-block  0
         -: 1142:
-      287: 1143:    _LIBCPP_INLINE_VISIBILITY __bit_iterator& operator++()
-      287: 1143-block  0
+      305: 1143:    _LIBCPP_INLINE_VISIBILITY __bit_iterator& operator++()
+      305: 1143-block  0
         -: 1144:    {
-      287: 1145:        if (__ctz_ != __bits_per_word-1)
-      287: 1145-block  0
-      287: 1146:            ++__ctz_;
-      287: 1146-block  0
+      305: 1145:        if (__ctz_ != __bits_per_word-1)
+      305: 1145-block  0
+      305: 1146:            ++__ctz_;
+      305: 1146-block  0
         -: 1147:        else
         -: 1148:        {
     #####: 1149:            __ctz_ = 0;
     #####: 1150:            ++__seg_;
     $$$$$: 1150-block  0
         -: 1151:        }
-      287: 1152:        return *this;
-      287: 1152-block  0
+      305: 1152:        return *this;
+      305: 1152-block  0
         -: 1153:    }
         -: 1154:
         -: 1155:    _LIBCPP_INLINE_VISIBILITY __bit_iterator operator++(int)
@@ -1297,14 +1297,14 @@
         -: 1238:
         -: 1239:private:
         -: 1240:    _LIBCPP_INLINE_VISIBILITY
-      168: 1241:    __bit_iterator(__storage_pointer __s, unsigned __ctz) _NOEXCEPT
-       84: 1241-block  0
-       84: 1241-block  1
+      180: 1241:    __bit_iterator(__storage_pointer __s, unsigned __ctz) _NOEXCEPT
+       90: 1241-block  0
+       90: 1241-block  1
     $$$$$: 1241-block  2
     $$$$$: 1241-block  3
-      168: 1242:        : __seg_(__s), __ctz_(__ctz) {}
-       84: 1242-block  0
-       84: 1242-block  1
+      180: 1242:        : __seg_(__s), __ctz_(__ctz) {}
+       90: 1242-block  0
+       90: 1242-block  1
     $$$$$: 1242-block  2
     $$$$$: 1242-block  3
         -: 1243:

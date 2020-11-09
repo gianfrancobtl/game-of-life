@@ -719,11 +719,11 @@
         -:  652:        {return rend();}
         -:  653:
         -:  654:    _LIBCPP_INLINE_VISIBILITY
-     8977:  655:    size_type size() const _NOEXCEPT
-     8975:  655-block  0
+     9009:  655:    size_type size() const _NOEXCEPT
+     9007:  655-block  0
         2:  655-block  1
-     8977:  656:        {return static_cast<size_type>(this->__end_ - this->__begin_);}
-     8975:  656-block  0
+     9009:  656:        {return static_cast<size_type>(this->__end_ - this->__begin_);}
+     9007:  656-block  0
         2:  656-block  1
         -:  657:    _LIBCPP_INLINE_VISIBILITY
       166:  658:    size_type capacity() const _NOEXCEPT
@@ -1713,12 +1713,12 @@
         -: 1552:template <class _Tp, class _Allocator>
         -: 1553:inline _LIBCPP_INLINE_VISIBILITY
         -: 1554:typename vector<_Tp, _Allocator>::const_reference
-    10309: 1555:vector<_Tp, _Allocator>::operator[](size_type __n) const _NOEXCEPT
-    10309: 1555-block  0
+    10361: 1555:vector<_Tp, _Allocator>::operator[](size_type __n) const _NOEXCEPT
+    10361: 1555-block  0
         -: 1556:{
         -: 1557:    _LIBCPP_ASSERT(__n < size(), "vector[] index out of bounds");
-    10309: 1558:    return this->__begin_[__n];
-    10309: 1558-block  0
+    10361: 1558:    return this->__begin_[__n];
+    10361: 1558-block  0
         -: 1559:}
         -: 1560:
         -: 1561:template <class _Tp, class _Allocator>
@@ -2475,10 +2475,10 @@
         -: 2302:    size_type capacity() const _NOEXCEPT
         -: 2303:        {return __internal_cap_to_external(__cap());}
         -: 2304:    _LIBCPP_INLINE_VISIBILITY
-     7341: 2305:    size_type size() const _NOEXCEPT
-     7341: 2305-block  0
-     7341: 2306:        {return __size_;}
-     7341: 2306-block  0
+     7373: 2305:    size_type size() const _NOEXCEPT
+     7373: 2305-block  0
+     7373: 2306:        {return __size_;}
+     7373: 2306-block  0
         -: 2307:    _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_INLINE_VISIBILITY
         -: 2308:    bool empty() const _NOEXCEPT
         -: 2309:        {return __size_ == 0;}
@@ -2531,9 +2531,9 @@
      3142: 2352:    _LIBCPP_INLINE_VISIBILITY reference       operator[](size_type __n)       {return __make_ref(__n);}
      3142: 2352-block  0
      3142: 2352-block  1
-     3218: 2353:    _LIBCPP_INLINE_VISIBILITY const_reference operator[](size_type __n) const {return __make_ref(__n);}
-     3218: 2353-block  0
-     3218: 2353-block  1
+     3238: 2353:    _LIBCPP_INLINE_VISIBILITY const_reference operator[](size_type __n) const {return __make_ref(__n);}
+     3238: 2353-block  0
+     3238: 2353-block  1
         -: 2354:    reference       at(size_type __n);
         -: 2355:    const_reference at(size_type __n) const;
         -: 2356:
@@ -2634,10 +2634,10 @@
      3142: 2450:        {return reference(__begin_ + __pos / __bits_per_word, __storage_type(1) << __pos % __bits_per_word);}
      3142: 2450-block  0
         -: 2451:    _LIBCPP_INLINE_VISIBILITY
-     3218: 2452:    const_reference __make_ref(size_type __pos) const _NOEXCEPT
-     3218: 2452-block  0
-     3218: 2453:        {return const_reference(__begin_ + __pos / __bits_per_word, __storage_type(1) << __pos % __bits_per_word);}
-     3218: 2453-block  0
+     3238: 2452:    const_reference __make_ref(size_type __pos) const _NOEXCEPT
+     3238: 2452-block  0
+     3238: 2453:        {return const_reference(__begin_ + __pos / __bits_per_word, __storage_type(1) << __pos % __bits_per_word);}
+     3238: 2453-block  0
         -: 2454:    _LIBCPP_INLINE_VISIBILITY
     #####: 2455:    iterator __make_iter(size_type __pos) _NOEXCEPT
     $$$$$: 2455-block  0

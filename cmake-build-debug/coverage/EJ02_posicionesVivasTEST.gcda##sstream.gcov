@@ -444,18 +444,18 @@
         -:  435:
         -:  436:template <class _CharT, class _Traits, class _Allocator>
         -:  437:basic_string<_CharT, _Traits, _Allocator>
-       98:  438:basic_stringbuf<_CharT, _Traits, _Allocator>::str() const
-       98:  438-block  0
+      100:  438:basic_stringbuf<_CharT, _Traits, _Allocator>::str() const
+      100:  438-block  0
         -:  439:{
-       98:  440:    if (__mode_ & ios_base::out)
-       98:  440-block  0
+      100:  440:    if (__mode_ & ios_base::out)
+      100:  440-block  0
         -:  441:    {
-       98:  442:        if (__hm_ < this->pptr())
-       98:  442-block  0
+      100:  442:        if (__hm_ < this->pptr())
+      100:  442-block  0
        42:  443:            __hm_ = this->pptr();
        42:  443-block  0
-       98:  444:        return string_type(this->pbase(), __hm_, __str_.get_allocator());
-       98:  444-block  0
+      100:  444:        return string_type(this->pbase(), __hm_, __str_.get_allocator());
+      100:  444-block  0
         -:  445:    }
     #####:  446:    else if (__mode_ & ios_base::in)
     $$$$$:  446-block  0
@@ -463,8 +463,8 @@
     $$$$$:  447-block  0
     #####:  448:    return string_type(__str_.get_allocator());
     $$$$$:  448-block  0
-       98:  449:}
-       98:  449-block  0
+      100:  449:}
+      100:  449-block  0
         -:  450:
         -:  451:template <class _CharT, class _Traits, class _Allocator>
         -:  452:void
@@ -564,67 +564,67 @@
         -:  523:
         -:  524:template <class _CharT, class _Traits, class _Allocator>
         -:  525:typename basic_stringbuf<_CharT, _Traits, _Allocator>::int_type
-      107:  526:basic_stringbuf<_CharT, _Traits, _Allocator>::overflow(int_type __c)
-      107:  526-block  0
+      109:  526:basic_stringbuf<_CharT, _Traits, _Allocator>::overflow(int_type __c)
+      109:  526-block  0
         -:  527:{
-      107:  528:    if (!traits_type::eq_int_type(__c, traits_type::eof()))
-      107:  528-block  0
+      109:  528:    if (!traits_type::eq_int_type(__c, traits_type::eof()))
+      109:  528-block  0
         -:  529:    {
-      107:  530:        ptrdiff_t __ninp = this->gptr()  - this->eback();
-      107:  531:        if (this->pptr() == this->epptr())
-      107:  531-block  0
+      109:  530:        ptrdiff_t __ninp = this->gptr()  - this->eback();
+      109:  531:        if (this->pptr() == this->epptr())
+      109:  531-block  0
         -:  532:        {
-      107:  533:            if (!(__mode_ & ios_base::out))
-      107:  533-block  0
+      109:  533:            if (!(__mode_ & ios_base::out))
+      109:  533-block  0
     #####:  534:                return traits_type::eof();
     $$$$$:  534-block  0
         -:  535:#ifndef _LIBCPP_NO_EXCEPTIONS
         -:  536:            try
         -:  537:            {
         -:  538:#endif  // _LIBCPP_NO_EXCEPTIONS
-      107:  539:                ptrdiff_t __nout = this->pptr()  - this->pbase();
-      107:  539-block  0
-      107:  539-block  1
-      107:  540:                ptrdiff_t __hm = __hm_ - this->pbase();
-      107:  540-block  0
-      107:  541:                __str_.push_back(char_type());
-      107:  541-block  0
-      107:  542:                __str_.resize(__str_.capacity());
-      107:  542-block  0
-      107:  543:                char_type* __p = const_cast<char_type*>(__str_.data());
-      107:  544:                this->setp(__p, __p + __str_.size());
-      107:  544-block  0
-      107:  545:                this->__pbump(__nout);
-      107:  545-block  0
-      107:  546:                __hm_ = this->pbase() + __hm;
-      107:  546-block  0
+      109:  539:                ptrdiff_t __nout = this->pptr()  - this->pbase();
+      109:  539-block  0
+      109:  539-block  1
+      109:  540:                ptrdiff_t __hm = __hm_ - this->pbase();
+      109:  540-block  0
+      109:  541:                __str_.push_back(char_type());
+      109:  541-block  0
+      109:  542:                __str_.resize(__str_.capacity());
+      109:  542-block  0
+      109:  543:                char_type* __p = const_cast<char_type*>(__str_.data());
+      109:  544:                this->setp(__p, __p + __str_.size());
+      109:  544-block  0
+      109:  545:                this->__pbump(__nout);
+      109:  545-block  0
+      109:  546:                __hm_ = this->pbase() + __hm;
+      109:  546-block  0
         -:  547:#ifndef _LIBCPP_NO_EXCEPTIONS
-      107:  548:            }
-      107:  548-block  0
+      109:  548:            }
+      109:  548-block  0
         -:  549:            catch (...)
         -:  550:            {
     #####:  551:                return traits_type::eof();
     #####:  552:            }
     $$$$$:  552-block  0
         -:  553:#endif  // _LIBCPP_NO_EXCEPTIONS
-      107:  554:        }
-      107:  554-block  0
-      107:  555:        __hm_ = _VSTD::max(this->pptr() + 1, __hm_);
-      107:  556:        if (__mode_ & ios_base::in)
-      107:  556-block  0
+      109:  554:        }
+      109:  554-block  0
+      109:  555:        __hm_ = _VSTD::max(this->pptr() + 1, __hm_);
+      109:  556:        if (__mode_ & ios_base::in)
+      109:  556-block  0
         -:  557:        {
-      107:  558:            char_type* __p = const_cast<char_type*>(__str_.data());
-      107:  559:            this->setg(__p, __p + __ninp, __hm_);
-      107:  560:        }
-      107:  560-block  0
-      107:  561:        return this->sputc(traits_type::to_char_type(__c));
-      107:  561-block  0
+      109:  558:            char_type* __p = const_cast<char_type*>(__str_.data());
+      109:  559:            this->setg(__p, __p + __ninp, __hm_);
+      109:  560:        }
+      109:  560-block  0
+      109:  561:        return this->sputc(traits_type::to_char_type(__c));
+      109:  561-block  0
         -:  562:    }
     #####:  563:    return traits_type::not_eof(__c);
     $$$$$:  563-block  0
-      107:  564:}
+      109:  564:}
     $$$$$:  564-block  0
-      107:  564-block  1
+      109:  564-block  1
         -:  565:
         -:  566:template <class _CharT, class _Traits, class _Allocator>
         -:  567:typename basic_stringbuf<_CharT, _Traits, _Allocator>::pos_type
