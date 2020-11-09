@@ -23,7 +23,7 @@ int cantColumnas (vector<vector<bool>> const &t){
 }
 
 // EJERCICIO 1
-bool esRectangulo (vector<vector<bool>> const &t){
+bool esRectangulo (toroide const &t){
     int longEsperadaFilas = t[0].size();
     bool esRectangulo = true;
     for (int i = 1; i < t.size(); i ++) {
@@ -34,21 +34,27 @@ bool esRectangulo (vector<vector<bool>> const &t){
 }
 
 // EJERCICIO 4
-bool vecinaViva(toroide t , int z , int c , int i , int j){
-    int result = t[(z+i + cantFilas(t)) % cantFilas(t)][(c+j + cantColumnas(t)) % cantColumnas(t)];
-    return result;
+bool estaViva(toroide const &t, posicion x){
+    return t[x.first][x.second];
 }
 
-int vecinosVivos(toroide t, int f , int c){
-    int  result = 0 ;
-    for (int i = -1; i <=1 ; ++i) {
-        for (int j = -1; j <=1 ; ++j) {
-            if ((i != 0 || j != 0) && vecinaViva(t,f,c,i,j)){
-                result = result +1;
-            }
+bool posVecinaViva(toroide const &t, int f, int c, int i, int j){
+    int k = (f + i + cantFilas(t)) % cantFilas(t);
+    int l = (c + j + cantColumnas(t)) % cantColumnas(t);
+    return (t[k][l]);
+}
+
+int cantVecinosVivos (toroide const &t, posicion x){
+    int cantVecinosVivos = 0;
+    int f = x.first;
+    int c = x.second;
+    for (int i = - 1; i <= 1; i ++){
+        for (int j = - 1; j <= 1; j ++){
+            if ((i != 0 || j != 0) && posVecinaViva(t, f, c, i, j))
+                cantVecinosVivos += 1;
         }
     }
-    return result;
+    return cantVecinosVivos;
 }
 
 
@@ -57,14 +63,12 @@ bool toroideMuerto (toroide const &t){
     bool estaMuerto = true;
     for (int i = 0; i < cantFilas(t) && estaMuerto; i ++) {
         for (int j = 0; j < cantColumnas(t) && estaMuerto; j++) {
-            if (t[i][j]) {
+            if (t[i][j])
                 estaMuerto = false;
-            }
         }
     }
     return estaMuerto;
 }
-
 
 
 //EJERCICIOS 11
@@ -79,23 +83,20 @@ toroide traslacion(toroide t, int a , int b ){
 }
 
 
-
 //EJERCICIO 12
 bool filaTieneViva (vector<bool> n){
     bool resp = false;
-    for (int i = 0; i < n.size() && !resp ; ++i) {
-        if (n[i]){
+    for (int i = 0; i < n.size() && !resp ; ++i){
+        if (n[i])
             resp = true;
-        }
     }
     return resp;
 }
 
-
 int primeraFilaViva (toroide t){
     int resultado = 0;
     bool resp = false;
-    for (int i = 0; i < cantFilas(t) && !resp ; ++i) {
+    for (int i = 0; i < cantFilas(t) && !resp ; ++i){
         if (filaTieneViva(t[i])){
             resultado = i;
             resp = true;
@@ -107,7 +108,7 @@ int primeraFilaViva (toroide t){
 int ultimaFilaViva (toroide t){
     int resultado = 0;
     bool resp = false;
-    for (int i = cantFilas(t)-1; i > 0 && !resp ; i--) {
+    for (int i = cantFilas(t)-1; i > 0 && !resp ; i--){
         if (filaTieneViva(t[i])){
             resultado = i;
             resp = true;
@@ -119,7 +120,7 @@ int ultimaFilaViva (toroide t){
 int primeraColumnaViva(toroide t){
     int result = 0;
     bool resp = false;
-    for (int j = 0; j < cantColumnas(t) && !resp ; ++j) {
+    for (int j = 0; j < cantColumnas(t) && !resp ; ++j){
         for (int i = 0; i <cantFilas(t) ; ++i) {
             if (t[i][j]){
                 result = j;
@@ -133,8 +134,8 @@ int primeraColumnaViva(toroide t){
 int ultimaColumnaViva(toroide t){
     int result = 0;
     bool resp = false;
-    for (int j = cantColumnas(t) -1; j > 0 && !resp ; ++j) {
-        for (int i = 0; i <cantFilas(t) ; ++i) {
+    for (int j = cantColumnas(t) - 1; j > 0 && !resp ; ++ j){
+        for (int i = 0; i < cantFilas(t) ; ++ i){
             if (t[i][j]){
                 result = j;
                 resp = true;
@@ -144,8 +145,8 @@ int ultimaColumnaViva(toroide t){
     return result;
 }
 
-int areaTotal (toroide t){
-    int cantFilaViva = ultimaFilaViva(t) - primeraFilaViva(t) + 1;
-    int cantColumnaViva = ultimaColumnaViva(t) - primeraColumnaViva(t) + 1;
-    return cantFilaViva * cantColumnaViva;
+int areaTotal (const toroide& t){
+    int cantFilasVivas = ultimaFilaViva(t) - primeraFilaViva(t) + 1;
+    int cantColumnasVivas = ultimaColumnaViva(t) - primeraColumnaViva(t) + 1;
+    return cantFilasVivas * cantColumnasVivas;
 }

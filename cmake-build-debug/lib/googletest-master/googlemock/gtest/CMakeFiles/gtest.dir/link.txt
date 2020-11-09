@@ -1,2 +1,2 @@
-D:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ar.exe qc libgtestd.a  CMakeFiles/gtest.dir/src/gtest-all.cc.obj
-D:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ranlib.exe libgtestd.a
+/Library/Developer/CommandLineTools/usr/bin/ar qc libgtestd.a  CMakeFiles/gtest.dir/src/gtest-all.cc.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libgtestd.a

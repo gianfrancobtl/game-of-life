@@ -1,0 +1,213 @@
+        -:    0:Source:/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/tests/EJ09_seleccionNaturalTEST.cpp
+        -:    0:Graph:/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.gcno
+        -:    0:Data:/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "../ejercicios.h"
+        -:    2:#include "gtest/gtest.h"
+        -:    3:#include <algorithm>
+        -:    4:
+        -:    5:using namespace std;
+        -:    6:
+        -:    7:
+        7:    8:TEST(seleccionNaturalTEST, toroideDiagonalVsUnoVivo){
+        1:    8-block  0
+        1:    8-block  1
+        1:    8-block  2
+        1:    8-block  3
+        1:    8-block  4
+        1:    8-block  5
+        1:    8-block  6
+    $$$$$:    8-block  7
+    $$$$$:    8-block  8
+    $$$$$:    8-block  9
+    $$$$$:    8-block 10
+    $$$$$:    8-block 11
+    $$$$$:    8-block 12
+        1:    8-block 13
+        1:    8-block 14
+        1:    8-block 15
+        1:    8-block 16
+        1:    8-block 17
+        1:    8-block 18
+        1:    8-block 19
+        1:    8-block 20
+        3:    9:    toroide t1 = { 
+        1:    9-block  0
+        1:    9-block  1
+        3:    9-block  2
+    $$$$$:    9-block  3
+    $$$$$:    9-block  4
+    $$$$$:    9-block  5
+    $$$$$:    9-block  6
+    $$$$$:    9-block  7
+    $$$$$:    9-block  8
+    $$$$$:    9-block  9
+        1:   10:                  {true, false, false},
+        1:   10-block  0
+        1:   11:                  {false, true, false},
+        1:   11-block  0
+        1:   12:                  {false, false, true}}; 
+        1:   12-block  0
+        5:   13:    toroide t2 = { 
+        1:   13-block  0
+        1:   13-block  1
+        5:   13-block  2
+    $$$$$:   13-block  3
+    $$$$$:   13-block  4
+    $$$$$:   13-block  5
+    $$$$$:   13-block  6
+    $$$$$:   13-block  7
+    $$$$$:   13-block  8
+        1:   14:                  {false, false, false}, 
+        1:   14-block  0
+        1:   15:                  {false, false, false}, 
+        1:   15-block  0
+        1:   16:                  {false, true, false},
+        1:   16-block  0
+        1:   17:                  {false, false, false}, 
+        1:   17-block  0
+        1:   18:                  {false, false, false}};
+        1:   18-block  0
+        1:   19:    vector<toroide> ts;
+        1:   20:    ts.push_back(t1);
+        1:   20-block  0
+        1:   21:    ts.push_back(t2);
+        1:   21-block  0
+        1:   22:    ts.push_back(t2);
+        1:   22-block  0
+        1:   23:    int res = seleccionNatural(ts);
+        1:   23-block  0
+        1:   23-block  1
+    $$$$$:   23-block  2
+        1:   24:    EXPECT_EQ(res, 0);
+        1:   24-block  0
+        1:   24-block  1
+        1:   24-block  2
+        1:   24-block  3
+    $$$$$:   24-block  4
+    $$$$$:   24-block  5
+    $$$$$:   24-block  6
+    $$$$$:   24-block  7
+    $$$$$:   24-block  8
+    $$$$$:   24-block  9
+    $$$$$:   24-block 10
+    $$$$$:   24-block 11
+        1:   25:}
+    $$$$$:   25-block  0
+    $$$$$:   25-block  1
+    $$$$$:   25-block  2
+        1:   25-block  3
+    $$$$$:   25-block  4
+    $$$$$:   25-block  5
+        7:   26:TEST(seleccionNaturalTEST, muerenALaVez){
+        1:   26-block  0
+        1:   26-block  1
+        1:   26-block  2
+        1:   26-block  3
+        1:   26-block  4
+        1:   26-block  5
+        1:   26-block  6
+    $$$$$:   26-block  7
+    $$$$$:   26-block  8
+    $$$$$:   26-block  9
+    $$$$$:   26-block 10
+    $$$$$:   26-block 11
+    $$$$$:   26-block 12
+        1:   26-block 13
+        1:   26-block 14
+        1:   26-block 15
+        1:   26-block 16
+        1:   26-block 17
+        1:   26-block 18
+        1:   26-block 19
+        1:   26-block 20
+        3:   27:    toroide t1 = {
+        1:   27-block  0
+        1:   27-block  1
+        3:   27-block  2
+    $$$$$:   27-block  3
+    $$$$$:   27-block  4
+    $$$$$:   27-block  5
+    $$$$$:   27-block  6
+    $$$$$:   27-block  7
+    $$$$$:   27-block  8
+    $$$$$:   27-block  9
+        1:   28:            {true, false, false},
+        1:   28-block  0
+        1:   29:            {false, true, false},
+        1:   29-block  0
+        1:   30:            {false, false, true}};
+        1:   30-block  0
+        5:   31:    toroide t2 = {
+        1:   31-block  0
+        1:   31-block  1
+        5:   31-block  2
+    $$$$$:   31-block  3
+    $$$$$:   31-block  4
+    $$$$$:   31-block  5
+    $$$$$:   31-block  6
+    $$$$$:   31-block  7
+    $$$$$:   31-block  8
+        1:   32:            {false, false, false},
+        1:   32-block  0
+        1:   33:            {false, false, false},
+        1:   33-block  0
+        1:   34:            {false, true, false},
+        1:   34-block  0
+        1:   35:            {false, false, false},
+        1:   35-block  0
+        1:   36:            {false, false, false}};
+        1:   36-block  0
+        1:   37:    vector<toroide> ts;
+        1:   38:    ts.push_back(t1);
+        1:   38-block  0
+        1:   39:    ts.push_back(t1);
+        1:   39-block  0
+        1:   40:    ts.push_back(t2);
+        1:   40-block  0
+        1:   41:    int res = seleccionNatural(ts);
+        1:   41-block  0
+        1:   41-block  1
+    $$$$$:   41-block  2
+        1:   42:    EXPECT_EQ(res, 0);
+        1:   42-block  0
+        1:   42-block  1
+        1:   42-block  2
+        1:   42-block  3
+    $$$$$:   42-block  4
+    $$$$$:   42-block  5
+    $$$$$:   42-block  6
+    $$$$$:   42-block  7
+    $$$$$:   42-block  8
+    $$$$$:   42-block  9
+    $$$$$:   42-block 10
+    $$$$$:   42-block 11
+        1:   43:}
+    $$$$$:   43-block  0
+    $$$$$:   43-block  1
+    $$$$$:   43-block  2
+        1:   43-block  3
+    $$$$$:   43-block  4
+    $$$$$:   43-block  5
+        -:   44:
+        -:   45:/*
+        -:   46:TEST(seleccionNaturalTEST, DiagonalVsHorizontal){
+        -:   47:    toroide t1 = { 
+        -:   48:                  {false, false, false, false, false}, 
+        -:   49:                  {false, false, false, false, false}, 
+        -:   50:                  {false, true, true, true, false},
+        -:   51:                  {false, false, false, false, false}, 
+        -:   52:                  {false, false,false, false, false} };
+        -:   53:    toroide t2 = { 
+        -:   54:                  {true, false, false},
+        -:   55:                  {false, true, false},
+        -:   56:                  {false, false, true}}; 
+        -:   57:    vector<toroide> ts;
+        -:   58:    ts.push_back(t2);
+        -:   59:    ts.push_back(t1);
+        -:   60:    ts.push_back(t2);
+        -:   61:    int res = seleccionNatural(ts);
+        -:   62:    EXPECT_EQ(res, 1);
+        -:   63:}
+        -:   64:*/

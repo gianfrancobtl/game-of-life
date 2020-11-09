@@ -11,21 +11,16 @@ pair<int,int> mp(int a, int b);
 vector<posicion> ordenar(vector<posicion> &v);
 int cantFilas (vector<vector<bool>> const &t);
 int cantColumnas (vector<vector<bool>> const &t);
-bool esRectangulo (vector<vector<bool>> const &t);
-bool vecinaViva(toroide t , int z , int c , int i , int j);
-int vecinosVivos(toroide t, int f , int c);
+bool esRectangulo (toroide const &t);
+bool estaViva(toroide const &t, posicion x);
+bool posVecinaViva(toroide const &t, int f, int c, int i, int j);
+int cantVecinosVivos (toroide const &t, posicion x);
 bool toroideMuerto (toroide const &t);
 toroide traslacion(toroide t, int a , int b );
-
-
-
 bool filaTieneViva (vector<bool> n);
 int primeraFilaViva (toroide t);
 int ultimaFilaViva (toroide t);
 int ultimaColumnaViva(toroide t);
-int areaTotal (toroide t);
-
-
-
+int areaTotal (const toroide& t);
 
 #endif //REUNIONESREMOTAS_AUXILIARES_H

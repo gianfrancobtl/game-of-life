@@ -31,15 +31,13 @@ float densidadPoblacion(toroide const &t) {
 
 // EJERCICIO 4
 bool evolucionDePosicion(toroide const &t, posicion x) {
-    bool resp = false;
-    int cantVecinos =  vecinosVivos(t,x.first,x.second);
-    if (cantVecinos==3) {
+    bool resp;
+    if ((estaViva(t, x) && (cantVecinosVivos(t, x) == 2 || cantVecinosVivos(t, x) == 3)) ||
+    (!estaViva(t, x) && cantVecinosVivos(t, x) == 3))
         resp = true;
-    } else {
-        if ( t[x.first][x.second] && cantVecinos >= 2 && cantVecinos <= 3){
-            resp = true;
-        }
-    }
+    else
+        resp = false;
+
     return resp;
 }
 
@@ -56,9 +54,8 @@ void evolucionToroide(toroide &t){
 // EJERCICIO 6
 toroide evolucionMultiple(toroide const &t, int K) {
     toroide out = t;
-    for (int k = K; k > 0; k --){
+    for (int k = K; k > 0; k --)
         evolucionToroide(out);
-    }
     return out;
 }
 
@@ -70,9 +67,8 @@ bool esPeriodico(toroide const& t, int &p) {
     while (!toroideMuerto(toroideOut) && !resp){
         p ++;
         evolucionToroide(toroideOut);
-        if (t == toroideOut){
+        if (t == toroideOut)
             resp = true;
-        }
     }
     return resp;
 }
@@ -98,15 +94,13 @@ int seleccionNatural(vector <toroide> ts) {
     for (int i = 0; i < ts.size(); i ++){
         toroide evoT = ts[i];
         int k = 0;
-        if (!esPeriodico(evoT, k)){
-            while (!toroideMuerto(evoT)){
-                evolucionToroide(evoT);
-                k ++;
-            }
-            if (k > mayorCantTicks){
-                resp = i;
-                mayorCantTicks = k;
-            }
+        while (!toroideMuerto(evoT)){
+            evolucionToroide(evoT);
+            k ++;
+        }
+        if (k > mayorCantTicks){
+            resp = i;
+            mayorCantTicks = k;
         }
     }
     return resp;
@@ -132,9 +126,8 @@ bool vistaTrasladada(toroide const &t, toroide const &u){
     bool resp = false;
     for (int i = 0; i < cantFilas(t) && !resp ; ++i) {
         for (int j = 0; j < cantColumnas(t) ; ++j) {
-            if (traslacion(t,i,j) == u){
+            if (traslacion(t,i,j) == u)
                 resp = true;
-            }
         }
     }
     return resp;
@@ -143,12 +136,10 @@ bool vistaTrasladada(toroide const &t, toroide const &u){
 // EJERCICIO 12
 int menorSuperficieViva(toroide const &t){
     int resp = areaTotal(t);
-    toroide generico = t;
-    for (int i = 0; i <t.size() ; ++i) {
-        for (int j = 0; j <t[0].size() ; ++j) {
-            if (resp > areaTotal(traslacion(t,i,j))){
+    for (int i = 0; i < t.size() ; ++ i) {
+        for (int j = 0; j < t[0].size() ; ++ j) {
+            if (resp > areaTotal(traslacion(t,i,j)))
                 resp = areaTotal(traslacion(t,i,j));
-            }
         }
     }
     return resp;
