@@ -30,3 +30,16 @@ TEST(vistaTrasladadaTEST, DiagonalVsTodoTrue){
     bool res = vistaTrasladada(t1, t2);
     EXPECT_FALSE(res);
 }
+
+TEST(vistaTrasladadaTEST, movido){
+    toroide t1 = {
+            {false, false, true},
+            {false, false, true},
+            {false, false, true}};
+    toroide t2 = {
+            {true, false, false},
+            {true, false, false},
+            {true, false, false}};
+    bool res = vistaTrasladada(t1, t2);
+    EXPECT_TRUE(res);
+}

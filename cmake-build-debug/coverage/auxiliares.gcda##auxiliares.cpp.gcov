@@ -1,0 +1,311 @@
+        -:    0:Source:C:/Users/ramir/Desktop/TPI FINALIZADO/tpi_final/auxiliares.cpp
+        -:    0:Graph:C:\Users\ramir\Desktop\TPI FINALIZADO\tpi_final\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcno
+        -:    0:Data:C:\Users\ramir\Desktop\TPI FINALIZADO\tpi_final\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "definiciones.h"
+        -:    2:#include "auxiliares.h"
+        -:    3:
+        -:    4:using namespace std;
+        -:    5:
+        -:    6:// GENERALES
+      743:    7:pair<int,int> mp(int a, int b) {
+      743:    8:    return make_pair(a, b);
+      743:    8-block  0
+        -:    9:}
+        -:   10:
+        6:   11:vector<posicion> ordenar(vector<posicion> &v) {
+        6:   12:    sort(v.begin(), v.end());
+        6:   12-block  0
+        6:   13:    return v;
+        -:   14:}
+        -:   15:
+    21001:   16:int cantFilas (vector<vector<bool>> const &t){
+    21001:   17:    int size = t.size();
+    21001:   17-block  0
+    21001:   18:    return size;
+        -:   19:}
+        -:   20:
+    16647:   21:int cantColumnas (vector<vector<bool>> const &t){
+    16647:   22:    return t[0].size();
+    16647:   22-block  0
+        -:   23:}
+        -:   24:
+        -:   25:// EJERCICIO 1
+        4:   26:bool esRectangulo (toroide const &t){
+        4:   27:    int longEsperadaFilas = t[0].size();
+        4:   27-block  0
+        4:   28:    bool esRectangulo = true;
+       16:   29:    for (int i = 1; i < t.size(); i ++) {
+       16:   29-block  0
+       12:   29-block  1
+       12:   30:        if (t[i].size() != longEsperadaFilas)
+       12:   30-block  0
+        2:   31:            esRectangulo = false;
+        2:   31-block  0
+        -:   32:    }
+        4:   33:    return esRectangulo;
+        4:   33-block  0
+        -:   34:}
+        -:   35:
+        -:   36:// EJERCICIO 4
+     1351:   37:bool estaViva(toroide const &t, posicion x){
+     1351:   38:    return t[x.first][x.second];
+     1351:   38-block  0
+        -:   39:}
+        -:   40:
+     6168:   41:bool posVecinaViva(toroide const &t, int f, int c, int i, int j){
+     6168:   42:    int k = (f + i + cantFilas(t)) % cantFilas(t);
+     6168:   42-block  0
+     6168:   43:    int l = (c + j + cantColumnas(t)) % cantColumnas(t);
+     6168:   44:    return (t[k][l]);
+        -:   45:}
+        -:   46:
+      771:   47:int cantVecinosVivos (toroide const &t, posicion x){
+      771:   48:    int cantVecinosVivos = 0;
+      771:   49:    int f = x.first;
+      771:   50:    int c = x.second;
+     3084:   51:    for (int i = - 1; i <= 1; i ++){
+      771:   51-block  0
+     3084:   51-block  1
+     2313:   51-block  2
+     9252:   52:        for (int j = - 1; j <= 1; j ++){
+     2313:   52-block  0
+     9252:   52-block  1
+     6939:   52-block  2
+     6939:   53:            if ((i != 0 || j != 0) && posVecinaViva(t, f, c, i, j))
+     6939:   53-block  0
+     2313:   53-block  1
+     6168:   53-block  2
+     1229:   53-block  3
+     5710:   53-block  4
+     6939:   53-block  5
+     1229:   54:                cantVecinosVivos += 1;
+     1229:   54-block  0
+        -:   55:        }
+        -:   56:    }
+      771:   57:    return cantVecinosVivos;
+      771:   57-block  0
+        -:   58:}
+        -:   59:
+        -:   60:
+        -:   61:// EJERCICIO 7
+       33:   62:bool toroideMuerto (toroide const &t){
+       33:   63:    bool estaMuerto = true;
+      118:   64:    for (int i = 0; i < cantFilas(t) && estaMuerto; i ++) {
+       33:   64-block  0
+      118:   64-block  1
+      111:   64-block  2
+       85:   64-block  3
+       33:   64-block  4
+      118:   64-block  5
+       85:   64-block  6
+      413:   65:        for (int j = 0; j < cantColumnas(t) && estaMuerto; j++) {
+       85:   65-block  0
+      413:   65-block  1
+      354:   65-block  2
+      328:   65-block  3
+       85:   65-block  4
+      413:   65-block  5
+      328:   65-block  6
+      328:   66:            if (t[i][j])
+      328:   66-block  0
+       26:   67:                estaMuerto = false;
+       26:   67-block  0
+        -:   68:        }
+        -:   69:    }
+       33:   70:    return estaMuerto;
+       33:   70-block  0
+        -:   71:}
+        -:   72:
+        -:   73:
+        -:   74://EJERCICIOS 11
+       64:   75:toroide traslacion(toroide t, int a , int b ){
+       64:   76:    toroide l = t;
+       64:   76-block  0
+      293:   77:    for (int i = 0; i < cantFilas(t) ; ++i) {
+      293:   77-block  0
+      229:   77-block  1
+     1100:   78:        for (int j = 0; j < cantColumnas(t) ; ++j) {
+      229:   78-block  0
+     1100:   78-block  1
+      871:   79:            l[(i + a + cantFilas(t)) % cantFilas(t)] [(j + b + cantColumnas(t)) % cantColumnas(t)] = t[i][j];
+      871:   79-block  0
+        -:   80:        }
+        -:   81:    }
+       64:   82:    return l;
+       64:   82-block  0
+        -:   83:}
+        -:   84:
+        -:   85:
+        -:   86://EJERCICIO 12
+      184:   87:bool filaTieneViva (vector<bool> n){
+      184:   88:    bool resp = false;
+      704:   89:    for (int i = 0; i < n.size() && !resp ; ++i){
+      184:   89-block  0
+      704:   89-block  1
+      610:   89-block  2
+      520:   89-block  3
+      184:   89-block  4
+      704:   89-block  5
+      520:   89-block  6
+      520:   90:        if (n[i])
+      520:   90-block  0
+       99:   91:            resp = true;
+       99:   91-block  0
+        -:   92:    }
+      184:   93:    return resp;
+      184:   93-block  0
+        -:   94:}
+        -:   95:
+       52:   96:int primeraFilaViva (toroide t){
+       52:   97:    int resultado = -1;
+       52:   98:    bool resp = false;
+       52:   99:    int i = 0;
+       52:   99-block  0
+      144:  100:    while (i < cantFilas(t) && !resp){
+      144:  100-block  0
+      140:  100-block  1
+       92:  100-block  2
+       52:  100-block  3
+      144:  100-block  4
+       92:  101:        if (filaTieneViva(t[i])){
+       92:  101-block  0
+       92:  101-block  1
+    $$$$$:  101-block  2
+       52:  102:            resultado = i;
+       52:  103:            resp = true;
+       52:  103-block  0
+        -:  104:        }
+       92:  105:        i++;
+       92:  105-block  0
+        -:  106:    }
+       52:  107:    return resultado;
+       52:  107-block  0
+       52:  107-block  1
+        -:  108:}
+        -:  109:
+       52:  110:int ultimaFilaViva (toroide t){
+       52:  111:    int resultado = -1;
+       52:  112:    bool resp = false;
+       52:  113:    int i = cantFilas(t)-1;
+       52:  113-block  0
+      144:  114:    while (i>0 && !resp ){
+      144:  114-block  0
+      129:  114-block  1
+       92:  115:        if (filaTieneViva(t[i])){
+       92:  115-block  0
+       92:  115-block  1
+    $$$$$:  115-block  2
+       47:  116:            resultado = i;
+       47:  117:            resp = true;
+       47:  117-block  0
+        -:  118:        }
+       92:  119:        i--;
+       92:  119-block  0
+        -:  120:    }
+       52:  121:    return resultado;
+       52:  121-block  0
+       52:  121-block  1
+        -:  122:}
+        -:  123:
+       52:  124:int primeraColumnaViva(toroide t){
+       52:  125:    int result = -1;
+       52:  126:    bool resp = false;
+       52:  127:    int j = 0;
+       52:  127-block  0
+      139:  128:    while (j<t.size() && !resp ){
+      139:  128-block  0
+      134:  128-block  1
+       87:  128-block  2
+       52:  128-block  3
+      139:  128-block  4
+      422:  129:        for (int i = 0; i < cantFilas(t) ; ++ i){
+       87:  129-block  0
+      422:  129-block  1
+      335:  129-block  2
+      335:  130:            if (t[i][j]){
+      335:  130-block  0
+       84:  131:                result = j;
+       84:  132:                resp = true;
+       84:  132-block  0
+        -:  133:            }
+        -:  134:        }
+       87:  135:        j++;
+       87:  135-block  0
+        -:  136:    }
+        -:  137:
+       52:  138:    return result;
+       52:  138-block  0
+        -:  139:}
+        -:  140:/*  for (int j = cantColumnas(t) - 1; j > 0 && !resp ; ++ j){
+        -:  141:       for (int i = 0; i < cantFilas(t) ; ++ i){
+        -:  142:           if (t[i][j]){
+        -:  143:               result = j;
+        -:  144:               resp = true;
+        -:  145:           }
+        -:  146:       }
+        -:  147:   }*/
+        -:  148:
+       52:  149:int ultimaColumnaViva(toroide t){
+       52:  150:    int result = -1;
+       52:  151:    bool resp = false;
+       52:  152:    int j = cantColumnas(t) -1;
+       52:  152-block  0
+     1187:  153:    while (j>0 && !resp ){
+     1187:  153-block  0
+     1187:  153-block  1
+     5662:  154:        for (int i = 0; i < cantFilas(t) ; ++ i){
+     1135:  154-block  0
+     5662:  154-block  1
+     4527:  154-block  2
+     4527:  155:            if (t[i][j]){
+     4527:  155-block  0
+      100:  156:                result = j;
+      100:  157:                resp = true;
+      100:  157-block  0
+        -:  158:            }
+        -:  159:        }
+     1135:  160:        j++;
+     1135:  160-block  0
+        -:  161:    }
+       52:  162:    return result;
+       52:  162-block  0
+        -:  163:}
+        -:  164:  /*  for (int j = cantColumnas(t) - 1; j > 0 && !resp ; ++ j){
+        -:  165:        for (int i = 0; i < cantFilas(t) ; ++ i){
+        -:  166:            if (t[i][j]){
+        -:  167:                result = j;
+        -:  168:                resp = true;
+        -:  169:            }
+        -:  170:        }
+        -:  171:    }*/
+        -:  172:
+        -:  173:
+        -:  174:
+       52:  175:int areaTotal (const toroide& t){
+       52:  176:    int result = 0;
+        -:  177:    //if (ultimaFilaViva(t)>=0 && ultimaColumnaViva(t)>=0 ){
+       52:  178:        int cantFilasVivas = ultimaFilaViva(t) - primeraFilaViva(t) + 1;
+       52:  178-block  0
+       52:  178-block  1
+       52:  178-block  2
+       52:  178-block  3
+    $$$$$:  178-block  4
+    $$$$$:  178-block  5
+    $$$$$:  178-block  6
+    $$$$$:  178-block  7
+       52:  179:        int cantColumnasVivas = ultimaColumnaViva(t) - primeraColumnaViva(t) + 1;
+       52:  179-block  0
+       52:  179-block  1
+       52:  179-block  2
+    $$$$$:  179-block  3
+    $$$$$:  179-block  4
+    $$$$$:  179-block  5
+       52:  180:        result = cantFilasVivas * cantColumnasVivas;
+        -:  181:  //  }else{
+        -:  182:   //     result = 0;
+        -:  183: //   }
+       52:  184:    return result;
+       52:  184-block  0
+        -:  185:}

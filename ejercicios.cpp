@@ -134,6 +134,7 @@ bool vistaTrasladada(toroide const &t, toroide const &u){
 }
 
 // EJERCICIO 12
+
 int menorSuperficieViva(toroide const &t){
     int resp = areaTotal(t);
     for (int i = 0; i < t.size() ; ++ i) {
@@ -144,3 +145,4 @@ int menorSuperficieViva(toroide const &t){
     }
     return resp;
 }
+

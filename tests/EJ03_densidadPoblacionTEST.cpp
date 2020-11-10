@@ -8,3 +8,19 @@ TEST(densidadPoblacionTEST, toroideDiagonal){
     toroide t = { a, a, a, a, a };
     EXPECT_NEAR(densidadPoblacion(t), 1.0, 0.01);
 }
+
+TEST(densidadPoblacionTEST, toroideNormal){
+    vector<bool> a = { false, true, false, true };
+    vector<bool> b = { false, true, false, true };
+    vector<bool> c = { false, true, false, true };
+    toroide t = { a, b, c };
+    EXPECT_NEAR(densidadPoblacion(t), 0.5, 0.01);
+}
+
+TEST(densidadPoblacionTEST, toroideMuerto){
+    vector<bool> a = { false, false, false, false };
+    vector<bool> b = { false, false, false, false };
+    vector<bool> c = { false, false, false, false };
+    toroide t = { a, b, c };
+    EXPECT_NEAR(densidadPoblacion(t), 0, 0.01);
+}

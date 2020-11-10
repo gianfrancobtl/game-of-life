@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/lib/googletest-master/googletest/src/gtest-all.cc" "/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+  "C:/Users/ramir/Desktop/TPI FINALIZADO/tpi_final/lib/googletest-master/googletest/src/gtest-all.cc" "C:/Users/ramir/Desktop/TPI FINALIZADO/tpi_final/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "Clang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/lib/googletest-master/googletest/include"
-  "/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/lib/googletest-master/googletest"
+  "../lib/googletest-master/googletest/include"
+  "../lib/googletest-master/googletest"
   )
 
 # Targets to which this target links.

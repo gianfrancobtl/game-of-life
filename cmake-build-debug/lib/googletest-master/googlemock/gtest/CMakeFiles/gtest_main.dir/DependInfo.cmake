@@ -4,19 +4,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/lib/googletest-master/googletest/src/gtest_main.cc" "/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+  "C:/Users/ramir/Desktop/TPI FINALIZADO/tpi_final/lib/googletest-master/googletest/src/gtest_main.cc" "C:/Users/ramir/Desktop/TPI FINALIZADO/tpi_final/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "Clang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/lib/googletest-master/googletest"
-  "/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/lib/googletest-master/googletest/include"
+  "../lib/googletest-master/googletest"
+  "../lib/googletest-master/googletest/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "C:/Users/ramir/Desktop/TPI FINALIZADO/tpi_final/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

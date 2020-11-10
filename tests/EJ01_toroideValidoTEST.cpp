@@ -21,3 +21,47 @@ TEST(toroideValidoTEST, diagonalTresPorTres) {
     };
     EXPECT_TRUE(toroideValido(t));
 }
+
+TEST(toroideValidoTEST, noRectangulo) {
+    toroide t = { {true, false, false},
+                  {false, true, true , false},
+                  {false, false, true}
+    };
+    EXPECT_FALSE(toroideValido(t));
+}
+
+TEST(toroideValidoTEST, Menor3Columnas) {
+    toroide t = { {true, false},
+                  {false, true},
+                  {false, false}
+    };
+    EXPECT_FALSE(toroideValido(t));
+}
+
+TEST(toroideValidoTEST, Menor3Filas) {
+    toroide t = { {true, false, false}
+
+    };
+    EXPECT_FALSE(toroideValido(t));
+}
+
+TEST(toroideValidoTEST, CincoXCuatro) {
+    toroide t = { {true, false, false,false},
+                  {false, true, false, false},
+                  {false, false, true, false},
+                  {false, false, true, false},
+                  {false, true, false, false}
+    };
+    EXPECT_TRUE(toroideValido(t));
+}
+
+TEST(toroideValidoTEST, FilaMenor) {
+    toroide t = { {true, false, false,false},
+                  {false, true, false},
+                  {false, false, true, false},
+                  {false, false, true, false},
+                  {false, true, false, false}
+    };
+    EXPECT_FALSE(toroideValido(t));
+}
+

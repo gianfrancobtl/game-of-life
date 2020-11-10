@@ -18,3 +18,21 @@ TEST(evolucionMultipleTEST, toroideDiagonalTresPorTresUnPaso){
     toroide res = evolucionMultiple(t, 1);
     EXPECT_EQ(res, evo_t);
 }
+
+TEST(evolucionMultipleTEST, toroideMUERTO){
+    toroide t = { {false, false, false}, {false, false, false}, {false, false, false}};
+
+    toroide evo_t = { {false, false, false}, {false, false, false}, {false, false, false} };
+
+    toroide res = evolucionMultiple(t, 5);
+    EXPECT_EQ(res, evo_t);
+}
+
+TEST(evolucionMultipleTEST, seMuere){
+    toroide t = { {false, false, false}, {false, true, false}, {false, false, false}};
+
+    toroide evo_t = { {false, false, false}, {false, false, false}, {false, false, false} };
+
+    toroide res = evolucionMultiple(t, 3);
+    EXPECT_EQ(res, evo_t);
+}
