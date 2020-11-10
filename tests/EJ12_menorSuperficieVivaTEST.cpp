@@ -13,18 +13,7 @@ TEST(menorSuperficieVivaTEST, enunciado){
     int res = menorSuperficieViva(t);
     EXPECT_EQ(res, 6);
 }
-/*
-TEST(menorSuperficieVivaTEST, toroideMuerto){
-    toroide t = {
-            {false, false, false, false},   // 1
-            {false, false, false, false}, // 2
-            {false, false, false, false}, // 3
-            {false, false, false, false}};  // 4
 
-    int res = menorSuperficieViva(t);
-    EXPECT_EQ(res, 0);
-}
-*/
 TEST(menorSuperficieVivaTEST, soloUnTrue){
     toroide t = {
             {false, false, false, false},   // 1
@@ -33,7 +22,7 @@ TEST(menorSuperficieVivaTEST, soloUnTrue){
             {false, false, false, false}};  // 4
 
     int res = menorSuperficieViva(t);
-    EXPECT_EQ(res, 0);
+    EXPECT_EQ(res, 1);
 }
 
 

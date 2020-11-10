@@ -34,460 +34,158 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5889e343-57c2-439e-af30-dbb338809fc2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc 2.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc 2.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind 2.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd 2.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxiliares.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/auxiliares.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/main.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/main.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/main.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/main.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/main.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/main.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.gcda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.gcno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##EJ01_toroideValidoTEST.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##__bit_reference.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##__string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##algorithm.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##gtest.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##initializer_list.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##limits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##new.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##stdexcept.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##vector.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##EJ02_posicionesVivasTEST.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##__bit_reference.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##__locale.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##__string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##algorithm.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##gtest.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##initializer_list.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##ios.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##iosfwd.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##istream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##limits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##locale.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##new.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##ostream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##sstream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##stdexcept.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##streambuf.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##utility.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##vector.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##EJ03_densidadPoblacionTEST.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##__bit_reference.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##__string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##algorithm.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##gtest.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##initializer_list.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##limits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##new.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##stdexcept.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##vector.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##EJ04_evolucionDePosicionTEST.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##__bit_reference.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##__string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##algorithm.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##gtest.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##initializer_list.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##limits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##new.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##stdexcept.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##utility.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##vector.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##EJ05_evolucionToroideTEST.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##__bit_reference.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##__locale.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##__string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##algorithm.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##gtest.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##initializer_list.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##ios.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##iosfwd.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##istream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##limits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##locale.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##new.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##ostream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##sstream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##stdexcept.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##streambuf.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##vector.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##EJ06_evolucionMultipleTEST.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##__bit_reference.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##__locale.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##__string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##algorithm.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##gtest.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##initializer_list.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##ios.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##iosfwd.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##istream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##limits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##locale.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##new.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##ostream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##sstream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##stdexcept.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##streambuf.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##vector.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##EJ07_esPeriodicoTEST.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##__bit_reference.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##__string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##algorithm.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##gtest.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##initializer_list.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##ios.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##iosfwd.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##istream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##limits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##new.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##ostream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##sstream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##stdexcept.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##streambuf.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##vector.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##EJ08_primosLejanosTEST.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##__bit_reference.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##__string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##algorithm.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##gtest.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##initializer_list.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##limits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##new.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##stdexcept.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##vector.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##EJ09_seleccionNaturalTEST.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##__bit_reference.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##__split_buffer.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##__string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##algorithm.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##gtest.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##initializer_list.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##ios.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##iosfwd.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##istream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##limits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##new.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##ostream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##sstream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##stdexcept.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##streambuf.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##utility.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##vector.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##EJ10_fusionarTEST.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##__bit_reference.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##__locale.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##__string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##algorithm.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##gtest.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##initializer_list.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##ios.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##iosfwd.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##istream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##limits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##locale.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##new.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##ostream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##sstream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##stdexcept.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##streambuf.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##vector.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##EJ11_vistaTrasladadaTEST.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##__bit_reference.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##__string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##algorithm.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##gtest.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##initializer_list.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##limits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##new.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##stdexcept.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##vector.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##EJ12_menorSuperficieVivaTEST.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##__bit_reference.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##__string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##algorithm.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##gtest.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##initializer_list.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##ios.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##iosfwd.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##istream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##limits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##new.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##ostream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##sstream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##stdexcept.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##streambuf.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##vector.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##__bit_reference.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##algorithm.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##auxiliares.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##limits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##new.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##stdexcept.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##utility.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##vector.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##__bit_reference.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##__split_buffer.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##algorithm.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##ejercicios.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##limits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##new.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##stdexcept.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##vector.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##__locale.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##__string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##gtest.h.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##ios.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##iterator.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##locale.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##main.cpp.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##memory.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##ostream.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##streambuf.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##string.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##type_traits.gcov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/gmock.pc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/gmock_main.pc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/gtest.pc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/gtest_main.pc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/juegoDeLaVida.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/CTestTestfile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/cmake_clean_target.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/includes_CXX.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/cmake_clean_target.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/includes_CXX.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CTestTestfile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gmock.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/cmake_clean_target.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/includes_CXX.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/cmake_clean_target.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/includes_CXX.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googletest-distribution.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejercicios.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicios.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##EJ01_toroideValidoTEST.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##EJ01_toroideValidoTEST.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##gtest-internal.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##gtest-internal.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##gtest-port.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##gtest-port.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##gtest.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##gtest.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##initializer_list.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##initializer_list.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##new.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ01_toroideValidoTEST.gcda##new.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##EJ02_posicionesVivasTEST.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##EJ02_posicionesVivasTEST.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##gtest-internal.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##gtest-internal.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##gtest-port.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##gtest-port.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##gtest-printers.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##gtest-printers.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##gtest.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##gtest.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##initializer_list.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##initializer_list.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##new.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ02_posicionesVivasTEST.gcda##new.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##EJ03_densidadPoblacionTEST.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##EJ03_densidadPoblacionTEST.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##gtest-internal.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##gtest-internal.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##gtest-port.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##gtest-port.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##gtest.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##gtest.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##initializer_list.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##initializer_list.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##new.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ03_densidadPoblacionTEST.gcda##new.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##EJ04_evolucionDePosicionTEST.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##EJ04_evolucionDePosicionTEST.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##gtest-internal.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##gtest-internal.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##gtest-port.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##gtest-port.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##gtest.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##gtest.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##initializer_list.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##initializer_list.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##new.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ04_evolucionDePosicionTEST.gcda##new.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##EJ05_evolucionToroideTEST.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##EJ05_evolucionToroideTEST.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##gtest-internal.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##gtest-internal.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##gtest-port.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##gtest-port.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##gtest-printers.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##gtest-printers.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##gtest.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##gtest.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##initializer_list.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##initializer_list.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##new.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ05_evolucionToroideTEST.gcda##new.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##EJ06_evolucionMultipleTEST.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##EJ06_evolucionMultipleTEST.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##gtest-internal.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##gtest-internal.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##gtest-port.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##gtest-port.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##gtest-printers.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##gtest-printers.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##gtest.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##gtest.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##initializer_list.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##initializer_list.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##new.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ06_evolucionMultipleTEST.gcda##new.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##EJ07_esPeriodicoTEST.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##EJ07_esPeriodicoTEST.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##gtest-internal.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##gtest-internal.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##gtest-port.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##gtest-port.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##gtest-printers.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##gtest-printers.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##gtest.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##gtest.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##initializer_list.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##initializer_list.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##new.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ07_esPeriodicoTEST.gcda##new.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##EJ08_primosLejanosTEST.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##EJ08_primosLejanosTEST.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##gtest-internal.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##gtest-internal.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##gtest-port.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##gtest-port.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##gtest.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##gtest.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##initializer_list.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##initializer_list.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##new.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ08_primosLejanosTEST.gcda##new.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##EJ09_seleccionNaturalTEST.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##EJ09_seleccionNaturalTEST.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##gtest-internal.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##gtest-internal.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##gtest-port.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##gtest-port.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##gtest-printers.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##gtest-printers.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##gtest.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##gtest.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##initializer_list.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##initializer_list.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##new.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ09_seleccionNaturalTEST.gcda##new.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##EJ10_fusionarTEST.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##EJ10_fusionarTEST.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##gtest-internal.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##gtest-internal.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##gtest-port.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##gtest-port.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##gtest-printers.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##gtest-printers.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##gtest.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##gtest.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##initializer_list.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##initializer_list.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##new.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ10_fusionarTEST.gcda##new.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##EJ11_vistaTrasladadaTEST.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##EJ11_vistaTrasladadaTEST.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##gtest-internal.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##gtest-internal.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##gtest-port.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##gtest-port.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##gtest.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##gtest.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##initializer_list.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##initializer_list.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##new.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ11_vistaTrasladadaTEST.gcda##new.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##EJ12_menorSuperficieVivaTEST.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##EJ12_menorSuperficieVivaTEST.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##gtest-internal.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##gtest-internal.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##gtest-port.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##gtest-port.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##gtest-printers.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##gtest-printers.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##gtest.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##gtest.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##initializer_list.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##initializer_list.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##new.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/EJ12_menorSuperficieVivaTEST.gcda##new.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##auxiliares.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##auxiliares.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##new.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##new.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##ejercicios.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##ejercicios.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##new.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##new.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##gtest.h.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##gtest.h.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##main.cpp.gcov" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##main.cpp.gcov" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juegoDeLaVida" beforeDir="false" afterPath="$PROJECT_DIR$/juegoDeLaVida" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/juegoDeLaVida.exe" beforeDir="false" afterPath="$PROJECT_DIR$/juegoDeLaVida.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/EJ01_toroideValidoTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EJ01_toroideValidoTEST.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/EJ02_posicionesVivasTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EJ02_posicionesVivasTEST.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/EJ03_densidadPoblacionTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EJ03_densidadPoblacionTEST.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/EJ04_evolucionDePosicionTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EJ04_evolucionDePosicionTEST.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/EJ05_evolucionToroideTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EJ05_evolucionToroideTEST.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/EJ06_evolucionMultipleTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EJ06_evolucionMultipleTEST.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/EJ07_esPeriodicoTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EJ07_esPeriodicoTEST.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/EJ10_fusionarTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EJ10_fusionarTEST.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/EJ11_vistaTrasladadaTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EJ11_vistaTrasladadaTEST.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/EJ12_menorSuperficieVivaTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EJ12_menorSuperficieVivaTEST.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -517,15 +215,15 @@
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunManager" selected="Google Test.juegoDeLaVida">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="juegoDeLaVida" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="gmock" CONFIG_NAME="Debug">
@@ -582,6 +280,7 @@
       <workItem from="1604981090914" duration="256000" />
       <workItem from="1604981852362" duration="7000" />
       <workItem from="1604981988315" duration="12161000" />
+      <workItem from="1605043837189" duration="1239000" />
     </task>
     <servers />
   </component>
@@ -614,42 +313,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1149" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604982807367" />
-    <state width="1877" height="308" key="GridCell.Tab.0.bottom" timestamp="1604997515535">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1605045082974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="252" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604962970630" />
-    <state width="1877" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604997515535" />
-    <state width="1877" height="308" key="GridCell.Tab.0.center" timestamp="1604997515535">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1605045082974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="252" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604962970629" />
-    <state width="1877" height="308" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604997515535" />
-    <state width="1877" height="308" key="GridCell.Tab.0.left" timestamp="1604997515535">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1605045082974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="252" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604962970628" />
-    <state width="1877" height="308" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604997515535" />
-    <state width="1877" height="308" key="GridCell.Tab.0.right" timestamp="1604997515535">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1605045082974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="252" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604962970629" />
-    <state width="1877" height="308" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604997515535" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604893360839">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1605045082974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604893360839" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1604893360839">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1605045082974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604893360839" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1604893360839">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1605045082974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604893360839" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1604893360839">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1605045082974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604893360839" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1604981152390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

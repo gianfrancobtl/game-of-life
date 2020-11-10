@@ -111,7 +111,7 @@ int ultimaFilaViva (toroide t){
     int resultado = -1;
     bool resp = false;
     int i = cantFilas(t)-1;
-    while (i>0 && !resp ){
+    while (i>=0 && !resp ){
         if (filaTieneViva(t[i])){
             resultado = i;
             resp = true;
@@ -126,7 +126,7 @@ int primeraColumnaViva(toroide t){
     bool resp = false;
     int j = 0;
     while (j<t.size() && !resp ){
-        for (int i = 0; i < cantFilas(t) ; ++ i){
+        for (int i = 0; i < cantFilas(t)  ; ++ i){
             if (t[i][j]){
                 result = j;
                 resp = true;
@@ -150,14 +150,14 @@ int ultimaColumnaViva(toroide t){
     int result = -1;
     bool resp = false;
     int j = cantColumnas(t) -1;
-    while (j>0 && !resp ){
-        for (int i = 0; i < cantFilas(t) ; ++ i){
+    while (j>=0 && !resp ){
+        for (int i = 0; i < cantFilas(t)   ; ++ i){
             if (t[i][j]){
                 result = j;
                 resp = true;
             }
         }
-        j++;
+        j--;
     }
     return result;
 }
@@ -176,6 +176,8 @@ int areaTotal (const toroide& t){
     int result = 0;
     //if (ultimaFilaViva(t)>=0 && ultimaColumnaViva(t)>=0 ){
         int cantFilasVivas = ultimaFilaViva(t) - primeraFilaViva(t) + 1;
+        int hola = ultimaColumnaViva(t);
+        int chau = primeraColumnaViva(t);
         int cantColumnasVivas = ultimaColumnaViva(t) - primeraColumnaViva(t) + 1;
         result = cantFilasVivas * cantColumnasVivas;
   //  }else{
