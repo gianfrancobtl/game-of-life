@@ -1,5 +1,0 @@
-"D:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\ramir\Desktop\TPI FINALIZADO\tpi_final"
--- Could NOT find PythonInterp (missing: PYTHON_EXECUTABLE) 
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/ramir/Desktop/TPI FINALIZADO/tpi_final/cmake-build-debug

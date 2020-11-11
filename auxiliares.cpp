@@ -22,11 +22,19 @@ int cantColumnas (vector<vector<bool>> const &t){
     return t[0].size();
 }
 
+int filaToroide (toroide const &t, int f, int i){
+    return (f + i + cantFilas(t)) % cantFilas(t);
+}
+
+int columnaToroide (toroide const &t, int c, int j){
+    return (c + j + cantColumnas(t)) % cantColumnas(t);
+}
+
 // EJERCICIO 1
 bool esRectangulo (toroide const &t){
-    int longEsperadaFilas = t[0].size();
+    int longEsperadaFilas = cantColumnas(t);
     bool esRectangulo = true;
-    for (int i = 1; i < t.size(); i ++) {
+    for (int i = 1; i < cantFilas(t); i ++){
         if (t[i].size() != longEsperadaFilas)
             esRectangulo = false;
     }
@@ -39,9 +47,7 @@ bool estaViva(toroide const &t, posicion x){
 }
 
 bool posVecinaViva(toroide const &t, int f, int c, int i, int j){
-    int k = (f + i + cantFilas(t)) % cantFilas(t);
-    int l = (c + j + cantColumnas(t)) % cantColumnas(t);
-    return (t[k][l]);
+    return (t[filaToroide (t, f, i)][columnaToroide (t, c, j)]);
 }
 
 int cantVecinosVivos (toroide const &t, posicion x){
@@ -57,36 +63,37 @@ int cantVecinosVivos (toroide const &t, posicion x){
     return cantVecinosVivos;
 }
 
-
 // EJERCICIO 7
 bool toroideMuerto (toroide const &t){
     bool estaMuerto = true;
-    for (int i = 0; i < cantFilas(t) && estaMuerto; i ++) {
-        for (int j = 0; j < cantColumnas(t) && estaMuerto; j++) {
+    int i = 0;
+    while (i < cantFilas(t) && estaMuerto) {
+        int j = 0;
+        while (j < cantColumnas(t) && estaMuerto) {
             if (t[i][j])
                 estaMuerto = false;
+            j ++;
         }
+        i ++;
     }
     return estaMuerto;
 }
 
-
 //EJERCICIOS 11
-toroide traslacion(toroide t, int a , int b ){
-    toroide l = t;
-    for (int i = 0; i < cantFilas(t) ; ++i) {
-        for (int j = 0; j < cantColumnas(t) ; ++j) {
-            l[(i + a + cantFilas(t)) % cantFilas(t)] [(j + b + cantColumnas(t)) % cantColumnas(t)] = t[i][j];
+toroide traslacion(toroide t, int f , int c ){
+    toroide trasladado = t;
+    for (int i = 0; i < cantFilas(t); i ++) {
+        for (int j = 0; j < cantColumnas(t); j ++) {
+            trasladado[filaToroide(t, f, i)][columnaToroide(t, c, j)] = t[i][j];
         }
     }
-    return l;
+    return trasladado;
 }
-
 
 //EJERCICIO 12
 bool filaTieneViva (vector<bool> n){
     bool resp = false;
-    for (int i = 0; i < n.size() && !resp ; ++i){
+    for (int i = 0; i < n.size(); i ++){
         if (n[i])
             resp = true;
     }
@@ -102,7 +109,7 @@ int primeraFilaViva (toroide t){
             resultado = i;
             resp = true;
         }
-        i++;
+        i ++;
     }
     return resultado;
 }
@@ -110,13 +117,13 @@ int primeraFilaViva (toroide t){
 int ultimaFilaViva (toroide t){
     int resultado = -1;
     bool resp = false;
-    int i = cantFilas(t)-1;
-    while (i>=0 && !resp ){
+    int i = cantFilas(t) - 1;
+    while (i >= 0 && !resp ){
         if (filaTieneViva(t[i])){
             resultado = i;
             resp = true;
         }
-        i--;
+        i --;
     }
     return resultado;
 }
@@ -125,63 +132,36 @@ int primeraColumnaViva(toroide t){
     int result = -1;
     bool resp = false;
     int j = 0;
-    while (j<t.size() && !resp ){
-        for (int i = 0; i < cantFilas(t)  ; ++ i){
+    while (j < cantFilas(t) && !resp ){
+        for (int i = 0; i < cantFilas(t); i ++){
             if (t[i][j]){
                 result = j;
                 resp = true;
             }
         }
-        j++;
+        j ++;
     }
-
     return result;
 }
-/*  for (int j = cantColumnas(t) - 1; j > 0 && !resp ; ++ j){
-       for (int i = 0; i < cantFilas(t) ; ++ i){
-           if (t[i][j]){
-               result = j;
-               resp = true;
-           }
-       }
-   }*/
 
 int ultimaColumnaViva(toroide t){
     int result = -1;
     bool resp = false;
-    int j = cantColumnas(t) -1;
-    while (j>=0 && !resp ){
-        for (int i = 0; i < cantFilas(t)   ; ++ i){
+    int j = cantColumnas(t) - 1;
+    while (j >= 0 && !resp ){
+        for (int i = 0; i < cantFilas(t); i ++){
             if (t[i][j]){
                 result = j;
                 resp = true;
             }
         }
-        j--;
+        j --;
     }
     return result;
 }
-  /*  for (int j = cantColumnas(t) - 1; j > 0 && !resp ; ++ j){
-        for (int i = 0; i < cantFilas(t) ; ++ i){
-            if (t[i][j]){
-                result = j;
-                resp = true;
-            }
-        }
-    }*/
-
-
 
 int areaTotal (const toroide& t){
-    int result = 0;
-    //if (ultimaFilaViva(t)>=0 && ultimaColumnaViva(t)>=0 ){
-        int cantFilasVivas = ultimaFilaViva(t) - primeraFilaViva(t) + 1;
-        int hola = ultimaColumnaViva(t);
-        int chau = primeraColumnaViva(t);
-        int cantColumnasVivas = ultimaColumnaViva(t) - primeraColumnaViva(t) + 1;
-        result = cantFilasVivas * cantColumnasVivas;
-  //  }else{
-   //     result = 0;
- //   }
-    return result;
+    int cantFilasVivas = ultimaFilaViva(t) - primeraFilaViva(t) + 1;
+    int cantColumnasVivas = ultimaColumnaViva(t) - primeraColumnaViva(t) + 1;
+    return cantFilasVivas * cantColumnasVivas;
 }

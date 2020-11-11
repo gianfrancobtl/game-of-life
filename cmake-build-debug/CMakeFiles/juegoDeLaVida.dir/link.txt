@@ -1,3 +1,0 @@
-"D:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\juegoDeLaVida.dir/objects.a
-D:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ar.exe cr CMakeFiles\juegoDeLaVida.dir/objects.a @CMakeFiles\juegoDeLaVida.dir\objects1.rsp
-D:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE -g --coverage -g   -Wl,--whole-archive CMakeFiles\juegoDeLaVida.dir/objects.a -Wl,--no-whole-archive  -o ..\juegoDeLaVida.exe -Wl,--out-implib,..\libjuegoDeLaVida.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\juegoDeLaVida.dir\linklibs.rsp

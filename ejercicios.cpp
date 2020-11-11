@@ -81,7 +81,7 @@ bool primosLejanos(toroide const &t, toroide const &u) {
     while (!toroideMuerto(genericoT) && !toroideMuerto(genericoU) && !resp){
         evolucionToroide(genericoT);
         evolucionToroide(genericoU);
-        if ( genericoT == u || genericoU == t)
+        if (genericoT == u || genericoU == t)
             resp = true;
     }
     return resp;
@@ -124,23 +124,25 @@ toroide fusionar(toroide const &t, toroide const &u) {
 // EJERCICIO 11
 bool vistaTrasladada(toroide const &t, toroide const &u){
     bool resp = false;
-    for (int i = 0; i < cantFilas(t) && !resp ; ++i) {
-        for (int j = 0; j < cantColumnas(t) ; ++j) {
+    int i = 0;
+    while (i < cantFilas(t) && !resp) {
+        for (int j = 0; j < cantColumnas(t); j ++) {
             if (traslacion(t,i,j) == u)
                 resp = true;
         }
+        i ++;
     }
     return resp;
 }
 
 // EJERCICIO 12
-
 int menorSuperficieViva(toroide const &t){
     int resp = areaTotal(t);
-    for (int i = 0; i < t.size() ; ++ i) {
-        for (int j = 0; j < t[0].size() ; ++ j) {
-            if (resp > areaTotal(traslacion(t,i,j)))
-                resp = areaTotal(traslacion(t,i,j));
+    for (int i = 0; i < cantFilas(t); ++ i) {
+        for (int j = 1; j < cantColumnas(t); ++ j) {
+            int areaRectanguloVivo = areaTotal(traslacion(t,i,j));
+            if (areaRectanguloVivo < resp)
+                resp = areaRectanguloVivo;
         }
     }
     return resp;

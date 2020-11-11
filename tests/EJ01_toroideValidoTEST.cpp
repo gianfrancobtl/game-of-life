@@ -57,7 +57,7 @@ TEST(toroideValidoTEST, CincoXCuatro) {
 
 TEST(toroideValidoTEST, FilaMenor) {
     toroide t = { {true, false, false,false},
-                  {false, true, false},
+                  {false, false},
                   {false, false, true, false},
                   {false, false, true, false},
                   {false, true, false, false}
