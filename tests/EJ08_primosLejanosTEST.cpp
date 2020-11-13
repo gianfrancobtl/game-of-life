@@ -45,20 +45,20 @@ TEST(primosLejanosTEST, toroideMuerto){
 
 TEST(esPeriodicoTEST, toroidesGrande ){
     toroide t1 = {
-            {false,false,false, false, false, false, false,false,false,false,false, false},
-            {false,false, false, false, false, true,false,false,false,false,false},
-            {false,false, false, false, false, true,false,false,false,false,false},
-            {false,false, false, false, false, true,false,false,false,false,false},
-            {false,false, false, false, false, false,false,false,false,false,false},
-            {false,true,  true, true,  false, false, false,true,true,true,false},
-            {false,false, false, false, false, false,false,false,false,false,false},
-            {false,false, false, false, false, true,false,false,false,false,false},
-            {false,false, false, false, false, true,false,false,false,false,false},
-            {false,false, false, false, false, true,false,false,false,false,false},
-            {false,false, false, false, false, false ,false,false,false,false,false}
+            {false, false,false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false},
+            {false, true,  true, true, false, false, false, true, true, true, false},
+            {false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, false ,false, false, false, false, false}
     };
     toroide t2 = {
-            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false},
             {false, false, false, false, false, true, false, false, false, false, false},
             {false, false, false, false, false, false, false, false, false, false, false},
             {false, false, false, false, false, true, false, false, false, false, false},

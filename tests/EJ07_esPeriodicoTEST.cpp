@@ -17,11 +17,11 @@ TEST(esPeriodicoTEST, toroideHorizontalPeriodico2){
     EXPECT_EQ(p, 2);
 }
 
-TEST(esPeriodicoTEST, cuadrado ){
+TEST(esPeriodicoTEST, cuadrado){
     toroide t = {
             {false, false, false, false, false},
             {false, false, true, true, false},
-            {false, false,   true, true, false},
+            {false, false, true, true, false},
             {false, false, false, false, false},
             {false, false,false, false, false} };
     int p;
@@ -30,19 +30,19 @@ TEST(esPeriodicoTEST, cuadrado ){
     EXPECT_EQ(p, 1);
 }
 
-TEST(esPeriodicoTEST, OtroCaso ){
+TEST(esPeriodicoTEST, dimensionesGrandes){
     toroide t = {
-            {false,false,false, false, false, false, false,false,false,false,false, false},
-            {false,false, false, false, false, true,false,false,false,false,false},
-            {false,false, false, false, false, true,false,false,false,false,false},
-            {false,false, false, false, false, true,false,false,false,false,false},
-            {false,false, false, false, false, false,false,false,false,false,false},
-            {false,true,  true, true,  false, false, false,true,true,true,false},
-            {false,false, false, false, false, false,false,false,false,false,false},
-            {false,false, false, false, false, true,false,false,false,false,false},
-            {false,false, false, false, false, true,false,false,false,false,false},
-            {false,false, false, false, false, true,false,false,false,false,false},
-            {false,false, false, false, false, false ,false,false,false,false,false}
+            {false, false,false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false},
+            {false, true,  true, true, false, false, false, true, true, true, false},
+            {false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, false ,false, false, false, false, false}
     };
     int p;
     bool res = esPeriodico(t, p);
@@ -50,7 +50,7 @@ TEST(esPeriodicoTEST, OtroCaso ){
     EXPECT_EQ(p, 2);
 }
 
-TEST(esPeriodicoTEST, toroideMuere ){
+TEST(esPeriodicoTEST, toroideMuere){
     toroide t = {
             {false, false, false, false, false},
             {false, false, true, false, false},
