@@ -25,8 +25,6 @@ TEST(menorSuperficieVivaTEST, soloUnTrue){
     EXPECT_EQ(res, 1);
 }
 
-
-
 TEST(menorSuperficieVivaTEST, todoTrue){
     toroide t = {
             {true, true, true, true},

@@ -43,3 +43,17 @@ TEST(posicionesVivasTEST, toroideVivoCompletamente){
     vector<posicion> res = posicionesVivas(t);
     EXPECT_EQ(ordenar(vivas), ordenar(res));
 }
+
+TEST(posicionesVivasTEST, vivasLasPuntas){
+    toroide t = {
+            {true,  false, false},
+            {false, false, false},
+            {false, false, false},
+            {false, false, false},
+            {false, false, false},
+            {false, false, true}};
+
+    vector<posicion> vivas = {mp(0,0), mp(5,2)};
+    vector<posicion> res = posicionesVivas(t);
+    EXPECT_EQ(ordenar(vivas), ordenar(res));
+}

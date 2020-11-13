@@ -37,12 +37,13 @@ TEST(esPeriodicoTEST, OtroCaso ){
             {false,false, false, false, false, true,false,false,false,false,false},
             {false,false, false, false, false, true,false,false,false,false,false},
             {false,false, false, false, false, false,false,false,false,false,false},
-            {false,true,   true, true,  false, false, false,true,true,true,false},
+            {false,true,  true, true,  false, false, false,true,true,true,false},
             {false,false, false, false, false, false,false,false,false,false,false},
             {false,false, false, false, false, true,false,false,false,false,false},
             {false,false, false, false, false, true,false,false,false,false,false},
             {false,false, false, false, false, true,false,false,false,false,false},
-            {false,false, false, false, false, false ,false,false,false,false,false}};
+            {false,false, false, false, false, false ,false,false,false,false,false}
+    };
     int p;
     bool res = esPeriodico(t, p);
     EXPECT_TRUE(res);
@@ -53,9 +54,10 @@ TEST(esPeriodicoTEST, toroideMuere ){
     toroide t = {
             {false, false, false, false, false},
             {false, false, true, false, false},
-            {false, false,   false, true, false},
+            {false, false, false, true, false},
             {false, false, false, false, false},
-            {false, false,false, false, false} };
+            {false, false,false, false, false}
+    };
     int p;
     bool res = esPeriodico(t, p);
     EXPECT_FALSE(res);

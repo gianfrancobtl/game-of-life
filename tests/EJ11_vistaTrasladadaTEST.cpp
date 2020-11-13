@@ -43,3 +43,16 @@ TEST(vistaTrasladadaTEST, movido){
     bool res = vistaTrasladada(t1, t2);
     EXPECT_TRUE(res);
 }
+
+TEST(vistaTrasladadaTEST, mismaPosicion){
+    toroide t1 = {
+            {false, false, false},
+            {false, false, false},
+            {false, false, true}};
+    toroide t2 = {
+            {false, false, false},
+            {false, false, false},
+            {false, false, true}};
+    bool res = vistaTrasladada(t1, t2);
+    EXPECT_TRUE(res);
+}

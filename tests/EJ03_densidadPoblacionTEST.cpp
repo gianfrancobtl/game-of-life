@@ -24,3 +24,13 @@ TEST(densidadPoblacionTEST, toroideMuerto){
     toroide t = { a, b, c };
     EXPECT_NEAR(densidadPoblacion(t), 0, 0.01);
 }
+
+TEST(densidadPoblacionTEST, unaViva){
+    vector<bool> a = { false, false, false, false };
+    vector<bool> b = { false, false, false, false };
+    vector<bool> c = { false, false, false, false };
+    vector<bool> d = { false, false, false, false };
+    vector<bool> e = { false, false, false, true };
+    toroide t = { a, b, c, d, e };
+    EXPECT_NEAR(densidadPoblacion(t), 0.05, 0.01);
+}

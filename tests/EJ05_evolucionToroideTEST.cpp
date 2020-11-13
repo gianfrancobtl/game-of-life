@@ -50,11 +50,15 @@ TEST(evolucionToroideTEST, toroideMUERTO){
 }
 
 TEST(evolucionToroideTEST, toroideNORMAL){
-    toroide t = {{true, false, false, true}, {false, false, false, true}, {true,true, true, false}, {false,false, false,
-                                                                                                      false}};
+    toroide t = {{true, false, false, true},
+                 {false, false, false, true},
+                 {true, true, true, false},
+                 {false, false, false, false}};
 
-    toroide evo_t = { {true, false, false, true}, {false, false, false, false}, {true,true, true, true}, {false,false, true,
-                                           false} };
+    toroide evo_t = { {true, false, false, true},
+                      {false, false, false, false},
+                      {true, true, true, true},
+                      {false, false, true, false} };
     evolucionToroide(t);
     EXPECT_EQ(t, evo_t);
 }

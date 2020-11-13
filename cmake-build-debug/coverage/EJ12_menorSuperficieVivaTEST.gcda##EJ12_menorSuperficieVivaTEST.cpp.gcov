@@ -1,0 +1,199 @@
+        -:    0:Source:/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/tests/EJ12_menorSuperficieVivaTEST.cpp
+        -:    0:Graph:/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.gcno
+        -:    0:Data:/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "../ejercicios.h"
+        -:    2:#include "gtest/gtest.h"
+        -:    3:
+        -:    4:using namespace std;
+        -:    5:
+        7:    6:TEST(menorSuperficieVivaTEST, enunciado){
+        1:    6-block  0
+        1:    6-block  1
+        1:    6-block  2
+        1:    6-block  3
+        1:    6-block  4
+        1:    6-block  5
+        1:    6-block  6
+    $$$$$:    6-block  7
+    $$$$$:    6-block  8
+    $$$$$:    6-block  9
+    $$$$$:    6-block 10
+    $$$$$:    6-block 11
+    $$$$$:    6-block 12
+        1:    6-block 13
+        1:    6-block 14
+        1:    6-block 15
+        1:    6-block 16
+        1:    6-block 17
+        1:    6-block 18
+        1:    6-block 19
+        1:    6-block 20
+        4:    7:    toroide t = {
+        1:    7-block  0
+        1:    7-block  1
+        4:    7-block  2
+    $$$$$:    7-block  3
+    $$$$$:    7-block  4
+    $$$$$:    7-block  5
+    $$$$$:    7-block  6
+    $$$$$:    7-block  7
+    $$$$$:    7-block  8
+    $$$$$:    7-block  9
+        1:    8:            {true, false, false, true},   // 1
+        1:    8-block  0
+        1:    9:            {false, false, false, false}, // 2
+        1:    9-block  0
+        1:   10:            {false, false, false, false}, // 3
+        1:   10-block  0
+        1:   11:            {true, true, false, false}};  // 4
+        1:   11-block  0
+        -:   12:
+        1:   13:    int res = menorSuperficieViva(t);
+        1:   13-block  0
+        1:   14:    EXPECT_EQ(res, 6);
+        1:   14-block  0
+        1:   14-block  1
+        1:   14-block  2
+        1:   14-block  3
+    $$$$$:   14-block  4
+    $$$$$:   14-block  5
+    $$$$$:   14-block  6
+    $$$$$:   14-block  7
+    $$$$$:   14-block  8
+    $$$$$:   14-block  9
+    $$$$$:   14-block 10
+    $$$$$:   14-block 11
+        1:   15:}
+    $$$$$:   15-block  0
+    $$$$$:   15-block  1
+    $$$$$:   15-block  2
+        1:   15-block  3
+    $$$$$:   15-block  4
+        -:   16:
+        7:   17:TEST(menorSuperficieVivaTEST, soloUnTrue){
+        1:   17-block  0
+        1:   17-block  1
+        1:   17-block  2
+        1:   17-block  3
+        1:   17-block  4
+        1:   17-block  5
+        1:   17-block  6
+    $$$$$:   17-block  7
+    $$$$$:   17-block  8
+    $$$$$:   17-block  9
+    $$$$$:   17-block 10
+    $$$$$:   17-block 11
+    $$$$$:   17-block 12
+        1:   17-block 13
+        1:   17-block 14
+        1:   17-block 15
+        1:   17-block 16
+        1:   17-block 17
+        1:   17-block 18
+        1:   17-block 19
+        1:   17-block 20
+        4:   18:    toroide t = {
+        1:   18-block  0
+        1:   18-block  1
+        4:   18-block  2
+    $$$$$:   18-block  3
+    $$$$$:   18-block  4
+    $$$$$:   18-block  5
+    $$$$$:   18-block  6
+    $$$$$:   18-block  7
+    $$$$$:   18-block  8
+    $$$$$:   18-block  9
+        1:   19:            {false, false, false, false},   // 1
+        1:   19-block  0
+        1:   20:            {false, false, false, false}, // 2
+        1:   20-block  0
+        1:   21:            {false, true, false, false}, // 3
+        1:   21-block  0
+        1:   22:            {false, false, false, false}};  // 4
+        1:   22-block  0
+        -:   23:
+        1:   24:    int res = menorSuperficieViva(t);
+        1:   24-block  0
+        1:   25:    EXPECT_EQ(res, 1);
+        1:   25-block  0
+        1:   25-block  1
+        1:   25-block  2
+        1:   25-block  3
+    $$$$$:   25-block  4
+    $$$$$:   25-block  5
+    $$$$$:   25-block  6
+    $$$$$:   25-block  7
+    $$$$$:   25-block  8
+    $$$$$:   25-block  9
+    $$$$$:   25-block 10
+    $$$$$:   25-block 11
+        1:   26:}
+    $$$$$:   26-block  0
+    $$$$$:   26-block  1
+    $$$$$:   26-block  2
+        1:   26-block  3
+    $$$$$:   26-block  4
+        -:   27:
+        7:   28:TEST(menorSuperficieVivaTEST, todoTrue){
+        1:   28-block  0
+        1:   28-block  1
+        1:   28-block  2
+        1:   28-block  3
+        1:   28-block  4
+        1:   28-block  5
+        1:   28-block  6
+    $$$$$:   28-block  7
+    $$$$$:   28-block  8
+    $$$$$:   28-block  9
+    $$$$$:   28-block 10
+    $$$$$:   28-block 11
+    $$$$$:   28-block 12
+        1:   28-block 13
+        1:   28-block 14
+        1:   28-block 15
+        1:   28-block 16
+        1:   28-block 17
+        1:   28-block 18
+        1:   28-block 19
+        1:   28-block 20
+        3:   29:    toroide t = {
+        1:   29-block  0
+        1:   29-block  1
+        3:   29-block  2
+    $$$$$:   29-block  3
+    $$$$$:   29-block  4
+    $$$$$:   29-block  5
+    $$$$$:   29-block  6
+    $$$$$:   29-block  7
+    $$$$$:   29-block  8
+    $$$$$:   29-block  9
+        1:   30:            {true, true, true, true},
+        1:   30-block  0
+        1:   31:            {true, true, true, true},
+        1:   31-block  0
+        1:   32:            {true, true, true, true}};
+        1:   32-block  0
+        -:   33:
+        1:   34:    int res = menorSuperficieViva(t);
+        1:   34-block  0
+        1:   35:    EXPECT_EQ(res, 12);
+        1:   35-block  0
+        1:   35-block  1
+        1:   35-block  2
+        1:   35-block  3
+    $$$$$:   35-block  4
+    $$$$$:   35-block  5
+    $$$$$:   35-block  6
+    $$$$$:   35-block  7
+    $$$$$:   35-block  8
+    $$$$$:   35-block  9
+    $$$$$:   35-block 10
+    $$$$$:   35-block 11
+        1:   36:}
+    $$$$$:   36-block  0
+    $$$$$:   36-block  1
+    $$$$$:   36-block  2
+        1:   36-block  3
+    $$$$$:   36-block  4
