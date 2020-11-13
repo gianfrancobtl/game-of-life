@@ -24,6 +24,8 @@ TEST(seleccionNaturalTEST, toroideDiagonalVsUnoVivo){
     EXPECT_EQ(res, 0);
 }
 
+// Borramos el test propuesto "DiagonalVSHorizontal porque no cumplía con la especificación".
+
 TEST(seleccionNaturalTEST, muerenALaVez){
     toroide t1 = {
             {true, false, false},
