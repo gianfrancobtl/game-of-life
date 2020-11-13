@@ -1,0 +1,17 @@
+        -:    0:Source:/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/main.cpp
+        -:    0:Graph:/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/main.gcno
+        -:    0:Data:/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/main.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:// MAIN del Trabajo Practico de Implementacion
+        -:    2:#include <iostream>
+        -:    3:#include "gtest/gtest.h"
+        -:    4:
+        -:    5:using namespace std;
+        1:    6:int main(int argc, char **argv) {
+        1:    6-block  0
+        1:    7:    std::cout << "Implementando TPI!!" << std::endl;
+        1:    8:    ::testing::InitGoogleTest(&argc, argv);
+        1:    9:    return RUN_ALL_TESTS();
+        1:    9-block  0
+        -:   10:}

@@ -35,8 +35,28 @@
   <component name="ChangeListManager">
     <list default="true" id="5889e343-57c2-439e-af30-dbb338809fc2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/ejercicios.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/main.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/main.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ01_toroideValidoTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ02_posicionesVivasTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ03_densidadPoblacionTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ04_evolucionDePosicionTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ05_evolucionToroideTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ06_evolucionMultipleTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ07_esPeriodicoTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ08_primosLejanosTEST.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ09_seleccionNaturalTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ10_fusionarTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ11_vistaTrasladadaTEST.gcda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ12_menorSuperficieVivaTEST.gcda" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejercicios.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicios.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/juegoDeLaVida" beforeDir="false" afterPath="$PROJECT_DIR$/juegoDeLaVida" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EJ08_primosLejanosTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EJ08_primosLejanosTEST.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +108,7 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="primosLejanosTEST.toroideMuerto" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="primosLejanosTEST" TEST_METHOD="toroideMuerto" TEST_MODE="SUITE_TEST">
+    <configuration name="primosLejanosTEST.DosPeriodico2" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="primosLejanosTEST" TEST_METHOD="DosPeriodico2" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -137,19 +157,19 @@
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
       <item itemvalue="Google Test.juegoDeLaVida" />
-      <item itemvalue="Google Test.primosLejanosTEST.toroideMuerto" />
       <item itemvalue="Google Test.esPeriodicoTEST.toroidesGrande" />
       <item itemvalue="Google Test.menorSuperficieVivaTEST.toroideMuerto" />
       <item itemvalue="Google Test.vistaTrasladadaTEST.mismaPosicion" />
       <item itemvalue="Google Test.seleccionNaturalTEST.unoQueTarda" />
+      <item itemvalue="Google Test.primosLejanosTEST.DosPeriodico2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.primosLejanosTEST.DosPeriodico2" />
         <item itemvalue="Google Test.seleccionNaturalTEST.unoQueTarda" />
         <item itemvalue="Google Test.vistaTrasladadaTEST.mismaPosicion" />
         <item itemvalue="Google Test.menorSuperficieVivaTEST.toroideMuerto" />
         <item itemvalue="Google Test.esPeriodicoTEST.toroidesGrande" />
-        <item itemvalue="Google Test.primosLejanosTEST.toroideMuerto" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +197,7 @@
       <workItem from="1605043837189" duration="1239000" />
       <workItem from="1605051677786" duration="1664000" />
       <workItem from="1605224561723" duration="2512000" />
-      <workItem from="1605233744232" duration="888000" />
+      <workItem from="1605233744232" duration="2624000" />
     </task>
     <servers />
   </component>
@@ -210,45 +230,49 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1149" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604982807367" />
-    <state width="1398" height="243" key="GridCell.Tab.0.bottom" timestamp="1605234664075">
+    <state width="1398" height="312" key="GridCell.Tab.0.bottom" timestamp="1605236199775">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="243" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605234664075" />
+    <state width="1398" height="312" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605236199775" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
     <state width="1398" height="252" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1605226033767" />
-    <state width="1398" height="243" key="GridCell.Tab.0.center" timestamp="1605234664074">
+    <state width="1398" height="312" key="GridCell.Tab.0.center" timestamp="1605236199774">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="243" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605234664074" />
+    <state width="1398" height="312" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605236199774" />
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
     <state width="1398" height="252" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1605226033766" />
-    <state width="1398" height="243" key="GridCell.Tab.0.left" timestamp="1605234664073">
+    <state width="1398" height="312" key="GridCell.Tab.0.left" timestamp="1605236199773">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="243" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605234664073" />
+    <state width="1398" height="312" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605236199773" />
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
     <state width="1398" height="252" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1605226033766" />
-    <state width="1398" height="243" key="GridCell.Tab.0.right" timestamp="1605234664074">
+    <state width="1398" height="312" key="GridCell.Tab.0.right" timestamp="1605236199774">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="243" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605234664074" />
+    <state width="1398" height="312" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605236199774" />
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
     <state width="1398" height="252" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1605226033767" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1605045082974">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="312" key="GridCell.Tab.1.bottom" timestamp="1605236208493">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="312" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605236208493" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1605045082974">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="312" key="GridCell.Tab.1.center" timestamp="1605236208492">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="312" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1605236208492" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1605045082974">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="312" key="GridCell.Tab.1.left" timestamp="1605236208491">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="312" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1605236208491" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1605045082974">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="312" key="GridCell.Tab.1.right" timestamp="1605236208493">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="312" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1605236208493" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1604981152390">
       <screen x="0" y="0" width="1920" height="1040" />

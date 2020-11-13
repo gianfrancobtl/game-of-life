@@ -34,7 +34,6 @@ bool evolucionDePosicion(toroide const &t, posicion x) {
     bool resp = false;
     if ((estaViva(t, x) && (cantVecinosVivos(t, x) == 2 || cantVecinosVivos(t, x) == 3)) || (!estaViva(t, x) && cantVecinosVivos(t, x) == 3))
         resp = true;
-
     return resp;
 }
 
@@ -75,11 +74,15 @@ bool primosLejanos(toroide const &t, toroide const &u) {
     bool resp = false;
     toroide genericoT = t;
     toroide genericoU = u;
-    while (!toroideMuerto(genericoT) && !toroideMuerto(genericoU) && !resp){
-        evolucionToroide(genericoT);
-        evolucionToroide(genericoU);
-        if (genericoT == u || genericoU == t)
-            resp = true;
+    int p = 0;
+    if (esPeriodico(t, p) || !esPeriodico(t, p)){
+        while (!resp && p > 0){
+            evolucionToroide(genericoT);
+            evolucionToroide(genericoU);
+            if (genericoT == u || genericoU == t)
+                resp = true;
+            p --;
+        }
     }
     return resp;
 }

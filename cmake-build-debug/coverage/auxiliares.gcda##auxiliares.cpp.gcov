@@ -1,0 +1,317 @@
+        -:    0:Source:/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/auxiliares.cpp
+        -:    0:Graph:/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.gcno
+        -:    0:Data:/Users/gianbattolla/Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/auxiliares.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "definiciones.h"
+        -:    2:#include "auxiliares.h"
+        -:    3:
+        -:    4:using namespace std;
+        -:    5:
+        -:    6:// GENERALES
+     2639:    7:pair<int,int> mp(int a, int b) {
+     2639:    7-block  0
+     2639:    8:    return make_pair(a, b);
+     2639:    8-block  0
+        -:    9:}
+        -:   10:
+        8:   11:vector<posicion> ordenar(vector<posicion> &v) {
+        8:   11-block  0
+        8:   12:    sort(v.begin(), v.end());
+        8:   13:    return v;
+        8:   13-block  0
+        -:   14:}
+        -:   15:
+    47911:   16:int cantFilas (vector<vector<bool>> const &t){
+    47911:   16-block  0
+    47911:   17:    int size = t.size();
+    47911:   18:    return size;
+    47911:   18-block  0
+        -:   19:}
+        -:   20:
+    51272:   21:int cantColumnas (vector<vector<bool>> const &t){
+    51272:   21-block  0
+    51272:   22:    return t[0].size();
+    51272:   22-block  0
+        -:   23:}
+        -:   24:
+    23038:   25:int filaToroide (toroide const &t, int f, int i){
+    23038:   25-block  0
+    23038:   26:    return (f + i + cantFilas(t)) % cantFilas(t);
+    23038:   26-block  0
+        -:   27:}
+        -:   28:
+    23038:   29:int columnaToroide (toroide const &t, int c, int j){
+    23038:   29-block  0
+    23038:   30:    return (c + j + cantColumnas(t)) % cantColumnas(t);
+    23038:   30-block  0
+        -:   31:}
+        -:   32:
+        -:   33:// EJERCICIO 1
+        4:   34:bool esRectangulo (toroide const &t){
+        4:   34-block  0
+        4:   35:    int longEsperadaFilas = cantColumnas(t);
+        4:   36:    bool esRectangulo = true;
+       16:   37:    for (int i = 1; i < cantFilas(t); i ++){
+        4:   37-block  0
+       16:   37-block  1
+       12:   37-block  2
+       12:   38:        if (t[i].size() != longEsperadaFilas)
+       12:   38-block  0
+        2:   39:            esRectangulo = false;
+        2:   39-block  0
+       12:   40:    }
+       12:   40-block  0
+        4:   41:    return esRectangulo;
+        4:   41-block  0
+        -:   42:}
+        -:   43:
+        -:   44:// EJERCICIO 4
+     5078:   45:bool estaViva(toroide const &t, posicion x){
+     5078:   45-block  0
+     5078:   46:    return t[x.first][x.second];
+     5078:   46-block  0
+        -:   47:}
+        -:   48:
+    22384:   49:bool posVecinaViva(toroide const &t, int f, int c, int i, int j){
+    22384:   49-block  0
+    22384:   50:    return (t[filaToroide (t, f, i)][columnaToroide (t, c, j)]);
+    22384:   50-block  0
+        -:   51:}
+        -:   52:
+     2798:   53:int cantVecinosVivos (toroide const &t, posicion x){
+     2798:   53-block  0
+     2798:   54:    int cantVecinosVivos = 0;
+     2798:   55:    int f = x.first;
+     2798:   56:    int c = x.second;
+    11192:   57:    for (int i = - 1; i <= 1; i ++){
+     2798:   57-block  0
+    11192:   57-block  1
+     8394:   57-block  2
+    33576:   58:        for (int j = - 1; j <= 1; j ++){
+     8394:   58-block  0
+    33576:   58-block  1
+    25182:   58-block  2
+    25182:   59:            if ((i != 0 || j != 0) && posVecinaViva(t, f, c, i, j))
+    25182:   59-block  0
+     8394:   59-block  1
+    22384:   59-block  2
+     2887:   60:                cantVecinosVivos += 1;
+     2887:   60-block  0
+    25182:   61:        }
+    25182:   61-block  0
+     8394:   62:    }
+     8394:   62-block  0
+     2798:   63:    return cantVecinosVivos;
+     2798:   63-block  0
+        -:   64:}
+        -:   65:
+        -:   66:// EJERCICIO 7
+       62:   67:bool toroideMuerto (toroide const &t){
+       62:   67-block  0
+       62:   68:    bool estaMuerto = true;
+       62:   69:    int i = 0;
+      246:   70:    while (i < cantFilas(t) && estaMuerto) {
+       62:   70-block  0
+      246:   70-block  1
+      229:   70-block  2
+      246:   70-block  3
+      184:   70-block  4
+      184:   71:        int j = 0;
+     1095:   72:        while (j < cantColumnas(t) && estaMuerto) {
+      184:   72-block  0
+     1095:   72-block  1
+      956:   72-block  2
+     1095:   72-block  3
+      911:   72-block  4
+      911:   73:            if (t[i][j])
+      911:   73-block  0
+       45:   74:                estaMuerto = false;
+       45:   74-block  0
+      911:   75:            j ++;
+        -:   76:        }
+      184:   77:        i ++;
+        -:   78:    }
+       62:   79:    return estaMuerto;
+       62:   79-block  0
+        -:   80:}
+        -:   81:
+        -:   82://EJERCICIOS 11
+       51:   83:toroide traslacion(toroide t, int f , int c ){
+       51:   83-block  0
+       51:   84:    toroide trasladado = t;
+      228:   85:    for (int i = 0; i < cantFilas(t); i ++) {
+       51:   85-block  0
+      228:   85-block  1
+      228:   85-block  2
+      177:   85-block  3
+      831:   86:        for (int j = 0; j < cantColumnas(t); j ++) {
+      177:   86-block  0
+      831:   86-block  1
+      831:   86-block  2
+      654:   86-block  3
+      654:   87:            trasladado[filaToroide(t, f, i)][columnaToroide(t, c, j)] = t[i][j];
+      654:   87-block  0
+      654:   87-block  1
+      654:   87-block  2
+      654:   87-block  3
+      654:   88:        }
+      654:   88-block  0
+      177:   89:    }
+      177:   89-block  0
+       51:   90:    return trasladado;
+       51:   91:}
+    $$$$$:   91-block  0
+       51:   91-block  1
+    $$$$$:   91-block  2
+       51:   91-block  3
+    $$$$$:   91-block  4
+        -:   92:
+        -:   93://EJERCICIO 12
+      129:   94:bool filaTieneViva (vector<bool> n){
+      129:   95:    bool resp = false;
+      129:   95-block  0
+      645:   96:    for (int i = 0; i < n.size(); i ++){
+      129:   96-block  0
+      645:   96-block  1
+      516:   96-block  2
+      516:   97:        if (n[i])
+      516:   97-block  0
+      158:   98:            resp = true;
+      158:   98-block  0
+      516:   99:    }
+      516:   99-block  0
+      129:  100:    return resp;
+      129:  100-block  0
+        -:  101:}
+        -:  102:
+       36:  103:int primeraFilaViva (toroide t){
+       36:  104:    int resultado = -1;
+       36:  104-block  0
+       36:  105:    bool resp = false;
+       36:  106:    int i = 0;
+      101:  107:    while (i < cantFilas(t) && !resp){
+       36:  107-block  0
+      101:  107-block  1
+       98:  107-block  2
+      101:  107-block  3
+       65:  107-block  4
+       65:  108:        if (filaTieneViva(t[i])){
+       65:  108-block  0
+       65:  108-block  1
+    $$$$$:  108-block  2
+    $$$$$:  108-block  3
+       36:  109:            resultado = i;
+       36:  110:            resp = true;
+       36:  111:        }
+       36:  111-block  0
+       65:  112:        i ++;
+        -:  113:    }
+       36:  114:    return resultado;
+       36:  114-block  0
+    #####:  115:}
+        -:  116:
+       36:  117:int ultimaFilaViva (toroide t){
+       36:  118:    int resultado = -1;
+       36:  118-block  0
+       36:  119:    bool resp = false;
+       36:  120:    int i = cantFilas(t) - 1;
+      100:  121:    while (i >= 0 && !resp ){
+       36:  121-block  0
+      100:  121-block  1
+       97:  121-block  2
+      100:  121-block  3
+       64:  121-block  4
+       64:  122:        if (filaTieneViva(t[i])){
+       64:  122-block  0
+       64:  122-block  1
+    $$$$$:  122-block  2
+    $$$$$:  122-block  3
+       36:  123:            resultado = i;
+       36:  124:            resp = true;
+       36:  125:        }
+       36:  125-block  0
+       64:  126:        i --;
+        -:  127:    }
+       36:  128:    return resultado;
+       36:  128-block  0
+    #####:  129:}
+        -:  130:
+       36:  131:int primeraColumnaViva(toroide t){
+       36:  132:    int result = -1;
+       36:  132-block  0
+       36:  133:    bool resp = false;
+       36:  134:    int j = 0;
+       97:  135:    while (j < cantFilas(t) && !resp ){
+       36:  135-block  0
+       97:  135-block  1
+       93:  135-block  2
+       97:  135-block  3
+       61:  135-block  4
+      295:  136:        for (int i = 0; i < cantFilas(t); i ++){
+       61:  136-block  0
+      295:  136-block  1
+      234:  136-block  2
+      234:  137:            if (t[i][j]){
+      234:  137-block  0
+       57:  138:                result = j;
+       57:  139:                resp = true;
+       57:  140:            }
+       57:  140-block  0
+      234:  141:        }
+      234:  141-block  0
+       61:  142:        j ++;
+        -:  143:    }
+       36:  144:    return result;
+       36:  144-block  0
+        -:  145:}
+        -:  146:
+       36:  147:int ultimaColumnaViva(toroide t){
+       36:  148:    int result = -1;
+       36:  148-block  0
+       36:  149:    bool resp = false;
+       36:  150:    int j = cantColumnas(t) - 1;
+       94:  151:    while (j >= 0 && !resp ){
+       36:  151-block  0
+       94:  151-block  1
+       90:  151-block  2
+       94:  151-block  3
+       58:  151-block  4
+      280:  152:        for (int i = 0; i < cantFilas(t); i ++){
+       58:  152-block  0
+      280:  152-block  1
+      222:  152-block  2
+      222:  153:            if (t[i][j]){
+      222:  153-block  0
+       60:  154:                result = j;
+       60:  155:                resp = true;
+       60:  156:            }
+       60:  156-block  0
+      222:  157:        }
+      222:  157-block  0
+       58:  158:        j --;
+        -:  159:    }
+       36:  160:    return result;
+       36:  160-block  0
+        -:  161:}
+        -:  162:
+       36:  163:int areaTotal (const toroide& t){
+       36:  163-block  0
+       36:  164:    int cantFilasVivas = ultimaFilaViva(t) - primeraFilaViva(t) + 1;
+       36:  164-block  0
+       36:  164-block  1
+       36:  164-block  2
+    $$$$$:  164-block  3
+    $$$$$:  164-block  4
+    $$$$$:  164-block  5
+       36:  165:    int cantColumnasVivas = ultimaColumnaViva(t) - primeraColumnaViva(t) + 1;
+       36:  165-block  0
+       36:  165-block  1
+       36:  165-block  2
+    $$$$$:  165-block  3
+    $$$$$:  165-block  4
+       36:  166:    return cantFilasVivas * cantColumnasVivas;
+       36:  166-block  0
+    #####:  167:}
+    $$$$$:  167-block  0
+    $$$$$:  167-block  1
