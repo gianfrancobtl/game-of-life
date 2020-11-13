@@ -255,9 +255,9 @@
         -:  250:    static _LIBCPP_CONSTEXPR_AFTER_CXX14
         -:  251:    int compare(const char_type* __s1, const char_type* __s2, size_t __n) _NOEXCEPT;
         -:  252:    static inline size_t _LIBCPP_CONSTEXPR_AFTER_CXX14
-      415:  253:    length(const char_type* __s)  _NOEXCEPT {return __builtin_strlen(__s);}
-      415:  253-block  0
-      415:  253-block  1
+      427:  253:    length(const char_type* __s)  _NOEXCEPT {return __builtin_strlen(__s);}
+      427:  253-block  0
+      427:  253-block  1
         -:  254:    static _LIBCPP_CONSTEXPR_AFTER_CXX14
         -:  255:    const char_type* find(const char_type* __s, size_t __n, const char_type& __a) _NOEXCEPT;
         -:  256:    static inline _LIBCPP_CONSTEXPR_AFTER_CXX17_WITH_IS_CONSTANT_EVALUATED
@@ -289,14 +289,14 @@
         -:  282:        {return char_type(__c);}
         -:  283:    static inline _LIBCPP_CONSTEXPR int_type to_int_type(char_type __c) _NOEXCEPT
         -:  284:        {return int_type((unsigned char)__c);}
-      492:  285:    static inline _LIBCPP_CONSTEXPR bool eq_int_type(int_type __c1, int_type __c2) _NOEXCEPT
-      492:  285-block  0
-      492:  286:        {return __c1 == __c2;}
-      492:  286-block  0
-      625:  287:    static inline _LIBCPP_CONSTEXPR int_type  eof() _NOEXCEPT
-      625:  288:        {return int_type(EOF);}
-      625:  288-block  0
-      625:  288-block  1
+      494:  285:    static inline _LIBCPP_CONSTEXPR bool eq_int_type(int_type __c1, int_type __c2) _NOEXCEPT
+      494:  285-block  0
+      494:  286:        {return __c1 == __c2;}
+      494:  286-block  0
+      629:  287:    static inline _LIBCPP_CONSTEXPR int_type  eof() _NOEXCEPT
+      629:  288:        {return int_type(EOF);}
+      629:  288-block  0
+      629:  288-block  1
         -:  289:};
         -:  290:
         -:  291:inline _LIBCPP_CONSTEXPR_AFTER_CXX14

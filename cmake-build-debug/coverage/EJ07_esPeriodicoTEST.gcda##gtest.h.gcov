@@ -1458,21 +1458,21 @@
         -: 1423:
         -: 1424:// The helper function for {ASSERT|EXPECT}_EQ.
         -: 1425:template <typename T1, typename T2>
-       10: 1426:AssertionResult CmpHelperEQ(const char* lhs_expression,
-       10: 1426-block  0
+       11: 1426:AssertionResult CmpHelperEQ(const char* lhs_expression,
+       11: 1426-block  0
         -: 1427:                            const char* rhs_expression,
         -: 1428:                            const T1& lhs,
         -: 1429:                            const T2& rhs) {
-       10: 1430:  if (lhs == rhs) {
-       10: 1430-block  0
-       10: 1431:    return AssertionSuccess();
-       10: 1431-block  0
+       11: 1430:  if (lhs == rhs) {
+       11: 1430-block  0
+       11: 1431:    return AssertionSuccess();
+       11: 1431-block  0
         -: 1432:  }
         -: 1433:
     #####: 1434:  return CmpHelperEQFailure(lhs_expression, rhs_expression, lhs, rhs);
     $$$$$: 1434-block  0
-       10: 1435:}
-       10: 1435-block  0
+       11: 1435:}
+       11: 1435-block  0
         -: 1436:
         -: 1437:// With this overloaded version, we allow anonymous enums to be used
         -: 1438:// in {ASSERT|EXPECT}_EQ when compiled with gcc 4, as anonymous enums
@@ -1491,13 +1491,13 @@
         -: 1451: public:
         -: 1452:  // This templatized version is for the general case.
         -: 1453:  template <typename T1, typename T2>
-       10: 1454:  static AssertionResult Compare(const char* lhs_expression,
-       10: 1454-block  0
+       11: 1454:  static AssertionResult Compare(const char* lhs_expression,
+       11: 1454-block  0
         -: 1455:                                 const char* rhs_expression,
         -: 1456:                                 const T1& lhs,
         -: 1457:                                 const T2& rhs) {
-       10: 1458:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
-       10: 1458-block  0
+       11: 1458:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
+       11: 1458-block  0
         -: 1459:  }
         -: 1460:
         -: 1461:  // With this overloaded version, we allow anonymous enums to be used

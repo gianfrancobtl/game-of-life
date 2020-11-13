@@ -92,7 +92,7 @@
         1:   18-block  6
     $$$$$:   18-block  7
         -:   19:
-        7:   20:TEST(esPeriodicoTEST, cuadrado ){
+        7:   20:TEST(esPeriodicoTEST, cuadrado){
         1:   20-block  0
         1:   20-block  1
         1:   20-block  2
@@ -129,11 +129,11 @@
         1:   22-block  0
         1:   23:            {false, false, true, true, false},
         1:   23-block  0
-        1:   24:            {false, false,   true, true, false},
+        1:   24:            {false, false, true, true, false},
         1:   24-block  0
         1:   25:            {false, false, false, false, false},
         1:   25-block  0
-        1:   26:            {false, false,false, false, false} };
+        1:   26:            {false, false, false, false, false} };
         1:   26-block  0
         -:   27:    int p;
         1:   28:    bool res = esPeriodico(t, p);
@@ -175,7 +175,7 @@
         1:   31-block  6
     $$$$$:   31-block  7
         -:   32:
-        7:   33:TEST(esPeriodicoTEST, OtroCaso ){
+        7:   33:TEST(esPeriodicoTEST, dimensionesGrandes){
         1:   33-block  0
         1:   33-block  1
         1:   33-block  2
@@ -208,27 +208,27 @@
     $$$$$:   34-block  7
     $$$$$:   34-block  8
     $$$$$:   34-block  9
-        1:   35:            {false,false,false, false, false, false, false,false,false,false,false, false},
+        1:   35:            {false, false,false, false, false, false, false, false, false, false, false},
         1:   35-block  0
-        1:   36:            {false,false, false, false, false, true,false,false,false,false,false},
+        1:   36:            {false, false, false, false, false, true, false, false, false, false, false},
         1:   36-block  0
-        1:   37:            {false,false, false, false, false, true,false,false,false,false,false},
+        1:   37:            {false, false, false, false, false, true, false, false, false, false, false},
         1:   37-block  0
-        1:   38:            {false,false, false, false, false, true,false,false,false,false,false},
+        1:   38:            {false, false, false, false, false, true, false, false, false, false, false},
         1:   38-block  0
-        1:   39:            {false,false, false, false, false, false,false,false,false,false,false},
+        1:   39:            {false, false, false, false, false, false, false, false, false, false, false},
         1:   39-block  0
-        1:   40:            {false,true,  true, true,  false, false, false,true,true,true,false},
+        1:   40:            {false, true,  true, true, false, false, false, true, true, true, false},
         1:   40-block  0
-        1:   41:            {false,false, false, false, false, false,false,false,false,false,false},
+        1:   41:            {false, false, false, false, false, false, false, false, false, false, false},
         1:   41-block  0
-        1:   42:            {false,false, false, false, false, true,false,false,false,false,false},
+        1:   42:            {false, false, false, false, false, true, false, false, false, false, false},
         1:   42-block  0
-        1:   43:            {false,false, false, false, false, true,false,false,false,false,false},
+        1:   43:            {false, false, false, false, false, true, false, false, false, false, false},
         1:   43-block  0
-        1:   44:            {false,false, false, false, false, true,false,false,false,false,false},
+        1:   44:            {false, false, false, false, false, true, false, false, false, false, false},
         1:   44-block  0
-        1:   45:            {false,false, false, false, false, false ,false,false,false,false,false}
+        1:   45:            {false, false, false, false, false, false ,false, false, false, false, false}
         1:   45-block  0
         -:   46:    };
         -:   47:    int p;
@@ -271,7 +271,7 @@
         1:   51-block  6
     $$$$$:   51-block  7
         -:   52:
-        7:   53:TEST(esPeriodicoTEST, toroideMuere ){
+        7:   53:TEST(esPeriodicoTEST, toroideMuere){
         1:   53-block  0
         1:   53-block  1
         1:   53-block  2
@@ -312,10 +312,10 @@
         1:   57-block  0
         1:   58:            {false, false, false, false, false},
         1:   58-block  0
-        1:   59:            {false, false,false, false, false}
+        1:   59:            {false, false, false, false, false}
         1:   59-block  0
         -:   60:    };
-        -:   61:    int p;
+        1:   61:    int p = 1000;
         1:   62:    bool res = esPeriodico(t, p);
         1:   62-block  0
         1:   63:    EXPECT_FALSE(res);
@@ -332,7 +332,7 @@
     $$$$$:   63-block 10
     $$$$$:   63-block 11
     $$$$$:   63-block 12
-        1:   64:    EXPECT_EQ(p, 1);
+        1:   64:    EXPECT_EQ(p, 1000);
         1:   64-block  0
         1:   64-block  1
         1:   64-block  2
@@ -354,3 +354,100 @@
     $$$$$:   65-block  5
         1:   65-block  6
     $$$$$:   65-block  7
+        -:   66:
+        7:   67:TEST(esPeriodicoTEST, toroideMuereEnMasDeUnTick){
+        1:   67-block  0
+        1:   67-block  1
+        1:   67-block  2
+        1:   67-block  3
+        1:   67-block  4
+        1:   67-block  5
+        1:   67-block  6
+    $$$$$:   67-block  7
+    $$$$$:   67-block  8
+    $$$$$:   67-block  9
+    $$$$$:   67-block 10
+    $$$$$:   67-block 11
+    $$$$$:   67-block 12
+        1:   67-block 13
+        1:   67-block 14
+        1:   67-block 15
+        1:   67-block 16
+        1:   67-block 17
+        1:   67-block 18
+        1:   67-block 19
+        1:   67-block 20
+       11:   68:    toroide t = {
+        1:   68-block  0
+        1:   68-block  1
+       11:   68-block  2
+    $$$$$:   68-block  3
+    $$$$$:   68-block  4
+    $$$$$:   68-block  5
+    $$$$$:   68-block  6
+    $$$$$:   68-block  7
+    $$$$$:   68-block  8
+    $$$$$:   68-block  9
+        1:   69:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:   69-block  0
+        1:   70:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:   70-block  0
+        1:   71:            {false, false, false, false, true, false, true, false, false, false, false, false},
+        1:   71-block  0
+        1:   72:            {false, false, false, false, true, false, true, false, false, false, false, false},
+        1:   72-block  0
+        1:   73:            {false, false, false, false, true, true, false, false, false, false, false, false},
+        1:   73-block  0
+        1:   74:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:   74-block  0
+        1:   75:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:   75-block  0
+        1:   76:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:   76-block  0
+        1:   77:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:   77-block  0
+        1:   78:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:   78-block  0
+        1:   79:            {false, false, false, false, false, false, false, false, false, false, false, false}
+        1:   79-block  0
+        -:   80:    };
+        1:   81:    int p = 9;
+        1:   82:    bool res = esPeriodico(t, p);
+        1:   82-block  0
+        1:   83:    EXPECT_FALSE(res);
+        1:   83-block  0
+        1:   83-block  1
+        1:   83-block  2
+        1:   83-block  3
+    $$$$$:   83-block  4
+    $$$$$:   83-block  5
+    $$$$$:   83-block  6
+    $$$$$:   83-block  7
+    $$$$$:   83-block  8
+    $$$$$:   83-block  9
+    $$$$$:   83-block 10
+    $$$$$:   83-block 11
+    $$$$$:   83-block 12
+        1:   84:    EXPECT_EQ(p, 9);
+        1:   84-block  0
+        1:   84-block  1
+        1:   84-block  2
+        1:   84-block  3
+    $$$$$:   84-block  4
+    $$$$$:   84-block  5
+    $$$$$:   84-block  6
+    $$$$$:   84-block  7
+    $$$$$:   84-block  8
+    $$$$$:   84-block  9
+    $$$$$:   84-block 10
+    $$$$$:   84-block 11
+        1:   85:}
+    $$$$$:   85-block  0
+    $$$$$:   85-block  1
+    $$$$$:   85-block  2
+    $$$$$:   85-block  3
+    $$$$$:   85-block  4
+    $$$$$:   85-block  5
+        1:   85-block  6
+    $$$$$:   85-block  7
+        -:   86:

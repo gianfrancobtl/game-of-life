@@ -662,21 +662,25 @@
         -:  657:
         -:  658:template <class _RandIter>
         -:  659:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX14
-        -:  660:void __advance(_RandIter& __i,
+    #####:  660:void __advance(_RandIter& __i,
+    $$$$$:  660-block  0
         -:  661:             typename iterator_traits<_RandIter>::difference_type __n, random_access_iterator_tag)
         -:  662:{
-        -:  663:   __i += __n;
-        -:  664:}
+    #####:  663:   __i += __n;
+    #####:  664:}
+    $$$$$:  664-block  0
         -:  665:
         -:  666:template <class _InputIter>
         -:  667:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX14
-        -:  668:void advance(_InputIter& __i,
+    #####:  668:void advance(_InputIter& __i,
+    $$$$$:  668-block  0
         -:  669:             typename iterator_traits<_InputIter>::difference_type __n)
         -:  670:{
         -:  671:    _LIBCPP_ASSERT(__n >= 0 || __is_cpp17_bidirectional_iterator<_InputIter>::value,
         -:  672:                       "Attempt to advance(it, -n) on a non-bidi iterator");
-        -:  673:    __advance(__i, __n, typename iterator_traits<_InputIter>::iterator_category());
-        -:  674:}
+    #####:  673:    __advance(__i, __n, typename iterator_traits<_InputIter>::iterator_category());
+    #####:  674:}
+    $$$$$:  674-block  0
         -:  675:
         -:  676:template <class _InputIter>
         -:  677:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX14
@@ -692,21 +696,25 @@
         -:  687:template <class _RandIter>
         -:  688:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX14
         -:  689:typename iterator_traits<_RandIter>::difference_type
-     2061:  690:__distance(_RandIter __first, _RandIter __last, random_access_iterator_tag)
-     2061:  690-block  0
+     2331:  690:__distance(_RandIter __first, _RandIter __last, random_access_iterator_tag)
+     2321:  690-block  0
+       10:  690-block  1
         -:  691:{
-     2061:  692:    return __last - __first;
-     2061:  692-block  0
+     2331:  692:    return __last - __first;
+     2321:  692-block  0
+       10:  692-block  1
         -:  693:}
         -:  694:
         -:  695:template <class _InputIter>
         -:  696:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX14
         -:  697:typename iterator_traits<_InputIter>::difference_type
-     2061:  698:distance(_InputIter __first, _InputIter __last)
-     2061:  698-block  0
+     2331:  698:distance(_InputIter __first, _InputIter __last)
+     2321:  698-block  0
+       10:  698-block  1
         -:  699:{
-     2061:  700:    return __distance(__first, __last, typename iterator_traits<_InputIter>::iterator_category());
-     2061:  700-block  0
+     2331:  700:    return __distance(__first, __last, typename iterator_traits<_InputIter>::iterator_category());
+     2321:  700-block  0
+       10:  700-block  1
         -:  701:}
         -:  702:
         -:  703:template <class _InputIter>
@@ -1464,15 +1472,15 @@
         -: 1455:        __get_db()->__erase_i(this);
         -: 1456:    }
         -: 1457:#endif
-      298: 1458:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG reference operator*() const _NOEXCEPT
-      298: 1458-block  0
+      394: 1458:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG reference operator*() const _NOEXCEPT
+      394: 1458-block  0
         -: 1459:    {
         -: 1460:#if _LIBCPP_DEBUG_LEVEL >= 2
         -: 1461:        _LIBCPP_ASSERT(__get_const_db()->__dereferenceable(this),
         -: 1462:                       "Attempted to dereference a non-dereferenceable iterator");
         -: 1463:#endif
-      298: 1464:        return *__i;
-      298: 1464-block  0
+      394: 1464:        return *__i;
+      394: 1464-block  0
         -: 1465:    }
         -: 1466:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG pointer  operator->() const _NOEXCEPT
         -: 1467:    {
@@ -1482,16 +1490,16 @@
         -: 1471:#endif
         -: 1472:        return (pointer)_VSTD::addressof(*__i);
         -: 1473:    }
-      216: 1474:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG __wrap_iter& operator++() _NOEXCEPT
-      216: 1474-block  0
+      288: 1474:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG __wrap_iter& operator++() _NOEXCEPT
+      288: 1474-block  0
         -: 1475:    {
         -: 1476:#if _LIBCPP_DEBUG_LEVEL >= 2
         -: 1477:        _LIBCPP_ASSERT(__get_const_db()->__dereferenceable(this),
         -: 1478:                       "Attempted to increment non-incrementable iterator");
         -: 1479:#endif
-      216: 1480:        ++__i;
-      216: 1481:        return *this;
-      216: 1481-block  0
+      288: 1480:        ++__i;
+      288: 1481:        return *this;
+      288: 1481-block  0
         -: 1482:    }
         -: 1483:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG __wrap_iter  operator++(int) _NOEXCEPT
         -: 1484:        {__wrap_iter __tmp(*this); ++(*this); return __tmp;}
@@ -1531,9 +1539,9 @@
         -: 1518:        return __i[__n];
         -: 1519:    }
         -: 1520:
-      326: 1521:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG iterator_type base() const _NOEXCEPT {return __i;}
-      326: 1521-block  0
-      326: 1521-block  1
+      424: 1521:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG iterator_type base() const _NOEXCEPT {return __i;}
+      424: 1521-block  0
+      424: 1521-block  1
         -: 1522:
         -: 1523:private:
         -: 1524:#if _LIBCPP_DEBUG_LEVEL >= 2
@@ -1542,11 +1550,11 @@
         -: 1527:        __get_db()->__insert_ic(this, __p);
         -: 1528:    }
         -: 1529:#else
-      330: 1530:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG __wrap_iter(iterator_type __x) _NOEXCEPT : __i(__x) {}
-      165: 1530-block  0
-      165: 1530-block  1
-      165: 1530-block  2
-      165: 1530-block  3
+      408: 1530:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG __wrap_iter(iterator_type __x) _NOEXCEPT : __i(__x) {}
+      204: 1530-block  0
+      204: 1530-block  1
+      204: 1530-block  2
+      204: 1530-block  3
         -: 1531:#endif
         -: 1532:
         -: 1533:    template <class _Up> friend class __wrap_iter;
@@ -1631,11 +1639,11 @@
         -: 1612:template <class _Iter1, class _Iter2>
         -: 1613:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG
         -: 1614:bool
-      163: 1615:operator==(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT
-      163: 1615-block  0
+      212: 1615:operator==(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT
+      212: 1615-block  0
         -: 1616:{
-      163: 1617:    return __x.base() == __y.base();
-      163: 1617-block  0
+      212: 1617:    return __x.base() == __y.base();
+      212: 1617-block  0
         -: 1618:}
         -: 1619:
         -: 1620:template <class _Iter1, class _Iter2>
@@ -1685,11 +1693,11 @@
         -: 1664:template <class _Iter1>
         -: 1665:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG
         -: 1666:bool
-      163: 1667:operator!=(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter1>& __y) _NOEXCEPT
-      163: 1667-block  0
+      212: 1667:operator!=(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter1>& __y) _NOEXCEPT
+      212: 1667-block  0
         -: 1668:{
-      163: 1669:    return !(__x == __y);
-      163: 1669-block  0
+      212: 1669:    return !(__x == __y);
+      212: 1669-block  0
         -: 1670:}
         -: 1671:
         -: 1672:template <class _Iter1>

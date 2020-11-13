@@ -270,9 +270,9 @@
         -:  265://   Expected: Foo() is even
         -:  266://     Actual: it's 5
         -:  267://
-      120:  268:class GTEST_API_ AssertionResult {
-       60:  268-block  0
-       60:  268-block  1
+      128:  268:class GTEST_API_ AssertionResult {
+       64:  268-block  0
+       64:  268-block  1
         -:  269: public:
         -:  270:  // Copy constructor.
         -:  271:  // Used in EXPECT_TRUE/FALSE(assertion_result).
@@ -290,17 +290,17 @@
         -:  283:  // the argument is implicitly convertible to AssertionResult. In that case
         -:  284:  // we want AssertionResult's copy constructor to be used.
         -:  285:  template <typename T>
-      120:  286:  explicit AssertionResult(
-       60:  286-block  0
-       60:  286-block  1
+      128:  286:  explicit AssertionResult(
+       64:  286-block  0
+       64:  286-block  1
         -:  287:      const T& success,
         -:  288:      typename internal::EnableIf<
         -:  289:          !internal::ImplicitlyConvertible<T, AssertionResult>::value>::type*
         -:  290:          /*enabler*/ = NULL)
-      180:  291:      : success_(success) {}
-       60:  291-block  0
-       60:  291-block  1
-       60:  291-block  2
+      192:  291:      : success_(success) {}
+       64:  291-block  0
+       64:  291-block  1
+       64:  291-block  2
         -:  292:
         -:  293:#if defined(_MSC_VER) && _MSC_VER < 1910
         -:  294:  GTEST_DISABLE_MSC_WARNINGS_POP_()
@@ -313,9 +313,9 @@
         -:  301:  }
         -:  302:
         -:  303:  // Returns true iff the assertion succeeded.
-       60:  304:  operator bool() const { return success_; }  // NOLINT
-       60:  304-block  0
-       60:  304-block  1
+       64:  304:  operator bool() const { return success_; }  // NOLINT
+       64:  304-block  0
+       64:  304-block  1
         -:  305:
         -:  306:  // Returns the assertion's negation. Used with EXPECT/ASSERT_FALSE.
         -:  307:  AssertionResult operator!() const;

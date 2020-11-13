@@ -680,9 +680,9 @@
         -:  675:struct __equal_to<_T1, _T1>
         -:  676:{
         -:  677:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
-      149:  678:    bool operator()(const _T1& __x, const _T1& __y) const {return __x == __y;}
-      149:  678-block  0
-      149:  678-block  1
+      197:  678:    bool operator()(const _T1& __x, const _T1& __y) const {return __x == __y;}
+      197:  678-block  0
+      197:  678-block  1
         -:  679:};
         -:  680:
         -:  681:template <class _T1>
@@ -719,9 +719,9 @@
         -:  712:struct __less<_T1, _T1>
         -:  713:{
         -:  714:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
-      516:  715:    bool operator()(const _T1& __x, const _T1& __y) const {return __x < __y;}
-      516:  715-block  0
-      516:  715-block  1
+      532:  715:    bool operator()(const _T1& __x, const _T1& __y) const {return __x < __y;}
+      532:  715-block  0
+      532:  715-block  1
     $$$$$:  715-block  2
     $$$$$:  715-block  3
         -:  716:};
@@ -1267,34 +1267,34 @@
         -: 1256:_LIBCPP_NODISCARD_EXT inline
         -: 1257:_LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17
         -: 1258:bool
-       55: 1259:equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2, _BinaryPredicate __pred)
-       55: 1259-block  0
+       68: 1259:equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2, _BinaryPredicate __pred)
+       68: 1259-block  0
         -: 1260:{
-      163: 1261:    for (; __first1 != __last1; ++__first1, (void) ++__first2)
-       55: 1261-block  0
-      163: 1261-block  1
-      108: 1261-block  2
-      149: 1262:        if (!__pred(*__first1, *__first2))
-      149: 1262-block  0
-      108: 1262-block  1
-       41: 1263:            return false;
-       41: 1263-block  0
-       14: 1264:    return true;
-       14: 1264-block  0
-       55: 1265:}
-       55: 1265-block  0
+      212: 1261:    for (; __first1 != __last1; ++__first1, (void) ++__first2)
+       68: 1261-block  0
+      212: 1261-block  1
+      144: 1261-block  2
+      197: 1262:        if (!__pred(*__first1, *__first2))
+      197: 1262-block  0
+      144: 1262-block  1
+       53: 1263:            return false;
+       53: 1263-block  0
+       15: 1264:    return true;
+       15: 1264-block  0
+       68: 1265:}
+       68: 1265-block  0
         -: 1266:
         -: 1267:template <class _InputIterator1, class _InputIterator2>
         -: 1268:_LIBCPP_NODISCARD_EXT inline
         -: 1269:_LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17
         -: 1270:bool
-       55: 1271:equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2)
-       55: 1271-block  0
+       68: 1271:equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2)
+       68: 1271-block  0
         -: 1272:{
         -: 1273:    typedef typename iterator_traits<_InputIterator1>::value_type __v1;
         -: 1274:    typedef typename iterator_traits<_InputIterator2>::value_type __v2;
-       55: 1275:    return _VSTD::equal(__first1, __last1, __first2, __equal_to<__v1, __v2>());
-       55: 1275-block  0
+       68: 1275:    return _VSTD::equal(__first1, __last1, __first2, __equal_to<__v1, __v2>());
+       68: 1275-block  0
         -: 1276:}
         -: 1277:
         -: 1278:#if _LIBCPP_STD_VER > 11
@@ -1655,9 +1655,13 @@
         -: 1633:template <class _Iter>
         -: 1634:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17
         -: 1635:_Iter
-        -: 1636:__unwrap_iter(_Iter __i)
+      252: 1636:__unwrap_iter(_Iter __i)
+       30: 1636-block  0
+      222: 1636-block  1
         -: 1637:{
-        -: 1638:    return __i;
+      252: 1638:    return __i;
+       30: 1638-block  0
+      222: 1638-block  1
         -: 1639:}
         -: 1640:
         -: 1641:template <class _Tp>
@@ -1717,19 +1721,27 @@
         -: 1695:template <class _InputIterator, class _OutputIterator>
         -: 1696:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17
         -: 1697:_OutputIterator
-        -: 1698:__copy_constexpr(_InputIterator __first, _InputIterator __last, _OutputIterator __result)
+       10: 1698:__copy_constexpr(_InputIterator __first, _InputIterator __last, _OutputIterator __result)
+       10: 1698-block  0
         -: 1699:{
-        -: 1700:    for (; __first != __last; ++__first, (void) ++__result)
-        -: 1701:        *__result = *__first;
-        -: 1702:    return __result;
+       84: 1700:    for (; __first != __last; ++__first, (void) ++__result)
+       10: 1700-block  0
+       84: 1700-block  1
+       74: 1700-block  2
+       74: 1701:        *__result = *__first;
+       74: 1701-block  0
+       10: 1702:    return __result;
+       10: 1702-block  0
         -: 1703:}
         -: 1704:
         -: 1705:template <class _InputIterator, class _OutputIterator>
         -: 1706:inline _LIBCPP_INLINE_VISIBILITY
         -: 1707:_OutputIterator
-        -: 1708:__copy(_InputIterator __first, _InputIterator __last, _OutputIterator __result)
+       10: 1708:__copy(_InputIterator __first, _InputIterator __last, _OutputIterator __result)
+       10: 1708-block  0
         -: 1709:{
-        -: 1710:    return __copy_constexpr(__first, __last, __result);
+       10: 1710:    return __copy_constexpr(__first, __last, __result);
+       10: 1710-block  0
         -: 1711:}
         -: 1712:
         -: 1713:template <class _Tp, class _Up>
@@ -1740,25 +1752,33 @@
         -: 1718:    is_trivially_copy_assignable<_Up>::value,
         -: 1719:    _Up*
         -: 1720:>::type
-        -: 1721:__copy(_Tp* __first, _Tp* __last, _Up* __result)
+       74: 1721:__copy(_Tp* __first, _Tp* __last, _Up* __result)
+       74: 1721-block  0
         -: 1722:{
-        -: 1723:    const size_t __n = static_cast<size_t>(__last - __first);
-        -: 1724:    if (__n > 0)
-        -: 1725:        _VSTD::memmove(__result, __first, __n * sizeof(_Up));
-        -: 1726:    return __result + __n;
+       74: 1723:    const size_t __n = static_cast<size_t>(__last - __first);
+       74: 1724:    if (__n > 0)
+       74: 1724-block  0
+       74: 1725:        _VSTD::memmove(__result, __first, __n * sizeof(_Up));
+       74: 1725-block  0
+       74: 1726:    return __result + __n;
+       74: 1726-block  0
         -: 1727:}
         -: 1728:
         -: 1729:template <class _InputIterator, class _OutputIterator>
         -: 1730:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17_WITH_IS_CONSTANT_EVALUATED
         -: 1731:_OutputIterator
-        -: 1732:copy(_InputIterator __first, _InputIterator __last, _OutputIterator __result)
+       84: 1732:copy(_InputIterator __first, _InputIterator __last, _OutputIterator __result)
+       10: 1732-block  0
+       74: 1732-block  1
         -: 1733:{
         -: 1734:    if (__libcpp_is_constant_evaluated()) {
         -: 1735:        return _VSTD::__copy_constexpr(
         -: 1736:            __unwrap_iter(__first), __unwrap_iter(__last), __unwrap_iter(__result));
         -: 1737:    } else {
-        -: 1738:        return _VSTD::__copy(
-        -: 1739:            __unwrap_iter(__first), __unwrap_iter(__last), __unwrap_iter(__result));
+       84: 1738:        return _VSTD::__copy(
+       10: 1738-block  0
+       74: 1738-block  1
+       84: 1739:            __unwrap_iter(__first), __unwrap_iter(__last), __unwrap_iter(__result));
         -: 1740:    }
         -: 1741:}
         -: 1742:
@@ -2570,15 +2590,15 @@
         -: 2548:_LIBCPP_NODISCARD_EXT inline
         -: 2549:_LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
         -: 2550:const _Tp&
-      494: 2551:min(const _Tp& __a, const _Tp& __b, _Compare __comp)
-      494: 2551-block  0
+      510: 2551:min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      510: 2551-block  0
     $$$$$: 2551-block  1
         -: 2552:{
-      494: 2553:    return __comp(__b, __a) ? __b : __a;
-      494: 2553-block  0
+      510: 2553:    return __comp(__b, __a) ? __b : __a;
+      510: 2553-block  0
     $$$$$: 2553-block  1
-      494: 2553-block  2
-      494: 2553-block  3
+      510: 2553-block  2
+      510: 2553-block  3
     $$$$$: 2553-block  4
     $$$$$: 2553-block  5
     $$$$$: 2553-block  6
@@ -2589,12 +2609,12 @@
         -: 2557:_LIBCPP_NODISCARD_EXT inline
         -: 2558:_LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
         -: 2559:const _Tp&
-      494: 2560:min(const _Tp& __a, const _Tp& __b)
-      494: 2560-block  0
+      510: 2560:min(const _Tp& __a, const _Tp& __b)
+      510: 2560-block  0
     $$$$$: 2560-block  1
         -: 2561:{
-      494: 2562:    return _VSTD::min(__a, __b, __less<_Tp>());
-      494: 2562-block  0
+      510: 2562:    return _VSTD::min(__a, __b, __less<_Tp>());
+      510: 2562-block  0
     $$$$$: 2562-block  1
         -: 2563:}
         -: 2564:

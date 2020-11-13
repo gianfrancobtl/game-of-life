@@ -70,7 +70,7 @@
         1:   17-block  0
         1:   18:                  {false, false, true, false, false}, 
         1:   18-block  0
-        1:   19:                  {false, false,false, false, false} };
+        1:   19:                  {false, false, false, false, false} };
         1:   19-block  0
         1:   20:    bool res = primosLejanos(t1, t2);
         1:   20-block  0
@@ -224,7 +224,7 @@
     $$$$$:   44-block  8
     $$$$$:   44-block  9
         -:   45:
-        7:   46:TEST(esPeriodicoTEST, toroidesGrande ){
+        7:   46:TEST(primosLejanosTEST, toroidesGrandes){
         1:   46-block  0
         1:   46-block  1
         1:   46-block  2
@@ -257,27 +257,27 @@
     $$$$$:   47-block  7
     $$$$$:   47-block  8
     $$$$$:   47-block  9
-        1:   48:            {false,false,false, false, false, false, false,false,false,false,false, false},
+        1:   48:            {false, false,false, false, false, false, false, false, false, false, false},
         1:   48-block  0
-        1:   49:            {false,false, false, false, false, true,false,false,false,false,false},
+        1:   49:            {false, false, false, false, false, true, false, false, false, false, false},
         1:   49-block  0
-        1:   50:            {false,false, false, false, false, true,false,false,false,false,false},
+        1:   50:            {false, false, false, false, false, true, false, false, false, false, false},
         1:   50-block  0
-        1:   51:            {false,false, false, false, false, true,false,false,false,false,false},
+        1:   51:            {false, false, false, false, false, true, false, false, false, false, false},
         1:   51-block  0
-        1:   52:            {false,false, false, false, false, false,false,false,false,false,false},
+        1:   52:            {false, false, false, false, false, false, false, false, false, false, false},
         1:   52-block  0
-        1:   53:            {false,true,  true, true,  false, false, false,true,true,true,false},
+        1:   53:            {false, true,  true, true, false, false, false, true, true, true, false},
         1:   53-block  0
-        1:   54:            {false,false, false, false, false, false,false,false,false,false,false},
+        1:   54:            {false, false, false, false, false, false, false, false, false, false, false},
         1:   54-block  0
-        1:   55:            {false,false, false, false, false, true,false,false,false,false,false},
+        1:   55:            {false, false, false, false, false, true, false, false, false, false, false},
         1:   55-block  0
-        1:   56:            {false,false, false, false, false, true,false,false,false,false,false},
+        1:   56:            {false, false, false, false, false, true, false, false, false, false, false},
         1:   56-block  0
-        1:   57:            {false,false, false, false, false, true,false,false,false,false,false},
+        1:   57:            {false, false, false, false, false, true, false, false, false, false, false},
         1:   57-block  0
-        1:   58:            {false,false, false, false, false, false ,false,false,false,false,false}
+        1:   58:            {false, false, false, false, false, false ,false, false, false, false, false}
         1:   58-block  0
         -:   59:    };
        11:   60:    toroide t2 = {
@@ -290,7 +290,7 @@
     $$$$$:   60-block  6
     $$$$$:   60-block  7
     $$$$$:   60-block  8
-        1:   61:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:   61:            {false, false, false, false, false, false, false, false, false, false, false},
         1:   61-block  0
         1:   62:            {false, false, false, false, false, true, false, false, false, false, false},
         1:   62-block  0
@@ -465,3 +465,137 @@
     $$$$$:   97-block  8
     $$$$$:   97-block  9
         -:   98:
+        -:   99:
+        7:  100:TEST(primosLejanosTEST, UnoNoperiodicoYOtroPeriodico){
+        1:  100-block  0
+        1:  100-block  1
+        1:  100-block  2
+        1:  100-block  3
+        1:  100-block  4
+        1:  100-block  5
+        1:  100-block  6
+    $$$$$:  100-block  7
+    $$$$$:  100-block  8
+    $$$$$:  100-block  9
+    $$$$$:  100-block 10
+    $$$$$:  100-block 11
+    $$$$$:  100-block 12
+        1:  100-block 13
+        1:  100-block 14
+        1:  100-block 15
+        1:  100-block 16
+        1:  100-block 17
+        1:  100-block 18
+        1:  100-block 19
+        1:  100-block 20
+       11:  101:    toroide t1 = {
+        1:  101-block  0
+        1:  101-block  1
+       11:  101-block  2
+    $$$$$:  101-block  3
+    $$$$$:  101-block  4
+    $$$$$:  101-block  5
+    $$$$$:  101-block  6
+    $$$$$:  101-block  7
+    $$$$$:  101-block  8
+    $$$$$:  101-block  9
+        1:  102:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:  102-block  0
+        1:  103:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:  103-block  0
+        1:  104:            {false, false, false, false, true, false, true, false, false, false, false, false},
+        1:  104-block  0
+        1:  105:            {false, false, false, false, true, false, true, false, false, false, false, false},
+        1:  105-block  0
+        1:  106:            {false, false, false, false, true, true, false, false, false, false, false, false},
+        1:  106-block  0
+        1:  107:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:  107-block  0
+        1:  108:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:  108-block  0
+        1:  109:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:  109-block  0
+        1:  110:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:  110-block  0
+        1:  111:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:  111-block  0
+        1:  112:            {false, false, false, false, false, false, false, false, false, false, false, false}
+        1:  112-block  0
+        -:  113:    };
+       11:  114:    toroide t2 = {
+        1:  114-block  0
+        1:  114-block  1
+       11:  114-block  2
+    $$$$$:  114-block  3
+    $$$$$:  114-block  4
+    $$$$$:  114-block  5
+    $$$$$:  114-block  6
+    $$$$$:  114-block  7
+    $$$$$:  114-block  8
+        1:  115:            {false, false,false, false, false, false, false, false, false, false, false, false},
+        1:  115-block  0
+        1:  116:            {false, false, false, false, false, true, false, false, false, false, false, false},
+        1:  116-block  0
+        1:  117:            {false, false, false, false, false, true, false, false, false, false, false, false},
+        1:  117-block  0
+        1:  118:            {false, false, false, false, false, true, false, false, false, false, false, false},
+        1:  118-block  0
+        1:  119:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:  119-block  0
+        1:  120:            {false, true, true, true, false, false, false, true, true, true, false, false},
+        1:  120-block  0
+        1:  121:            {false, false, false, false, false, false, false, false, false, false, false, false},
+        1:  121-block  0
+        1:  122:            {false, false, false, false, false, true, false, false, false, false, false, false},
+        1:  122-block  0
+        1:  123:            {false, false, false, false, false, true, false, false, false, false, false, false},
+        1:  123-block  0
+        1:  124:            {false, false, false, false, false, true, false, false, false, false, false, false},
+        1:  124-block  0
+        1:  125:            {false, false, false, false, false, false, false, false, false, false, false, false}
+        1:  125-block  0
+        -:  126:    };
+        -:  127:
+        1:  128:    bool res = primosLejanos(t1, t2);
+        1:  128-block  0
+        1:  129:    EXPECT_FALSE(res);
+        1:  129-block  0
+        1:  129-block  1
+        1:  129-block  2
+        1:  129-block  3
+    $$$$$:  129-block  4
+    $$$$$:  129-block  5
+    $$$$$:  129-block  6
+    $$$$$:  129-block  7
+    $$$$$:  129-block  8
+    $$$$$:  129-block  9
+    $$$$$:  129-block 10
+    $$$$$:  129-block 11
+    $$$$$:  129-block 12
+        1:  130:    res = primosLejanos(t2, t1);
+        1:  130-block  0
+        1:  131:    EXPECT_FALSE(res);
+        1:  131-block  0
+        1:  131-block  1
+        1:  131-block  2
+        1:  131-block  3
+    $$$$$:  131-block  4
+    $$$$$:  131-block  5
+    $$$$$:  131-block  6
+    $$$$$:  131-block  7
+    $$$$$:  131-block  8
+    $$$$$:  131-block  9
+    $$$$$:  131-block 10
+    $$$$$:  131-block 11
+    $$$$$:  131-block 12
+        1:  132:}
+    $$$$$:  132-block  0
+    $$$$$:  132-block  1
+    $$$$$:  132-block  2
+    $$$$$:  132-block  3
+    $$$$$:  132-block  4
+    $$$$$:  132-block  5
+    $$$$$:  132-block  6
+        1:  132-block  7
+    $$$$$:  132-block  8
+    $$$$$:  132-block  9

@@ -16,7 +16,7 @@ TEST(primosLejanosTEST, toroideHorizontalPeriodico2){
                   {false, false, true, false, false}, 
                   {false, false, true, false, false},
                   {false, false, true, false, false}, 
-                  {false, false,false, false, false} };
+                  {false, false, false, false, false} };
     bool res = primosLejanos(t1, t2);
     EXPECT_TRUE(res);
     res = primosLejanos(t2, t1);
@@ -112,17 +112,17 @@ TEST(primosLejanosTEST, UnoNoperiodicoYOtroPeriodico){
             {false, false, false, false, false, false, false, false, false, false, false, false}
     };
     toroide t2 = {
-            {false, false,false, false, false, false, false, false, false, false, false},
-            {false, false, false, false, false, true, false, false, false, false, false},
-            {false, false, false, false, false, true, false, false, false, false, false},
-            {false, false, false, false, false, true, false, false, false, false, false},
-            {false, false, false, false, false, false, false, false, false, false, false},
-            {false, true, true, true, false, false, false, true, true, true, false},
-            {false, false, false, false, false, false, false, false, false, false, false},
-            {false, false, false, false, false, true, false, false, false, false, false},
-            {false, false, false, false, false, true, false, false, false, false, false},
-            {false, false, false, false, false, true, false, false, false, false, false},
-            {false, false, false, false, false, false, false, false, false, false, false}
+            {false, false,false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, true, true, true, false, false, false, true, true, true, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false}
     };
 
     bool res = primosLejanos(t1, t2);

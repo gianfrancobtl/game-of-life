@@ -77,16 +77,23 @@ bool esPeriodico(toroide const& t, int &p) {
 bool primosLejanos(toroide const &t, toroide const &u) {
     bool resp = false;
     toroide genericoT = t;
-    toroide genericoU = u;
-    int p = 0;
-    if (esPeriodico(t, p) || !esPeriodico(t, p)){
-        while (!resp && p > 0){
+    int p;
+    int i;
+    if (esPeriodico(t,p)){
+        i = p;
+    } else {
+        i = 0;
+        while (!toroideMuerto(genericoT)){
             evolucionToroide(genericoT);
-            evolucionToroide(genericoU);
-            if (genericoT == u || genericoU == t)
-                resp = true;
-            p --;
+            i ++;
         }
+    }
+    genericoT = t;
+    while (!resp && i > 0){
+        evolucionToroide(genericoT);
+        if (genericoT == u)
+            resp = true;
+        i --;
     }
     return resp;
 }

@@ -593,13 +593,13 @@
         -:  588:inline _LIBCPP_CONSTEXPR_AFTER_CXX14
         -:  589:_LIBCPP_NO_CFI _LIBCPP_INLINE_VISIBILITY
         -:  590:_Tp*
-      392:  591:addressof(_Tp& __x) _NOEXCEPT
-      266:  591-block  0
-      126:  591-block  1
+      398:  591:addressof(_Tp& __x) _NOEXCEPT
+      270:  591-block  0
+      128:  591-block  1
         -:  592:{
-      392:  593:    return __builtin_addressof(__x);
-      266:  593-block  0
-      126:  593-block  1
+      398:  593:    return __builtin_addressof(__x);
+      270:  593-block  0
+      128:  593-block  1
         -:  594:}
         -:  595:
         -:  596:#else
@@ -2279,21 +2279,21 @@
         -: 2270:template <class _Tp>
         -: 2271:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR
         -: 2272:_Tp&&
-      431: 2273:forward(typename remove_reference<_Tp>::type& __t) _NOEXCEPT
-      149: 2273-block  0
+      437: 2273:forward(typename remove_reference<_Tp>::type& __t) _NOEXCEPT
+      151: 2273-block  0
     $$$$$: 2273-block  1
        16: 2273-block  2
     $$$$$: 2273-block  3
     $$$$$: 2273-block  4
-      266: 2273-block  5
+      270: 2273-block  5
         -: 2274:{
-      431: 2275:    return static_cast<_Tp&&>(__t);
-      149: 2275-block  0
+      437: 2275:    return static_cast<_Tp&&>(__t);
+      151: 2275-block  0
     $$$$$: 2275-block  1
        16: 2275-block  2
     $$$$$: 2275-block  3
     $$$$$: 2275-block  4
-      266: 2275-block  5
+      270: 2275-block  5
         -: 2276:}
         -: 2277:
         -: 2278:template <class _Tp>

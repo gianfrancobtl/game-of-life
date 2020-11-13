@@ -450,22 +450,22 @@
         -:  445:// of a Test object.
         -:  446:class TestFactoryBase {
         -:  447: public:
-       52:  448:  virtual ~TestFactoryBase() {}
+       54:  448:  virtual ~TestFactoryBase() {}
     $$$$$:  448-block  0
     $$$$$:  448-block  1
     $$$$$:  448-block  2
     $$$$$:  448-block  3
-       52:  448-block  4
-       52:  448-block  5
+       54:  448-block  4
+       54:  448-block  5
         -:  449:
         -:  450:  // Creates a test instance to run. The instance is both created and destroyed
         -:  451:  // within TestInfoImpl::Run()
         -:  452:  virtual Test* CreateTest() = 0;
         -:  453:
         -:  454: protected:
-       52:  455:  TestFactoryBase() {}
-       52:  455-block  0
-       52:  455-block  1
+       54:  455:  TestFactoryBase() {}
+       54:  455-block  0
+       54:  455-block  1
         -:  456:
         -:  457: private:
         -:  458:  GTEST_DISALLOW_COPY_AND_ASSIGN_(TestFactoryBase);
@@ -576,15 +576,15 @@
         -:  483:typedef void (*SetUpTestCaseFunc)();
         -:  484:typedef void (*TearDownTestCaseFunc)();
         -:  485:
-      312:  486:struct CodeLocation {
-      156:  486-block  0
-      156:  486-block  1
-      104:  487:  CodeLocation(const std::string& a_file, int a_line)
-       52:  487-block  0
-       52:  487-block  1
-      104:  488:      : file(a_file), line(a_line) {}
-       52:  488-block  0
-       52:  488-block  1
+      324:  486:struct CodeLocation {
+      162:  486-block  0
+      162:  486-block  1
+      108:  487:  CodeLocation(const std::string& a_file, int a_line)
+       54:  487-block  0
+       54:  487-block  1
+      108:  488:      : file(a_file), line(a_line) {}
+       54:  488-block  0
+       54:  488-block  1
         -:  489:
         -:  490:  std::string file;
         -:  491:  int line;

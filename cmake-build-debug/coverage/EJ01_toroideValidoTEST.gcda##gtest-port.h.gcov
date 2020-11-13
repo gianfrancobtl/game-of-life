@@ -1186,23 +1186,23 @@
         -: 1181: public:
         -: 1182:  typedef T element_type;
         -: 1183:
-      120: 1184:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
-       60: 1184-block  0
-       60: 1184-block  1
-       60: 1184-block  2
-       60: 1184-block  3
-      386: 1185:  ~scoped_ptr() { reset(); }
-      133: 1185-block  0
-      133: 1185-block  1
-      133: 1185-block  2
-      133: 1185-block  3
-      133: 1185-block  4
+      128: 1184:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
+       64: 1184-block  0
+       64: 1184-block  1
+       64: 1184-block  2
+       64: 1184-block  3
+      398: 1185:  ~scoped_ptr() { reset(); }
+      135: 1185-block  0
+      135: 1185-block  1
+      135: 1185-block  2
+      135: 1185-block  3
+      135: 1185-block  4
     $$$$$: 1185-block  5
-       60: 1185-block  6
-       60: 1185-block  7
-       60: 1185-block  8
-       60: 1185-block  9
-       60: 1185-block 10
+       64: 1185-block  6
+       64: 1185-block  7
+       64: 1185-block  8
+       64: 1185-block  9
+       64: 1185-block 10
     $$$$$: 1185-block 11
         -: 1186:
         -: 1187:  T& operator*() const { return *ptr_; }
@@ -1215,30 +1215,30 @@
         -: 1194:    return ptr;
         -: 1195:  }
         -: 1196:
-      193: 1197:  void reset(T* p = NULL) {
-      133: 1197-block  0
-       60: 1197-block  1
-      193: 1198:    if (p != ptr_) {
-      133: 1198-block  0
-       60: 1198-block  1
-      133: 1199:      if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
-      133: 1199-block  0
+      199: 1197:  void reset(T* p = NULL) {
+      135: 1197-block  0
+       64: 1197-block  1
+      199: 1198:    if (p != ptr_) {
+      135: 1198-block  0
+       64: 1198-block  1
+      135: 1199:      if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
+      135: 1199-block  0
     $$$$$: 1199-block  1
-      133: 1200:        delete ptr_;
-      133: 1200-block  0
-      133: 1200-block  1
+      135: 1200:        delete ptr_;
+      135: 1200-block  0
+      135: 1200-block  1
     $$$$$: 1200-block  2
     $$$$$: 1200-block  3
-      133: 1201:      }
-      133: 1201-block  0
+      135: 1201:      }
+      135: 1201-block  0
     $$$$$: 1201-block  1
-      133: 1202:      ptr_ = p;
-      133: 1203:    }
-      133: 1203-block  0
+      135: 1202:      ptr_ = p;
+      135: 1203:    }
+      135: 1203-block  0
     $$$$$: 1203-block  1
-      193: 1204:  }
-      133: 1204-block  0
-       60: 1204-block  1
+      199: 1204:  }
+      135: 1204-block  0
+       64: 1204-block  1
         -: 1205:
         -: 1206:  friend void swap(scoped_ptr& a, scoped_ptr& b) {
         -: 1207:    using std::swap;

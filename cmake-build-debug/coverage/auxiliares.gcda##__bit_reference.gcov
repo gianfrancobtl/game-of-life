@@ -160,22 +160,22 @@
         -:  142:    __bit_const_reference(const __bit_reference<_Cp>& __x) _NOEXCEPT
         -:  143:        : __seg_(__x.__seg_), __mask_(__x.__mask_) {}
         -:  144:
-    28373:  145:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR operator bool() const _NOEXCEPT
-    28373:  145-block  0
-    28373:  146:        {return static_cast<bool>(*__seg_ & __mask_);}
-    28373:  146-block  0
+    60355:  145:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR operator bool() const _NOEXCEPT
+    60355:  145-block  0
+    60355:  146:        {return static_cast<bool>(*__seg_ & __mask_);}
+    60355:  146-block  0
         -:  147:
         -:  148:    _LIBCPP_INLINE_VISIBILITY __bit_iterator<_Cp, true> operator&() const _NOEXCEPT
         -:  149:        {return __bit_iterator<_Cp, true>(__seg_, static_cast<unsigned>(__libcpp_ctz(__mask_)));}
         -:  150:private:
         -:  151:    _LIBCPP_INLINE_VISIBILITY
         -:  152:    _LIBCPP_CONSTEXPR
-    56746:  153:    __bit_const_reference(__storage_pointer __s, __storage_type __m) _NOEXCEPT
-    28373:  153-block  0
-    28373:  153-block  1
-    56746:  154:        : __seg_(__s), __mask_(__m) {}
-    28373:  154-block  0
-    28373:  154-block  1
+   120710:  153:    __bit_const_reference(__storage_pointer __s, __storage_type __m) _NOEXCEPT
+    60355:  153-block  0
+    60355:  153-block  1
+   120710:  154:        : __seg_(__s), __mask_(__m) {}
+    60355:  154-block  0
+    60355:  154-block  1
         -:  155:
         -:  156:    __bit_const_reference& operator=(const __bit_const_reference&) = delete;
         -:  157:};
