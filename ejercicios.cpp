@@ -58,6 +58,7 @@ toroide evolucionMultiple(toroide const &t, int K) {
 // EJERCICIO 7
 bool esPeriodico(toroide const& t, int &p) {
     bool resp = false;
+    int pInicial = p;
     p = 0;
     toroide toroideOut = t;
     while (!toroideMuerto(toroideOut) && !resp){
@@ -65,6 +66,9 @@ bool esPeriodico(toroide const& t, int &p) {
         evolucionToroide(toroideOut);
         if (t == toroideOut)
             resp = true;
+    }
+    if (!resp){
+        p = pInicial;
     }
     return resp;
 }

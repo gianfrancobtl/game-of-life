@@ -43,7 +43,7 @@ TEST(primosLejanosTEST, toroideMuerto){
     EXPECT_FALSE(res);
 }
 
-TEST(esPeriodicoTEST, toroidesGrande ){
+TEST(primosLejanosTEST, toroidesGrandes){
     toroide t1 = {
             {false, false,false, false, false, false, false, false, false, false, false},
             {false, false, false, false, false, true, false, false, false, false, false},
@@ -96,3 +96,37 @@ TEST(primosLejanosTEST, DosPeriodico2){
     EXPECT_FALSE(res);
 }
 
+
+TEST(primosLejanosTEST, UnoNoperiodicoYOtroPeriodico){
+    toroide t1 = {
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, true, false, true, false, false, false, false, false},
+            {false, false, false, false, true, false, true, false, false, false, false, false},
+            {false, false, false, false, true, true, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false}
+    };
+    toroide t2 = {
+            {false, false,false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false},
+            {false, true, true, true, false, false, false, true, true, true, false},
+            {false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, true, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false}
+    };
+
+    bool res = primosLejanos(t1, t2);
+    EXPECT_FALSE(res);
+    res = primosLejanos(t2, t1);
+    EXPECT_FALSE(res);
+}

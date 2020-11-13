@@ -23,7 +23,7 @@ TEST(esPeriodicoTEST, cuadrado){
             {false, false, true, true, false},
             {false, false, true, true, false},
             {false, false, false, false, false},
-            {false, false,false, false, false} };
+            {false, false, false, false, false} };
     int p;
     bool res = esPeriodico(t, p);
     EXPECT_TRUE(res);
@@ -56,10 +56,31 @@ TEST(esPeriodicoTEST, toroideMuere){
             {false, false, true, false, false},
             {false, false, false, true, false},
             {false, false, false, false, false},
-            {false, false,false, false, false}
+            {false, false, false, false, false}
     };
-    int p;
+    int p = 1000;
     bool res = esPeriodico(t, p);
     EXPECT_FALSE(res);
-    EXPECT_EQ(p, 1);
+    EXPECT_EQ(p, 1000);
 }
+
+TEST(esPeriodicoTEST, toroideMuereEnMasDeUnTick){
+    toroide t = {
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, true, false, true, false, false, false, false, false},
+            {false, false, false, false, true, false, true, false, false, false, false, false},
+            {false, false, false, false, true, true, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false},
+            {false, false, false, false, false, false, false, false, false, false, false, false}
+    };
+    int p = 9;
+    bool res = esPeriodico(t, p);
+    EXPECT_FALSE(res);
+    EXPECT_EQ(p, 9);
+}
+
