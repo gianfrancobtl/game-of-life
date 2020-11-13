@@ -20,11 +20,11 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="juegoDeLaVida" targetName="juegoDeLaVida" />
-      <config projectName="juegoDeLaVida" targetName="gtest" />
-      <config projectName="juegoDeLaVida" targetName="gmock_main" />
       <config projectName="juegoDeLaVida" targetName="gmock" />
+      <config projectName="juegoDeLaVida" targetName="juegoDeLaVida" />
+      <config projectName="juegoDeLaVida" targetName="gmock_main" />
       <config projectName="juegoDeLaVida" targetName="gtest_main" />
+      <config projectName="juegoDeLaVida" targetName="gtest" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -35,7 +35,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5889e343-57c2-439e-af30-dbb338809fc2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxiliares.h" beforeDir="false" afterPath="$PROJECT_DIR$/auxiliares.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejercicios.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicios.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/juegoDeLaVida" beforeDir="false" afterPath="$PROJECT_DIR$/juegoDeLaVida" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +65,12 @@
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunManager" selected="Google Test.juegoDeLaVida">
-    <configuration name="esPeriodicoTEST.toroidesGrande" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="esPeriodicoTEST" TEST_METHOD="toroidesGrande" TEST_MODE="SUITE_TEST">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="esPeriodicoTEST.toroidesGrande" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="esPeriodicoTEST" TEST_METHOD="toroidesGrande" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -77,25 +82,25 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="menorSuperficieVivaTEST.toroideMuerto" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="menorSuperficieVivaTEST" TEST_METHOD="toroideMuerto" TEST_MODE="SUITE_TEST">
+    <configuration name="menorSuperficieVivaTEST.toroideMuerto" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="menorSuperficieVivaTEST" TEST_METHOD="toroideMuerto" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="primosLejanosTEST.toroideMuerto" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="primosLejanosTEST" TEST_METHOD="toroideMuerto" TEST_MODE="SUITE_TEST">
+    <configuration name="primosLejanosTEST.toroideMuerto" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="primosLejanosTEST" TEST_METHOD="toroideMuerto" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="seleccionNaturalTEST.unoQueTarda" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="seleccionNaturalTEST" TEST_METHOD="unoQueTarda" TEST_MODE="SUITE_TEST">
+    <configuration name="seleccionNaturalTEST.unoQueTarda" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="seleccionNaturalTEST" TEST_METHOD="unoQueTarda" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="vistaTrasladadaTEST.mismaPosicion" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="vistaTrasladadaTEST" TEST_METHOD="mismaPosicion" TEST_MODE="SUITE_TEST">
+    <configuration name="vistaTrasladadaTEST.mismaPosicion" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="vistaTrasladadaTEST" TEST_METHOD="mismaPosicion" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -172,6 +177,7 @@
       <workItem from="1605043837189" duration="1239000" />
       <workItem from="1605051677786" duration="1664000" />
       <workItem from="1605224561723" duration="2512000" />
+      <workItem from="1605233744232" duration="888000" />
     </task>
     <servers />
   </component>
@@ -204,28 +210,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1149" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604982807367" />
-    <state width="1398" height="138" key="GridCell.Tab.0.bottom" timestamp="1605227264100">
+    <state width="1398" height="243" key="GridCell.Tab.0.bottom" timestamp="1605234664075">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="138" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605227264100" />
+    <state width="1398" height="243" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605234664075" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
     <state width="1398" height="252" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1605226033767" />
-    <state width="1398" height="138" key="GridCell.Tab.0.center" timestamp="1605227264096">
+    <state width="1398" height="243" key="GridCell.Tab.0.center" timestamp="1605234664074">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="138" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605227264096" />
+    <state width="1398" height="243" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605234664074" />
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
     <state width="1398" height="252" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1605226033766" />
-    <state width="1398" height="138" key="GridCell.Tab.0.left" timestamp="1605227264094">
+    <state width="1398" height="243" key="GridCell.Tab.0.left" timestamp="1605234664073">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="138" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605227264094" />
+    <state width="1398" height="243" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605234664073" />
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
     <state width="1398" height="252" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1605226033766" />
-    <state width="1398" height="138" key="GridCell.Tab.0.right" timestamp="1605227264099">
+    <state width="1398" height="243" key="GridCell.Tab.0.right" timestamp="1605234664074">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="138" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605227264099" />
+    <state width="1398" height="243" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605234664074" />
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
     <state width="1398" height="252" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1605226033767" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1605045082974">
@@ -252,6 +258,5 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="../../../../Desktop/TPI FINALIZADO/tpi_final/cmake-build-debug" NAME="juegoDeLaVida Coverage Results" MODIFIED="1604997496253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="../../../../Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug" NAME="juegoDeLaVida Coverage Results" MODIFIED="1604962633227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="../../../../Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug" NAME="juegoDeLaVida Coverage Results" MODIFIED="1605226554733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

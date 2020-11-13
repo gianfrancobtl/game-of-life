@@ -31,12 +31,9 @@ float densidadPoblacion(toroide const &t) {
 
 // EJERCICIO 4
 bool evolucionDePosicion(toroide const &t, posicion x) {
-    bool resp;
-    if ((estaViva(t, x) && (cantVecinosVivos(t, x) == 2 || cantVecinosVivos(t, x) == 3)) ||
-    (!estaViva(t, x) && cantVecinosVivos(t, x) == 3))
+    bool resp = false;
+    if ((estaViva(t, x) && (cantVecinosVivos(t, x) == 2 || cantVecinosVivos(t, x) == 3)) || (!estaViva(t, x) && cantVecinosVivos(t, x) == 3))
         resp = true;
-    else
-        resp = false;
 
     return resp;
 }
