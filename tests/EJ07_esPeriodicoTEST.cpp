@@ -84,3 +84,12 @@ TEST(esPeriodicoTEST, toroideMuereEnMasDeUnTick){
     EXPECT_EQ(p, 9);
 }
 
+TEST(esPeriodicoTEST, toroideTodoFalso) {
+    toroide t = {{false, false, false},
+                 {false, false, false},
+                 {false, false, false}};
+    int p;
+    bool res = esPeriodico(t, p);
+    EXPECT_TRUE(res);
+    EXPECT_EQ(p, 0);
+}
