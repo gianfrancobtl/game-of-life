@@ -60,19 +60,21 @@ bool esPeriodico(toroide const& t, int &p) {
     bool resp = false;
     int pInicial = p;
     p = 0;
-    toroide toroideOut = t;
-    if (toroideMuerto(t)){
-        resp = true;
-    } else {
-        while (!toroideMuerto(toroideOut) && !resp){
-            p ++;
-            evolucionToroide(toroideOut);
-            if (t == toroideOut)
-                resp = true;
+    if (!toroideMuerto(t)){
+         toroide toroideOut = t;
+         while (!toroideMuerto(toroideOut) && !resp){
+                 p ++;
+                 evolucionToroide(toroideOut);
+                 if (t == toroideOut)
+                    resp = true;
         }
+    }else{
+        resp = true;
+        p = 1;
     }
-    if (!resp)
+    if (!resp){
         p = pInicial;
+    }
     return resp;
 }
 
@@ -80,27 +82,28 @@ bool esPeriodico(toroide const& t, int &p) {
 bool primosLejanos(toroide const &t, toroide const &u) {
     bool resp = false;
     toroide genericoT = t;
-    int p;
-    int i;
+    int p = 0;
+    int i = 0;
     if (toroideMuerto(t) && toroideMuerto(u)){
         resp = true;
-    } else {
+  }else if (toroideMuerto(t) && !esPeriodico(u,p)) {
+         resp = true;
+    }else{
         if (esPeriodico(t,p)){
-            i = p;
-        } else {
-            i = 0;
-            while (!toroideMuerto(genericoT)){
-                evolucionToroide(genericoT);
-                i ++;
+         i = p;
+            } else {
+                while (!toroideMuerto(genericoT)){
+                        evolucionToroide(genericoT);
+                         i ++;
             }
         }
-        genericoT = t;
-        while (!resp && i > 0){
-            evolucionToroide(genericoT);
-            if (genericoT == u)
+    genericoT = t;
+     while (!resp && i > 0){
+          evolucionToroide(genericoT);
+         if (genericoT == u)
                 resp = true;
-            i --;
-        }
+        i --;
+    }
     }
     return resp;
 }

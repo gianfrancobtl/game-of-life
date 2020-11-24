@@ -33,7 +33,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5889e343-57c2-439e-af30-dbb338809fc2" name="Default Changelist" comment="" />
+    <list default="true" id="5889e343-57c2-439e-af30-dbb338809fc2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejercicios.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicios.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juegoDeLaVida.exe" beforeDir="false" afterPath="$PROJECT_DIR$/juegoDeLaVida.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EJ07_esPeriodicoTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EJ07_esPeriodicoTEST.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EJ08_primosLejanosTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EJ08_primosLejanosTEST.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EJ09_seleccionNaturalTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EJ09_seleccionNaturalTEST.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,36 +68,13 @@
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunManager" selected="Google Test.juegoDeLaVida">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="esPeriodicoTEST.toroideMuere" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="esPeriodicoTEST" TEST_METHOD="toroideMuere" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="esPeriodicoTEST.toroideMuereEnMasDeUnTick" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="esPeriodicoTEST" TEST_METHOD="toroideMuereEnMasDeUnTick" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="juegoDeLaVida" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="primosLejanosTEST.DosPeriodico2" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="primosLejanosTEST" TEST_METHOD="DosPeriodico2" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="primosLejanosTEST.NOperiodioyperiodico" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="primosLejanosTEST" TEST_METHOD="NOperiodioyperiodico" TEST_MODE="SUITE_TEST">
+    <configuration name="primosLejanosTEST.UnoNoperiodicoYOtroMuerto" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="primosLejanosTEST" TEST_METHOD="UnoNoperiodicoYOtroMuerto" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -100,6 +84,29 @@
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="primosLejanosTEST.UnoperiodicoYOtroMuerto" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="primosLejanosTEST" TEST_METHOD="UnoperiodicoYOtroMuerto" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="primosLejanosTEST.ambosMuertos" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="primosLejanosTEST" TEST_METHOD="ambosMuertos" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="seleccionNaturalTEST.prueba" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_CLASS="seleccionNaturalTEST" TEST_METHOD="prueba" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="gmock" CONFIG_NAME="Debug">
@@ -133,19 +140,19 @@
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
       <item itemvalue="Google Test.juegoDeLaVida" />
-      <item itemvalue="Google Test.primosLejanosTEST.DosPeriodico2" />
-      <item itemvalue="Google Test.esPeriodicoTEST.toroideMuere" />
-      <item itemvalue="Google Test.primosLejanosTEST.NOperiodioyperiodico" />
       <item itemvalue="Google Test.primosLejanosTEST.UnoNoperiodicoYOtroPeriodico" />
-      <item itemvalue="Google Test.esPeriodicoTEST.toroideMuereEnMasDeUnTick" />
+      <item itemvalue="Google Test.primosLejanosTEST.ambosMuertos" />
+      <item itemvalue="Google Test.seleccionNaturalTEST.prueba" />
+      <item itemvalue="Google Test.primosLejanosTEST.UnoperiodicoYOtroMuerto" />
+      <item itemvalue="Google Test.primosLejanosTEST.UnoNoperiodicoYOtroMuerto" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Google Test.esPeriodicoTEST.toroideMuere" />
-        <item itemvalue="Google Test.esPeriodicoTEST.toroideMuereEnMasDeUnTick" />
+        <item itemvalue="Google Test.primosLejanosTEST.UnoNoperiodicoYOtroMuerto" />
+        <item itemvalue="Google Test.primosLejanosTEST.UnoperiodicoYOtroMuerto" />
         <item itemvalue="Google Test.primosLejanosTEST.UnoNoperiodicoYOtroPeriodico" />
-        <item itemvalue="Google Test.primosLejanosTEST.NOperiodioyperiodico" />
-        <item itemvalue="Google Test.primosLejanosTEST.DosPeriodico2" />
+        <item itemvalue="Google Test.seleccionNaturalTEST.prueba" />
+        <item itemvalue="Google Test.primosLejanosTEST.ambosMuertos" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +181,15 @@
       <workItem from="1605051677786" duration="1664000" />
       <workItem from="1605224561723" duration="2512000" />
       <workItem from="1605233744232" duration="2624000" />
-      <workItem from="1605274719353" duration="7337000" />
+      <workItem from="1605274719353" duration="7202000" />
+      <workItem from="1605293636434" duration="398000" />
+      <workItem from="1605405476883" duration="204000" />
+      <workItem from="1605919912143" duration="223000" />
+      <workItem from="1605920185647" duration="5531000" />
+      <workItem from="1605930930425" duration="43000" />
+      <workItem from="1605950875919" duration="823000" />
+      <workItem from="1606008291823" duration="1321000" />
+      <workItem from="1606249502283" duration="1178000" />
     </task>
     <servers />
   </component>
@@ -207,54 +222,67 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="467" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1605276189892" />
-    <state x="1149" y="275" key="FileChooserDialogImpl" timestamp="1604982807367">
+    <state x="1149" y="275" key="FileChooserDialogImpl" timestamp="1605930971607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1149" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604982807367" />
-    <state width="1398" height="312" key="GridCell.Tab.0.bottom" timestamp="1605282783274">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="1149" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-461.1536.824@0.0.1920.1040" timestamp="1605930971607" />
+    <state x="1149" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605405681051" />
+    <state width="1877" height="308" key="GridCell.Tab.0.bottom" timestamp="1606250582248">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="312" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605282783274" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
+    <state width="1398" height="312" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605282550809" />
+    <state width="1877" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1842.-84.1474.789@0.0.1920.1040" timestamp="1606250582248" />
+    <state width="1877" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-461.1536.824@0.0.1920.1040" timestamp="1605951705903" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605294036265" />
     <state width="1398" height="252" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1605226033767" />
-    <state width="1398" height="312" key="GridCell.Tab.0.center" timestamp="1605282783273">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="308" key="GridCell.Tab.0.center" timestamp="1606250582248">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="312" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605282783273" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
+    <state width="1398" height="312" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605282550808" />
+    <state width="1877" height="308" key="GridCell.Tab.0.center/0.0.1920.1040/-1842.-84.1474.789@0.0.1920.1040" timestamp="1606250582248" />
+    <state width="1877" height="308" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-461.1536.824@0.0.1920.1040" timestamp="1605951705903" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605294036265" />
     <state width="1398" height="252" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1605226033766" />
-    <state width="1398" height="312" key="GridCell.Tab.0.left" timestamp="1605282783273">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="308" key="GridCell.Tab.0.left" timestamp="1606250582247">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="312" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605282783273" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
+    <state width="1398" height="312" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605282550807" />
+    <state width="1877" height="308" key="GridCell.Tab.0.left/0.0.1920.1040/-1842.-84.1474.789@0.0.1920.1040" timestamp="1606250582247" />
+    <state width="1877" height="308" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-461.1536.824@0.0.1920.1040" timestamp="1605951705903" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605294036265" />
     <state width="1398" height="252" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1605226033766" />
-    <state width="1398" height="312" key="GridCell.Tab.0.right" timestamp="1605282783274">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="308" key="GridCell.Tab.0.right" timestamp="1606250582248">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="312" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605282783274" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
+    <state width="1398" height="312" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605282550808" />
+    <state width="1877" height="308" key="GridCell.Tab.0.right/0.0.1920.1040/-1842.-84.1474.789@0.0.1920.1040" timestamp="1606250582248" />
+    <state width="1877" height="308" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-461.1536.824@0.0.1920.1040" timestamp="1605951705903" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605294036265" />
     <state width="1398" height="252" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1605226033767" />
-    <state width="1398" height="312" key="GridCell.Tab.1.bottom" timestamp="1605282783276">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1605927063831">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="312" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605282783276" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
-    <state width="1398" height="312" key="GridCell.Tab.1.center" timestamp="1605282783275">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="312" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605282553061" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.-461.1536.824@0.0.1920.1040" timestamp="1605927063831" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605294036266" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1605927063831">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="312" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1605282783275" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
-    <state width="1398" height="312" key="GridCell.Tab.1.left" timestamp="1605282783275">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="312" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1605282553061" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.-461.1536.824@0.0.1920.1040" timestamp="1605927063831" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605294036266" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1605927063831">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="312" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1605282783275" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
-    <state width="1398" height="312" key="GridCell.Tab.1.right" timestamp="1605282783275">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="312" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1605282553060" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.-461.1536.824@0.0.1920.1040" timestamp="1605927063831" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605294036266" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1605927063831">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="312" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1605282783275" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605045082974" />
+    <state width="1398" height="312" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1605282553061" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.-461.1536.824@0.0.1920.1040" timestamp="1605927063831" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605294036266" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1604981152390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -264,20 +292,10 @@
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1605278841965" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/tests/EJ08_primosLejanosTEST.cpp</url>
-          <line>99</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="../../../../Desktop/TPI FINALIZADO/tpi_final/cmake-build-debug" NAME="juegoDeLaVida Coverage Results" MODIFIED="1604997496253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="../../../../Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug" NAME="juegoDeLaVida Coverage Results" MODIFIED="1604962633227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="../../../../Documents/Año 2020 - Cs. de la computación/Algoritmos y Estructuras de Datos 1/Trabajo Practico de Implementación - Juego de la Vida-20201031/tpi_final/cmake-build-debug" NAME="juegoDeLaVida Coverage Results" MODIFIED="1605282697844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="../../../../Desktop/Entregar/tpi_final/cmake-build-debug" NAME="juegoDeLaVida Coverage Results" MODIFIED="1605293689270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="../../../../Desktop/TPI FINALIZADO/tpi_final/cmake-build-debug" NAME="juegoDeLaVida Coverage Results" MODIFIED="1604997496253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="../../../../Desktop/Entregar/tpi_final/cmake-build-debug" NAME="juegoDeLaVida Coverage Results" MODIFIED="1606249746250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

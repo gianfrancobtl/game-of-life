@@ -65,3 +65,4 @@ TEST(seleccionNaturalTEST, esperaResDifCero){
     int res = seleccionNatural(ts);
     EXPECT_EQ(res, 4);
 }
+
